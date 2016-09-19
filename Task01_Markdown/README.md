@@ -22,6 +22,7 @@
 
 [4. Kết luận](#KetLuan)
 
+[5. Tài liệu tham khảo](#TaiLieu)
 ---
 
 <a name="gt"></a>
@@ -49,7 +50,8 @@ Sự phổ biến của HTML khiến ngôn ngữ đánh dấu này được sử
 <a name="CuPhap"></a>
 ### 2. Các cú pháp thường gặp
 
-Markdown sử dụng khá đơn giản với một số cú pháp dễ nhớ. tuy nhiên chúng có nhiều cách viết có thể cho những nơi khác nhau như github, blog như đã nói ở trên.
+Markdown sử dụng khá đơn giản với một số cú pháp dễ nhớ. tuy nhiên chúng có nhiều cách viết có thể cho những nơi khác nhau như github, blog như đã nói ở trên. Chúng ta sẽ tìm hiểu qua 1 vài cú pháp cơ bản
+> Còn rất nhiều [cú pháp khác](https://daringfireball.net/projects/markdown/syntax) chưa được đề cập đến.
 
 ##### 2.1 Thẻ tiêu đề (headers)
 Markdown sử dụng kí tự # để bắt đầu cho các thẻ tiêu đề (có thể dùng từ 1 kí tự **#** đến 6 kí tự **######**)
@@ -229,28 +231,11 @@ Chúng ta có thể sử dụng bất kỳ trình soạn thảo nào như sublim
 ##### Nhược điểm.
 Nhược điểm lớn nhất của Markdown có lẽ là khả năng cộng tác trong Markdown và theo giỏi những thay đổi. Vì đơn giản nên chỉ có thể dùng cho các dự án nhỏ lẻ, bài blog và tất nhiên những dự án lớn hay những quyển sách cần nhiều hơn những thứ mà Markdown hỗ trợ.
 
+<a name="TaiLieu"></a>
+### 5. Tài liệu tham khảo
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+https://vi.wikipedia.org/wiki/Markdown
+https://github.com/hocchudong/git-github-for-sysadmin
+https://help.ghost.org/hc/en-us/articles/224410728-Markdown-Guide
+http://ngochin.com/2013/01/03/markdown/
 
