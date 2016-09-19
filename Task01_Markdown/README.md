@@ -23,6 +23,7 @@
 [4. Kết luận](#KetLuan)
 
 [5. Tài liệu tham khảo](#TaiLieu)
+
 ---
 
 <a name="gt"></a>
@@ -235,7 +236,10 @@ Nhược điểm lớn nhất của Markdown có lẽ là khả năng cộng tá
 ### 5. Tài liệu tham khảo
 
 https://vi.wikipedia.org/wiki/Markdown
+
 https://github.com/hocchudong/git-github-for-sysadmin
+
 https://help.ghost.org/hc/en-us/articles/224410728-Markdown-Guide
+
 http://ngochin.com/2013/01/03/markdown/
 
