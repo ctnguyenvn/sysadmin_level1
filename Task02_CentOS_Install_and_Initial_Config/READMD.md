@@ -1,0 +1,285 @@
+
+
+### Install CentOS 6.5 on virtualbox and initial config
+
+> Tài liệu: 
+
+> Thực hiện: Nguyễn Công Trứ
+
+> Cập nhật: 21/09/2016
+
+#### Mục lục
+
+[1. Giới thiệu CentOS](#GioiThieu)
+
+[2. Cài đặt Virtualbox](#Virtualbox)
+
+[3. Cài đặt CentOS 6.5](#Centos)
+
+- [3.1 Tạo máy ảo cài đặt CentOS trên virtualbox](#TaoMayAo)
+- [3.2 Cài đặt CentOS 6.5 (step by step)](#CaiDatCentos)
+
+[4. Initial config](#CoBan)
+
+- [4.1 Add a User](#AddUser)
+- [4.2 Use root account](#UseRoot)
+- [4.3 Network Settings](#NetConfig)
+- [4.4 Configure Services](#SerConfig)
+- [4.5 Update System](#SysUpdateS)
+- [4.6 Vim Settings](#Vim)
+- [4.7 Sudo Settings](#SudoSet)
+
+<a name="GioiThieu"></a>
+#### 1. Giới thiệu CentOS
+
+[CentOS](https://www.centos.org/) (Community ENTerprise Operating System) là một phân phối Linux tập trung vào lớp doanh nghiệp. Là hệ điều hành tự do dựa trên Linux. Nó có nguồn gốc từ bản phân phối Red Hat Enterprise Linux. CentOS tồn tại để cung cấp một nền tảng điện toán doanh nghiệp tự do và phấn đấu để duy trì khả năng tương thích nhị phân 100% với nguồn Red Hat. CentOS hỗ trợ các dòng x86(i586 và i686), dòng x86_64 (AMD64 và Intel64), và các cấu trúc Alpha, S390,...
+
+<a name="Virtualbox"></a>
+#### 2. Cài đặt Virtualbox
+
+Lưu ý cần gỡ tất cả các phiên bản virtualbox trước đó đã cài đặt trên máy
+
+##### Cài đặt trên Ubuntu
+- Bạn có thể cài đặt virtualbox qua:
+
+    + ubuntu software center để cài đặt
+    + File .deb của virtualbox từ trang chủ và cài đặt với lệnh 
+
+        **sudo dpkg -i .deb**
+
+    + Sử dụng trực tiếp từ terminal
+
+        **sudo apt-get install virtualbox**
+
+##### Cài đặt trên CentOS
+
+- Thêm VirtualBox repository vào CentOS để cài đặt và cập nhật VirtualBox phiên bản mới nhất được dễ dàng hơn.
+   
+    **cd /etc/yum.repos.d/**
+    **wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo**
+
+- Cài đặt gói epel-release:
+    
+    **yum install epel-release**
+    
+- Cập nhật CentOS và cài các gói cần thiết cho VirtualBox.
+
+    **yum update**
+    **yum install binutils qt gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms**
+
+- Và bây giờ cài đặt VirtualBox với lệnh sau:
+
+    **yum install VirtualBox-5.0**
+
+<a name="Centos"></a>
+#### 3. Cài đặt CentOS 6.5
+-- Bạn có thể tải file cài đặt CentOS 6.5 từ [trang chủ](http://vault.centos.org/6.5/isos/x86_64/) và tiếp tục thực hiện các bước sau.
+
+<a name="TaoMayAo"></a>
+##### 3.1 Tạo máy ảo cài đặt CentOS trên virtualbox
+
+- Đặt tên máy và chọn như hình 
+> Nếu sử dụng bản 32 bit chọn Red hat (32 bit)
+
+![](/img/vbox1.png)
+
+- Chọn Memory size (RAM)
+
+![](/img/vbox2.png)
+
+- Chọn tạo mới ổ cứng ảo
+
+![](/img/vbox3.png)
+
+- Chọn loại ổ cứng ảo (VDI)
+
+![](/img/vbox4.png)
+
+- chọn lưu trữ trên ổ cứng vật lý (chọn dynamically)
+
+![](/img/vbox5.png)
+
+- Chọn kích thước và vị trí ỗ đĩa
+
+![](/img/vbox6.png)
+
+
+<a name="CaiDatCentos"></a>
+##### 3.2 Cài đặt CentOS 6.5 (step by step)
+
+- Nhấn Start để bắt đầu chọn dvd/iso file
+
+![](/img/vbox7.png)
+
+- Chọn Install or upgrade an existing system
+![](/img/install1.png)
+
+- Chọn Skip để bỏ qua bộ cài đăt
+![](/img/install2.png)
+
+- Sau khi chọn next ta bắt đầu chọn ngôn ngữ cài đặt
+![](/img/install4.png)
+
+- Chọn bàn phím hệ thống (keyboard)
+![](/img/install5.png)
+
+- Chọn Kiểu thiết bị sẽ cài đặt
+![](/img/install6.png)
+
+- Chọn yes, discard any data để bỏ qua cảnh báo (xóa dữ liệu trên ổ cứng đã chọn)
+![](/img/install7.png)
+
+- Đặt hostname
+![](/img/install8.png)
+
+> Có thể config network để có thể khởi động network khi vào hệ thống như sau
+![](/img/install9.png)
+![](/img/install10.png)
+
+- Chọn giờ hệ thống
+![](/img/install11.png)
+
+- Dặt passwork cho user root
+![](/img/install12.png)
+
+- Chọn kiểu cài đặt:
+
+	+ Use All Space: Xóa tất cả các phân vùng, tự động tạo phạn vùng mới
+	+ Replace existing Linux System: Thay thế hệ thống Linux hiện tại
+	+ Shrink Current System: Thu lại phân vùng hiện có để tạo ra phân vùng trống mặc định
+	+ Use Free Space: Sử dụng phân vùng trống
+	+ Create custom Layout: Tạo phân vùng tùy chỉnh theo ý muốn 
+
+![](/img/install13.png)
+
+- Chọn Standard partition 
+![](/img/install14.png)
+
+- Tùy chỉnh phân vùng
+
+	+ Mount Point: Tạo phân vùng (/, /home, /boot, /var,...)
+	+ File System Type: Chọn kiểu file hệ thống (ext3, ext4, swap,...)
+	+ Size: Kích thước phân vùng
+
+![](/img/install15.png)
+
+- Sau khi tạo xong tất cả các phân vùng mong muốn, chọn Next và chọn write changes to disk để ghi lại những thay đổi
+![](/img/install17.png)
+
+- Boot loader (để mặc định)
+![](/img/install18.png)
+
+- Chọn loại hệ thống desktop (có hỗ trợ GUI), Minimal (Chỉ hỗ trợ console), basic server,...
+![](/img/install19.png)
+
+- Sau đó nhấn Next và quá trình cài đặt bắt đầu, sau khi cài xong reboot lại hệ thống
+
+- Chọn forward đến tạo user
+
+![Tao user]()
+
+- Chọn ngày và thời gian
+![](/img/install21.png)
+
+- Thiết lập dung lượng cho kdump
+![](/img/install22.png)
+
+
+
+<a name="CoBan"></a>
+#### 4. Initial config
+
+<a name="AddUser"></a>
+##### 4.1 Add a User
+
+Sử dụng lệnh:
+
+**useradd user_name**
+
+Thay đổi pass của user này:
+
+**Passwd user_name**
+
+![](/img/init1.png)
+
+<a name="UseRoot"></a>
+##### 4.2 Use root account
+
+<a name="NetConfig"></a>
+##### 4.3 Network Settings
+
+- Sử dụng lệnh 
+	**vi /etc/sysconfig/network-scripts/ifcfg-eth0**
+và thay đổi như sau:
+![](/img/init2.png)
+
+- Restart lại service network và kiểm tra lại với các lệnh như hình
+![](/img/init3.png)
+
+- Để disable IPv6 ta thêm 2 dòng sau vào file /etc/sysctl.conf
+![](/img/init4.png)
+
+- Áp dụng cấu hình với lệnh sysctl -p và kiểm tra ta được
+![](/img/init5.png)
+
+<a name="SerConfig"></a>
+##### 4.4 Configure Services
+
+chkconfig là lệnh thao tác với service, một số lệnh cơ bản như sau:
+	
++ kiểm tra các service
+
+![](/img/init6.png)
+
++ Tắt service
+
+![](/img/init7.png)
+
+<a name="SysUpdate"></a>
+##### 4.5 Update System
+
+- Sử dụng lệnh
+
+![](/img/init8.png)
+
+<a name="Vim"></a>
+##### 4.6 Vim Settings
+
+![](/img/init9.png)
+
+- Sau khi dùng lệnh trên cài đặt thì ta chỉnh alias như sau
+
+![](/img/init10.png)
+
+- Ngoài ra ta chỉnh 1 số cấu hình như hiển thị dòng, systax trong vim
+
+![](/img/init11.png)
+
+<a name="SudoSet"></a>
+##### 4.7 Sudo Settings
+
+- Cho user (hellsins) quyền như root
+
+![](/img/init12.png)
+
+- Tạo group mới
+
+![](/img/init14.png)
+
+- Áp dụng quyền cụ thể cho từng user đối với từng lệnh
+
+![](/img/init15.png)
+
+- Sau khi áp dụng ta được kết quả sau
+
+![](/img/init16.png)
+![](/img/init17.png)
+
+- Để chỉ ghi log của sudo ta thêm vào cuối file sudoer dòng:
+	
+	**Defaults syslog=local1**
+
+Sau đó thêm vào file /etc/rsyslog.conf như sau (khoảng dưới dòng 42)
+![](/img/init18.png)
+
+#### Kết thúc
