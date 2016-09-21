@@ -2,7 +2,7 @@
 
 ### Install CentOS 6.5 on virtualbox and initial config
 
-> Tài liệu: 
+> Tài liệu: Cài đặt CentOS trên virtualbox và config cơ bản
 
 > Thực hiện: Nguyễn Công Trứ
 
