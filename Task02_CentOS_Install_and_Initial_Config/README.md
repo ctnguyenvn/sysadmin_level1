@@ -139,7 +139,7 @@ Lưu ý cần gỡ tất cả các phiên bản virtualbox trước đó đã c�
 - Chọn giờ hệ thống
 ![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install11.png)
 
-- Dặt passwork cho user root
+- Đặt passwork cho user root
 ![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install12.png)
 
 - Chọn kiểu cài đặt:
@@ -174,9 +174,7 @@ Lưu ý cần gỡ tất cả các phiên bản virtualbox trước đó đã c�
 
 - Sau đó nhấn Next và quá trình cài đặt bắt đầu, sau khi cài xong reboot lại hệ thống
 
-- Chọn forward đến tạo user
-
-![Tao user]()
+- Chọn forward đến tạo user (điền thông tin user) và tiếp tục
 
 - Chọn ngày và thời gian
 ![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install21.png)
