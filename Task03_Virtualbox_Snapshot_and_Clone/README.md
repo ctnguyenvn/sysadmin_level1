@@ -18,16 +18,16 @@
 ---
 
 <a name="Snapshot"></a>
-#### 1. Snapshot
+### 1. Snapshot
 
 Snapshot là một chức năng lưu lại (chụp) trạng thái hiện tại của một máy ảo trên Virtualbox. Và sau đó tại bất kỳ thời điểm nào bạn cũng có thể khôi phục lại trạng thái trước đó mặc dù bạn đã thay đổi rất nhiều trong hệ thống đó.
 
 <a name="TaoKhoiphucXoa"></a>
-##### 1.1 Tạo, khôi phục, xóa Snapshot
+#### 1.1 Tạo, khôi phục, xóa Snapshot
 
 Khi Snapshot một máy ảo trên Virtualbox ta có thể:
 
-- ##### Tạo Snapshot (Take a snapshot)
+- #### Tạo Snapshot (Take a snapshot)
 Như đã nói ở trên, một snapshot sau khi được tạo ra có thể khôi phục lại trạng thái **lúc chụp** bất cứ lúc nào. Muốn Snapshot một máy ảo bất kỳ ta làm như sau:
 
 	+ Đối với máy ảo đang chạy chọn **Take snapshot** từ "Machine" ở menu thả xuống của cửa sổ Snapshot. Sau đó đặt tên máy ảo mới
@@ -37,16 +37,16 @@ Như đã nói ở trên, một snapshot sau khi được tạo ra có thể kh�
 
 > Virtualbox không hạn chế số lượng snapshot, tuy nhiên về mặt thực tế thì có thể do hạn chế về ổ cứng của bạn.
 
-- ##### khôi phục Snapshot.
+- #### khôi phục Snapshot.
 Để khôi phục lại snapshot bạn kích chuột phải vào bất kỳ ảnh chụp nào đã thực hiện snapshot trong list snapshot của bạn và chọn Restore Snapshot (hoặc nhấn vào biểu tượng máy ảnh có dấu quay lại)
 
-- ##### Xóa Snapshot.
+- #### Xóa Snapshot.
 Cuối cùng có thể xóa một ảnh trong list của mình thì tương tự như khôi phục và thay vì chọn Restore Snapshot thì bạn chon Delete Snapshot.
 
 > Để tránh tình trạng mất trạng thái hiện tại khi khôi phục hoặc xóa một bản chụp, bạn có thể tạo ra 1 snapshot mới trước khi thao tác.
 
 <a name="Contents"></a>
-##### 1.3 Contents Snapshot
+#### 1.3 Contents Snapshot
 
 Để rõ hơn về 1 snapshot ta sẽ xem xét 3 yếu tố sau
 
@@ -55,7 +55,7 @@ Cuối cùng có thể xóa một ảnh trong list của mình thì tương tự
 + Cuối cùng, nếu bạn mất một ảnh chụp khi máy đang chạy, trạng thái bộ nhớ cũng được lưu lại trong các ảnh chụp. Khi bạn khôi phục lại một bản chụp như vậy, bạn sẽ ở chính xác thời điểm khi ảnh được chụp
 
 <a name="Clone"></a>
-#### 2. Clone
+### 2. Clone
 
 Clone máy ảo chúng ta có thể hiểu như nhân bản một máy ảo nào đó được tạo ra trong Virtualbox thành nhiều bản nữa giống hệt máy ảo ban đầu với mục đích tiết kiệm thời gian cho việc lặp đi lặp lại cài đặt các máy ảo có cấu hình giống nhau.
 
@@ -83,4 +83,4 @@ Nhấn Clone để hoàn thành
 
 Chọn và nhấn Clone để hoàn thành
 
-#### Kết thúc.
+### Kết thúc.
