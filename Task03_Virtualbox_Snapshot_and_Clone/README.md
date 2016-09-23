@@ -10,8 +10,8 @@
 
 [1. Snapshot](#Snapshot)
 
-- [2.1 Tạo, khôi phục, xóa Snapshot](#TaoKhoiphucXoa)
-- [2.3 Contents Snapshot](#Contents)
+- [1.1 Tạo, khôi phục, xóa Snapshot](#TaoKhoiphucXoa)
+- [1.2 Contents Snapshot](#Contents)
 
 [2. Clone](#Clone)
 
@@ -46,7 +46,7 @@ Cuối cùng có thể xóa một ảnh trong list của mình thì tương tự
 > Để tránh tình trạng mất trạng thái hiện tại khi khôi phục hoặc xóa một bản chụp, bạn có thể tạo ra 1 snapshot mới trước khi thao tác.
 
 <a name="Contents"></a>
-#### 1.3 Contents Snapshot
+#### 1.2 Contents Snapshot
 
 Để rõ hơn về 1 snapshot ta sẽ xem xét 3 yếu tố sau
 
