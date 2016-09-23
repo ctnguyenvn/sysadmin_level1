@@ -33,7 +33,7 @@ Như đã nói ở trên, một snapshot sau khi được tạo ra có thể kh�
 	+ Đối với máy ảo đang chạy chọn **Take snapshot** từ "Machine" ở menu thả xuống của cửa sổ Snapshot. Sau đó đặt tên máy ảo mới
 	+ Đối với máy ảo ở trạng thái **save** hoặc **powered off** Bạn kích vào hình chiếc máy ảnh ở cửa sổ Snapshots hoặc nhấn *Strl+Shift+S* . Sau đó đặt tên máy ảo mới
 
-	![](/home/sins/Dropbox/sysadmin_level1/Task03_Virtualbox_Snapshot_and_Clone/img/snap1.jpg)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task03_Virtualbox_Snapshot_and_Clone/img/snap1.jpg)
 
 > Virtualbox không hạn chế số lượng snapshot, tuy nhiên về mặt thực tế thì có thể do hạn chế về ổ cứng của bạn.
 
