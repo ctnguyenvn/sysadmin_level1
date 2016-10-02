@@ -20,6 +20,8 @@ Mục lục:
 
 - #### [2.3 Liên kết tài khoản github bằng SSH (Add key SSH) ](#AddKey)
 
+- #### [2.4 Caching your Github password](#Caching)
+
 ### [3. Các thao tác cơ bản sử dụng github](#ThaoTac)
 
 - #### [3. 0 Tạo Một repo](#Tao)
@@ -130,6 +132,20 @@ Như chúng ta đã thấy đó là những trạng thái của 1 repo github. C
 
 ![](https://github.com/hellsins/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git5.png)
 
+<p name="Caching"></p>
+#### 2.4 Caching your Github password
+
+- Nếu bạn clone repo sử dụng HTTP thì có thể sử dụng 1 helper để lưu user/pass tài khoản github để tiện việc commit những thay đổi (sẽ không cần đánh user/pass lại)
+
+- Nếu bạn clone repo của github sử dụng SSH thì bạn sẽ xác thực bằng key SSH thay vì tên người dùng.
+
+- Để sử dụng helper bạn dùng lệnh sau: 
+
+	> git config --global credential.helper cache
+
+	> git config --global credential.helper 'cache --timeout=1800'
+
+> Lưu ý: nếu bạn không thiết lập thời gian cho helper thì mặc định sẽ là 15 phút
 
 Sau khi đã liên kết được với github ta sẽ đi qua một vài thao tác cơ bản để hoạt động trên github sau
 
