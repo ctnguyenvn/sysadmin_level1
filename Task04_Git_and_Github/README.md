@@ -1,5 +1,5 @@
 
-### Git and Github
+## Git and Github
 
 > Tài hiệu: Tìm hiểu về git và github
 
@@ -10,41 +10,41 @@
 
 Mục lục:
 
-####  [1. Giới thiệu về github](#GioiThieu)
+###  [1. Giới thiệu về github](#GioiThieu)
 
-#### [2. Cài đặt git, Generate, add key SHH...](#CaiDat)
+### [2. Cài đặt git, Generate, add key SHH...](#CaiDat)
 
-- ##### [2.1 Cài đặt Git](#CaiDatGit)
+- #### [2.1 Cài đặt Git](#CaiDatGit)
 
-- ##### [2.2 Các thiết lập ban đầu](#ThietLap)
+- #### [2.2 Các thiết lập ban đầu](#ThietLap)
 
-- ##### [2.3 Liên kết tài khoản github bằng SSH (Add key SSH) ](#AddKey)
+- #### [2.3 Liên kết tài khoản github bằng SSH (Add key SSH) ](#AddKey)
 
 #### [3. Các thao tác cơ bản sử dụng github](#ThaoTac)
 
-- ##### [3. 0 Tạo Một repo](#Tao)
+- #### [3. 0 Tạo Một repo](#Tao)
 
-- ##### [3. 1 Clone](#Clone)
+- #### [3. 1 Clone](#Clone)
 
-- ##### [3. 2 Add](#Add)
+- #### [3. 2 Add](#Add)
 	
-- ##### [3. 3 Remove](#Remove)
+- #### [3. 3 Remove](#Remove)
 	
-- ##### [3. 4 Commit ](#Commit)
+- #### [3. 4 Commit ](#Commit)
 	
-- ##### [3. 5 Push](#Push)
+- #### [3. 5 Push](#Push)
 	
-- ##### [3. 6 Pull](#Pull)
+- #### [3. 6 Pull](#Pull)
 
-- ##### [3. 7 Remote](#Remove)
+- #### [3. 7 Remote](#Remove)
 
-- ##### [3. 8 Fork](#Fork)
+- #### [3. 8 Fork](#Fork)
 
-- ##### [3. 9 Star](#Star)
+- #### [3. 9 Star](#Star)
 
-- ##### [3. 10 Watch](#Watch)
+- #### [3. 10 Watch](#Watch)
 
-- ##### [3. 11 Fetch](#Fetch)
+- #### [3. 11 Fetch](#Fetch)
 
 #### [4 Kết luận](#KetLuan)
 
@@ -71,7 +71,7 @@ Như chúng ta đã thấy đó là những trạng thái của 1 repo github. C
 ####  2. Cài đặt git, Generate, add key SSH...
 
 <p name="CaiDatGit"></p>
-##### 2.1 Cài đặt Git
+#### 2.1 Cài đặt Git
 
 - Với HĐH là Ubuntu, Debian:
 
@@ -86,7 +86,7 @@ Như chúng ta đã thấy đó là những trạng thái của 1 repo github. C
 	> pacman -S git
 
 <p name="ThietLap"></p>
-##### 2.2 Các thiết lập ban đầu
+#### 2.2 Các thiết lập ban đầu
 
 - Bạn cần thiết tập tên và email của mình để khi commit lên server sẽ nhận biết được ai đang commit lên1 repo (vì có thể nhiều người tham gia)
 	> git config --global user.name "tên/username của bạn"
@@ -100,7 +100,7 @@ Như chúng ta đã thấy đó là những trạng thái của 1 repo github. C
 	> git config --list
 
 <p name="AddKey"></p>
-##### 2.3 Liên kết tài khoản github bằng SSH (Add key SSH)
+#### 2.3 Liên kết tài khoản github bằng SSH (Add key SSH)
 
 - Bạn mở terminal và gõ lệnh với cú pháp sau
 
@@ -137,14 +137,14 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 ####  3. Các thao tác cơ bản sử dụng github
 
 <p name="Tao"></p>
-##### 3. 0 Tạo Một repo
+#### 3. 0 Tạo Một repo
 
 - Bạn vào github và chọn Create repository và điền thông tin như hình
 
 ![](https://github.com/hellsins/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git6.png)
 
 <p name="Clone"></p>
-#####  3. 1 Clone
+####  3. 1 Clone
 
 - Để clone một repo về ta có thể chọn __Clone or Download__ và nhấn Download Zip hoặc copy đường dẫn (bạn có thể chọn clone sử dụng SSH hoặc HTTP) và thực hiện với lệnh sau:
 
@@ -159,7 +159,7 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 	> Lưu ý bạn có thể không sử dụng ` thư mục chứa repo trên local ` và bạn sẽ clone repo đó về thư mục hiện tại (pwd) 
 
 <p name="Add"></p>
-#####  3. 2 Add
+####  3. 2 Add
 
 - Để  thực hiện hành động `add` ta sử dụng lệnh sau:
 
@@ -170,14 +170,14 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 	__git add --all__	:	dùng để `add` tất cả
 
 <p name="Remove"></p>	
-#####  3. 3 Remove	
+####  3. 3 Remove	
 
 - Để remove một thư mục hay một file nào đó bạn có thể xóa ở máy local sau đó add và commit lại là xong
 
 - Nếu muốn xóa repo bạn vào repo đó trên server và chọn __Delete this repository__ ở phần Setting. Đọc warning và chọn yes...
 
 <p name="Commit"></p>
-#####  3. 4 Commit 
+####  3. 4 Commit 
 	
 - Để thực hiện hành động commit ta sử dụng lệnh sau:
 
@@ -186,7 +186,7 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 	__git commit "tên_file" -m "thêm chú thích"__: 	dùng để thêm chú thích cho commit của mình
 
 <p name="Push"></p>
-#####  3. 5 Push
+####  3. 5 Push
 
 - Sau khi commit thì tất cả đã lưu vào máy cục bộ và giờ thì chúng ta sẽ push lên server  với lệnh
 
@@ -195,7 +195,7 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 	> Nhập passphrase nếu có
 
 <p name="Pull"></p>
-#####  3. 6 Pull
+####  3. 6 Pull
 
 - Hành động pull là hành động được thực hiện khi server có những thay đổi mà máy cục bộ vẫn chưa và giờ muốn cập nhật những thay đổi này. Ta dùng lệnh
 
@@ -203,7 +203,7 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 
 
 <p name="Remove"></p>
-##### 3. 7 Remote
+#### 3. 7 Remote
 
 - Việc remote được hiện khi bạn muốn add một máy chủ từ xa nào đó. Để thực hiện remote bạn làm như sau:
 
@@ -215,7 +215,7 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 
 
 <p name="Fork"></p>
-#####  3. 8 Fork
+####  3. 8 Fork
 
 - Tại một thời điểm ta muốn phân phối hay sử dụng một project hay repo của ai đó để bắt đầu và điều này nghĩa là ta sẽ Fork một repo về. Sau khi Fork về thì repo đó sẽ tồn tại trên github của chúng ta. Chúng ta có thể clone nó về máy local để bắt đầu sử dụng.
 
@@ -226,7 +226,7 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 	> git fetch upstream
 
 <p name="Star"></p>
-#####  3. 9 Star
+####  3. 9 Star
 
 - Star một repo trong github như thể hiện cho việc repo này được nhiều người quan tâm, theo dõi. Đây cũng là cách để bạn tăng khả năng xuất hiện của repo mình trên github.
 
@@ -235,12 +235,12 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 - Để thực hiện bạn chỉ cần nhấn vào Star trên repo đã chọn
 
 <p name="Watch"></p>
-#####  3. 10 Watch
+####  3. 10 Watch
 
 - Để thực hiện bạn chọn Watch trên repo mà bạn muốn và khi đó bạn sẽ nhận được thông báo cho các yêu cầu mới hay vấn đề gì xảy ra với repo đó.
 
 <p name="Fetch"></p>
-#####  3. 11 Fetch
+####  3. 11 Fetch
 
 - Lệnh này sẽ truy cập vào dự án từ xa nào đó và cập nhật dữ liệu mà bạn chưa có trên repo đó. Sau khi Fetch xong bạn có thể tham chiếu đến toàn bộ các nhánh của dự án đó.
 
