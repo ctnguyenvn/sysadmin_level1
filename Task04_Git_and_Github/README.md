@@ -20,7 +20,7 @@ Mục lục:
 
 - #### [2.3 Liên kết tài khoản github bằng SSH (Add key SSH) ](#AddKey)
 
-#### [3. Các thao tác cơ bản sử dụng github](#ThaoTac)
+### [3. Các thao tác cơ bản sử dụng github](#ThaoTac)
 
 - #### [3. 0 Tạo Một repo](#Tao)
 
@@ -46,11 +46,11 @@ Mục lục:
 
 - #### [3. 11 Fetch](#Fetch)
 
-#### [4 Kết luận](#KetLuan)
+### [4 Kết luận](#KetLuan)
 
 ---
 <p name="GioiThieu"></p>
-####  1. Giới thiệu về github
+###  1. Giới thiệu về github
 
 -- Github là một dịch vụ lưu trữ dựa trên web cho các dự án phát triển phần mềm trong đó sử dụng các hệ thống kiểm soát phiên bản Git. Github cung cấp phiên bản trả phí cho các kho tư nhân, doanh nghiệp hoặc có thể miễn phí cho dự án mã nguồn mở. Github đang trở nên ngày càng phổ biến và thiết yếu hơn đối với các doanh nghiệp - như là một sơ yếu lý lịch cho các nhà tuyển dụng.
 
@@ -68,7 +68,7 @@ Như chúng ta đã thấy đó là những trạng thái của 1 repo github. C
 - __Git directory__: Nơi lưu trữ mã nguồn của bạn (ở đây là github)
 
 <p name="CaiDat"></p>
-####  2. Cài đặt git, Generate, add key SSH...
+###  2. Cài đặt git, Generate, add key SSH...
 
 <p name="CaiDatGit"></p>
 #### 2.1 Cài đặt Git
@@ -134,7 +134,7 @@ Như chúng ta đã thấy đó là những trạng thái của 1 repo github. C
 Sau khi đã liên kết được với github ta sẽ đi qua một vài thao tác cơ bản để hoạt động trên github sau
 
 <p name="ThaoTac"></p>
-####  3. Các thao tác cơ bản sử dụng github
+###  3. Các thao tác cơ bản sử dụng github
 
 <p name="Tao"></p>
 #### 3. 0 Tạo Một repo
@@ -251,7 +251,7 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 	> Bạn có thể git fetch `upstream` như repo mà ta đã firk phía trên
 
 <p name="KetLuan"></p>
-#### 4 Kết luận
+### 4 Kết luận
 
 Trên đây mà cách cài đặt và sử dụng __cơ bản__ git và github. Bạn có thể tải và cài đặt git trên Windows và sử dụng bình thường.
 
