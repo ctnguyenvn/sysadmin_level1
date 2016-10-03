@@ -28,3 +28,4 @@
 	+ `font-family`: Font chữ (Time new roman,...)
 	+ `text-align`: Căn lề văn bản (left, center, right, justify)
 
+
