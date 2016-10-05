@@ -39,6 +39,4 @@ Trong HTML có thể xếp chồng một danh sách vào nhiều tầng bằng c
 		</li>
 
 	</ul>
-	```
-
-	
+	```	
