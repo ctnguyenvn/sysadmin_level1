@@ -29,4 +29,3 @@ Liên kết neo gồm 2 phần:
 - Khu vực neo sử dụng thuộc tính id (có thẻ dụng dụng ở bất kỳ thẻ nào)
 
 - Liên kết neo được khai báo bằng thẻ `<a>` nhưng có thuộc tính là href="#" (lưu ý là có dấu __#__ phía trước)
-
