@@ -168,4 +168,3 @@ __sudo apt-get install vlc__
 >__sudo apt-get -f install__
 
 ### Kết thúc
-
