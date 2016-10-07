@@ -98,7 +98,7 @@ Mục lục
 
 Teamview là phần mềm điều khiển máy tính từ xa. Trên ubuntu sau khi [tải về](https://www.teamviewer.com/vi/download/linux/) ta sử dụng command line sau để cài đặt
 
-![](https://github.com/hellsins/sysadmin_level1/tree/master/Task06_Install_software_on_Linux/img/teamview1.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task06_Install_software_on_Linux/img/teamview1.png)
 
 > Lưu ý cần chọn đúng phiên bản cho OS của mình
 
@@ -107,7 +107,7 @@ Teamview là phần mềm điều khiển máy tính từ xa. Trên ubuntu sau k
 
 Ibus-bogo là phần mềm hỗ trợ tiếng việt trên linux. Bạn có thể tải source từ [đây](https://github.com/BoGoEngine/ibus-bogo-python/releases/download/v0.4.0/ibus-bogo_0.4.0.tar.gz) hoặc clone từ [github](https://github.com/BoGoEngine/ibus-bogo.git) về để cài đặt.
 
-![](https://github.com/hellsins/sysadmin_level1/tree/master/Task06_Install_software_on_Linux/img/ibus1.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task06_Install_software_on_Linux/img/ibus1.png)
 
 Tuy nhiên chúng ta cần cài các phần mềm, package cần thiết để sử dụng ibus-bogo như sau:
 
@@ -119,7 +119,7 @@ Sau khi clone về ta dùng lệnh sau để cài đặt
 
 __sudo make install__
 
-![](https://github.com/hellsins/sysadmin_level1/tree/master/Task06_Install_software_on_Linux/img/ibus2.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task06_Install_software_on_Linux/img/ibus2.png)
 
 Sau khi cài đặt thành công ta vào system setting/Text Entry và thêm vietnam(bogo) vào để sử dụng tiếng việt
 
@@ -127,7 +127,7 @@ Sau khi cài đặt thành công ta vào system setting/Text Entry và thêm vie
 
 __sudo make uninstall__
 
-![](https://github.com/hellsins/sysadmin_level1/tree/master/Task06_Install_software_on_Linux/img/ibus3.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task06_Install_software_on_Linux/img/ibus3.png)
 
 <a name="CPT"></a>
 #### 2.3 Cài đặt Packet tracer
@@ -146,15 +146,15 @@ __sudo dpkg -i [ten_file.deb]__
 	+ b3: Chạy file cài đặt
 	__sudo ./install__
 
-	![](https://github.com/hellsins/sysadmin_level1/tree/master/Task06_Install_software_on_Linux/img/CPT1.png)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task06_Install_software_on_Linux/img/CPT1.png)
 
 	Nhấn Enter sau đó tới bước chọn nơi cài đặt (nếu để mặc định thì nhấn Enter)
 
-	![](https://github.com/hellsins/sysadmin_level1/tree/master/Task06_Install_software_on_Linux/img/CPT2.png)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task06_Install_software_on_Linux/img/CPT2.png)
 
 	Cuối cùng là tạo liên kết. Nhấn Enter nếu muốn tạo liên kết nhanh tới file thực thi sau khi cài đặt.
 	
-	![](https://github.com/hellsins/sysadmin_level1/tree/master/Task06_Install_software_on_Linux/img/CPT3.png)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task06_Install_software_on_Linux/img/CPT3.png)
 
 <a name="VLC"></a>
 #### 2.4 Cài đặt vlc
