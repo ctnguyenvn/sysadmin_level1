@@ -48,27 +48,27 @@ Một Desktop Environment là một môi trường máy tính cung cấp một g
 
 - [Cinnamon](https://wiki.archlinux.org/index.php/cinnamon): là một DE dựa trên bộ công cụ GTK+3. Được phát hành năm 2011 và phát triển bởi Linux mint. Sau đó được sử dụng nhiều trên các bản phân phối khác. Phiên bản mới nhất là cinnamon 3.0 (phát hành 26/04/2016)
 
-![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/cinnamon.jpg)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/cinnamon.jpg)
 
 - [Gnome](https://wiki.archlinux.org/index.php/GNOME): được lập trình bởi C và được hỗ trợ từ nhiều công ty lớn như Red Hat, Novell, HP,... là một DE mã nguồn mở, tự do, dể dùng, dể sử dụng và phổ biến hiện nay với các end-user
 
-![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/gnome.jpg)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/gnome.jpg)
 
 - [KDE](https://wiki.archlinux.org/index.php/KDE): Đây cũng là một DE phổ biến hiện nay, được viết ra với mục đích tạo ra môi trường làm việc dể dàng, đơn giản và được sử dụng trên rất nhiều bản phân phổi như openSUSE, Kubuntu, Manjaro linux,...
 
-![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/kde.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/kde.png)
 
 - [LXDE](https://wiki.archlinux.org/index.php/LXDE) (Lightweight X11 Desktop Environment): là một môi trường máy tính miễn phí thích hợp với các máy tính có cấu hình phần cứng yếu. Ưu điểm của nó là nhẹ và nhanh. Được phát triển trên nhiều phiên bản khác nhau như Ubuntu, Debian...
 
-![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/lxde.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/lxde.png)
 
 - [MATE](https://wiki.archlinux.org/index.php/MATE): Đây là sự tiếp nối của GNOME 2. Nó cung cấp môi trường Desktop  trực quan và khá hập dẫn. MATE đang được phát triển để hỗ trợ thêm cho các công nghệ mới, tuy nhiên nó vẫn giữ một Desktop truyền thống.
 
-![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/mate.jpg)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/mate.jpg)
 
 - [XFCE](https://wiki.archlinux.org/index.php/xfce): Giống như LXDE thì XFCE cũng được tạo ra là một DE miễn phí cho các nền tảng Unix và tương tự Unix như Linux, Solaris, BSD. Ưư điểm nhanh, nhẹ, đơn giản và dể dùng. Sử dụng GTK+ 2 với cửa sổ XFwm
 
-![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/xfce.jpg)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/xfce.jpg)
 
 Ngoài ra còn các DE không được hỗ trợ chính thức bạn có thể xem thêm tại [đây](https://wiki.archlinux.org/index.php/desktop_environment#Unofficially_supported)
 
@@ -87,7 +87,7 @@ Desktop Manager là một trình quản lý login, quản lý đăng nhập ngư
 
 	+ [CDM](https://wiki.archlinux.org/index.php/CDM): là một DM đơn giản nhưng cũng đầy đủ tính năng. Được thiết kế cung cấp một hệ thống đăng nhập mà không phụ thuộc vào hay cần thiết vào hệ thống X Window. Tuy nhiên CDM không dành cho mọi người (người mới).
 
-	![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/cdm.jpg)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/cdm.jpg)
 
 
 	+ [Console TDM](https://wiki.archlinux.org/index.php/Console_TDM): Đây là một phát triển dựa trên xorg-xinit. Nó lấy cảm hứng từ CDM, mà nhằm để được một sự thay thế cho GDM.
@@ -98,11 +98,11 @@ Desktop Manager là một trình quản lý login, quản lý đăng nhập ngư
 
 	+ [GDM](https://wiki.archlinux.org/index.php/GDM) (Gnome Display Manager): laf chương trình quản lýmasy chủ cho phép người dùng đăng nhập với hiển thị đồ họa cho hệ thống X11 và Wayland. Cho phép người dùng tùy chỉnh hoặc khắc phục sự cố các thiết lập mà không cần phải nhờ đến dòng lệnh. Người dùng cũng có thể chọn phiên bản phù hợp với mình
 
-	![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/gdm.png)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/gdm.png)
 
 	+ [KDM](https://wiki.archlinux.org/index.php/KDM) (KDE Display Manager): là trình quản lý đăng nhập KDE. Nó hỗ trợ các theme, lựa chọn session và nhiều tính năng khác và tự động đăng nhập như KDM tự động hiển thị danh sách user cho người dùng khi đăng nhập...
 
-	![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/kdm.png)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/kdm.png)
 
 	+ [LightDM](https://wiki.archlinux.org/index.php/LightDM): Đây là một DM phổ biến trên Desktop được nhiều người dùng với các tính năng như sau
 
@@ -118,15 +118,15 @@ Desktop Manager là một trình quản lý login, quản lý đăng nhập ngư
 
 		- Bộ kiểm tra toàn diện
 
-	![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/LightDM.png)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/LightDM.png)
 
 	+ [LXDM](https://wiki.archlinux.org/index.php/LXDM): Là trình quản lý login cho môi trường LXDE. Các giao diện người dùng với GTK+ 2.
 
-	![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/lxdm.png)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/lxdm.png)
 
 	+ [SLIM](https://wiki.archlinux.org/index.php/SLiM) (Simple LogIn Manager): Trọng lượng nhẹ, đơn giản, hướng tới các môi trường như xfce, Openbox, Fluxbox là ưu điểm của Slim.
 
-	![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/slim.png)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/slim.png)
 
 	> Lưu ý hiện nay dự án Slim đã ngừng phát triển. Tuy nhiên bạn vẫn có thể cài đặt sử dụng.
 
@@ -139,4 +139,4 @@ $__systemctl enable slim.server__
 
 Chúng ta có thể xem tình trạng của phiên người dùng đang hoạt động với __loginctl__ như sau
 
-![](/home/hellsins/Dropbox/sysadmin_level1/Task07_DE_and_DM/img/usingslim.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task07_DE_and_DM/img/usingslim.png)
