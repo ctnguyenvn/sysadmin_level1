@@ -22,6 +22,7 @@
 [2.2 Một số DM phổ biến.](#ListDM)
 
 [2.3 Enable Display Manager](#EnableDM)
+
 ---
 <a name="DE"></a>
 #### 1. Desktop Environment (DE).
