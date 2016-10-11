@@ -11,17 +11,17 @@
 
 [1. Desktop Environment (DE).](#DE)
 
-[1.1 Giới thiệu.](#GioiThieuDE)
+- [1.1 Giới thiệu.](#GioiThieuDE)
 
-[1.2 Một số DE thông dụng.](#ListDE)
+- [1.2 Một số DE thông dụng.](#ListDE)
 
 [2. Display Manager (DM).](#DM)
 
-[2.1 Giới thiệu.](#GioiThieuDM)
+- [2.1 Giới thiệu.](#GioiThieuDM)
 
-[2.2 Một số DM phổ biến.](#ListDM)
+- [2.2 Một số DM phổ biến.](#ListDM)
 
-[2.3 Enable Display Manager](#EnableDM)
+- [2.3 Enable Display Manager](#EnableDM)
 
 ---
 <a name="DE"></a>
