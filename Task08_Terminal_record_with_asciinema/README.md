@@ -78,7 +78,7 @@ Asciinema là phần mềm ghi lại quá trình hoạt động của cửa số
 > Bạn có thể chạy lệnh này sau và tất cả các asciicasts ghi nhận trước đó sẽ được tự động gán cho hồ sơ của bạn.
 
 <a name="CaiDat" =""></a>
-#### 3. Cài đặt
+### 3. Cài đặt
 
 asciinema có sẵn trên PyPI và bạn có thể cài nó với pip (yêu cầu python3)
 
@@ -124,7 +124,7 @@ Bạn cũng có thể cài từ repo của các distro của mình như sau
 	+ `sudo apt-get install asciinema`
 
 <a name="SuDung" =""></a>
-#### 4. Sử dụng
+### 4. Sử dụng
 
 asciinema khá đơn giản để sử dụng. Bạn có thể nhấn asciinema mà không có tham số gì phía sau để hiện tất cả các option.
 
