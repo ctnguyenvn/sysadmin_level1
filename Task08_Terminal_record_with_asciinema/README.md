@@ -13,9 +13,21 @@
 
 [2. Bắt đầu record](#BatDau)
 
+- [2.1Record](#Redcord)
+
+- [2.2Quản lí các tùy chọn rec](#QuanLi)
+
 [3. Cài đặt](#CaiDat)
 
 [4. Sử dụng](#SuDung)
+
+- [4.1 Rec](#Rec)
+
+- [4.2 Play](#Play)
+
+- [4.3 Upload](#Upload)
+
+- [4.4 Auth](#Auth)
 
 ---
 
@@ -47,7 +59,8 @@ Asciinema là phần mềm ghi lại quá trình hoạt động của cửa số
 <a name="BatDau" =""></a>
 ### 2. Bắt đầu record
 
-#### Record.
+<a name="Record" =""></a>
+#### 2.1 Record.
 
 - Để bắt đầu rec ta sử dụng
 
@@ -55,7 +68,8 @@ Asciinema là phần mềm ghi lại quá trình hoạt động của cửa số
 
 > Quá trình sẽ dừng lại nếu nhấn `exit` hoặc Ctrl-D.
 
-#### Quản lí các tùy chọn rec
+<a name="QuanLi" =""></a>
+#### 2.2 Quản lí các tùy chọn rec
 
 - Nếu bạn muốn quản lý tất cả các rec của mình trên asciinema.org(set title/description, delete etc) bạn cần xác thực với lệnh sau trên terminal
 
@@ -114,7 +128,8 @@ Bạn cũng có thể cài từ repo của các distro của mình như sau
 
 asciinema khá đơn giản để sử dụng. Bạn có thể nhấn asciinema mà không có tham số gì phía sau để hiện tất cả các option.
 
-#### rec 
+<a name="Rec" =""></a>
+#### 4.1 Rec 
 
 Đây là công việc quan trọng nhất trong quá trình này. Để bắt đầu quá trình ghi lại màn hình cửa sổ dòng lệnh ta sử dụng
 
@@ -138,7 +153,8 @@ Ta có 1 số option sau
 
 - `-q`: chặn tất cả các thông báo/cảnh báo
 
-#### play
+<a name="Play" =""></a>
+#### 4.2 Play
 
 Quá tình chơi có thể chơi trực tiếp tại
 
@@ -166,8 +182,8 @@ Quá tình chơi có thể chơi trực tiếp tại
 
 	+ `asciinema play fs:/ipfs/QmcdXYJp6e4zNuimuGeWPwNMHQdxuqWmKx7NhZofQ1nw2V`
 
-
-#### upload
+<a name="Upload" =""></a>
+#### 4.3 Upload
 
 Bạn có thể edit để sửa file vừa ghi với notepad++ hay sublime tùy thích sau đó sử dụng lệnh sau để upload lên asciinema.org (chúng ta có thể sử dụng về sau)
 
@@ -177,10 +193,12 @@ Hoặc chúng ta có thể kết hợp cả 3 quá trình để edit và upload 
 
 - `asciinema rec filename + asciinema play [filename] + asciinema upload [filename]`
 
-#### auth
+<a name="Auth" =""></a>
+#### 4.4 Auth
 
 Như đã nói ở trên, nếu bạn muốn quản lý kết quả các lần rec của mình thì cần xác thực. 
 
 - `asciinema auth`
 
 Lệnh này hiển thị các URL và bạn mở nó với trình duyệt. Trên mỗi máy tính chạy asciinema rec sẽ có một token APi duy nhất. Khi bạn login vào trang web asciinema.org và chạy asciinema trên máy tính mới thì nó sẽ liên kết máy tính mới này với tài khoản của bạn. Bạn cũng có thể đồng bộ tất cả cấu hình lên máy của mình. Bạn có thể gán thẻ mới vào tài khoản của mình từ nhiều máy khác nhau
+
