@@ -1,7 +1,7 @@
 
 ### Terminal record with asciinema 
 
-> Tài liệu: Dùng asciinema ghi lại cửa sổ terminal
+> Tài liệu: Tìm hiểu về asciinema
 
 > Thực hiện: Nguyễn Công Trứ
 
