@@ -29,6 +29,8 @@
 
 - [4.4 Auth](#Auth)
 
+[5. Demo với cài đặt ibus-bogo](#Demo)
+
 ---
 
 <a name="GioiThieu" =""></a>
@@ -201,4 +203,18 @@ Như đã nói ở trên, nếu bạn muốn quản lý kết quả các lần r
 - `asciinema auth`
 
 Lệnh này hiển thị các URL và bạn mở nó với trình duyệt. Trên mỗi máy tính chạy asciinema rec sẽ có một token APi duy nhất. Khi bạn login vào trang web asciinema.org và chạy asciinema trên máy tính mới thì nó sẽ liên kết máy tính mới này với tài khoản của bạn. Bạn cũng có thể đồng bộ tất cả cấu hình lên máy của mình. Bạn có thể gán thẻ mới vào tài khoản của mình từ nhiều máy khác nhau
+
+<a name="Demo" =""></a>
+### 5. Demo với cài đặt ibus-bogo
+
+Bạn có thể tạo sử dụng lệnh như trên để bắt đầu việc rec
+
+- `asciinema rec`
+
+https://asciinema.org/a/ahjkfdsliqyvy0vskq3s8ma0k
+
+> Lưu ý: Bạn nên tạo file để bắt đầu rec hoặc sử dụng trực tiếp khi rec để có thể chỉnh sửa sau đó và có thể upload sau
+
+> asciinema rec filename.json
+
 
