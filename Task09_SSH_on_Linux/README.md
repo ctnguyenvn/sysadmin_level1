@@ -87,7 +87,7 @@ Việc chứng thực là bước cuối cùng. Tại thời điểm này, kênh
 
 #### Để hiểu hơn về hoạt động của SSH ta xem qua minh họa sau.
 
-![](/home/hellsins/Dropbox/sysadmin_level1/Task09_SSH_on_Linux/img/ssh.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task09_SSH_on_Linux/img/ssh.png)
 
 - Đầu tiên ta thấy CLIENT mở kết nối TCP đến SERVER 
 
