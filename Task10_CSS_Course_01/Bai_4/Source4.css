@@ -1,0 +1,25 @@
+h3{
+	font-weight: bold;;
+	color: green;
+}
+
+#tieu-de1 {
+	font-weight: bold;
+	color: red;
+}
+
+.tieu-de2 {
+	font-weight: bold;;
+	color: blue;
+}
+
+#menu2 ul li {
+	font-weight: bold;;
+	color: yellow;
+}
+
+#menu4 ul ul > p {
+	background: red;
+	font-weight: bold;;
+	color: green;
+}
