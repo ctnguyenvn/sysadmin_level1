@@ -1,0 +1,33 @@
+.inline {
+	background-color: #e8e8B8;
+	border: 1px solid red;
+	display: inline;
+}
+
+.block {
+	background-color: blue;
+	display: block;
+}
+
+.list div {
+	list-style-type: circle;
+	margin-left: 32px;
+	display: list-item;
+}
+
+.container {
+	width: 60%;
+	margin: 0 auto;
+	display: table;
+}
+
+.row {
+	display: table-row;
+
+}
+
+.col {
+	display: table-cell;
+	background: red;
+	border: 1px solid;
+}
