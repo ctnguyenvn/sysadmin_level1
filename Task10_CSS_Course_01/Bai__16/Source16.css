@@ -1,0 +1,12 @@
+ul {
+	background: red;
+	padding: 0;
+	margin-left: 32px;
+	width: 550px;
+}
+
+li {
+	list-style-type: circle;
+	list-style-position: inside;
+	list-style-image: url('https://cdn-img.easyicon.net/png/11577/1157747.gif');
+}
