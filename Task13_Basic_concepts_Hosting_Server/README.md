@@ -147,7 +147,7 @@ Một cấu trúc cơ bản của 1 domain (ví dụ: www.abc.com) gồm
 - Là domain được add vào host của domain chính và domain này sẽ hoạt động chung cấu trúc file/folder với domain chính. Chức năng này cho phép nhiều domain chạy trên 1 website duy nhất trên cùng 1 host. Khi người dùng gõ tên miền phụ được thiết lập bởi park domain thì nội dung hiển thị cũng như tên miền chính
 
 <a name=4></a>
-#### 4. Một số thống kê
+### 4. Một số thống kê
 
 
 | STT 	| Tên công ty 	| Năm thành lập 	| Tên thương hiệu 	| Trang chủ 	| Địa chỉ 	| Lĩnh vực kinh doanh 	| Mức độ lớn 	|
