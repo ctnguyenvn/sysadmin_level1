@@ -19,13 +19,13 @@
 <a name="1"></a>
 ### 1. Giới thiệu
 
-DHCP (Dynamic Host Configuration Protocol - giao thức cấu hình host động) là giao thức cho phép cấp phát địa chỉ IP một cách tự động cùng với cấu hình liên quan khác như subnet mark và gateway mặc định. Máy tính được cấu hình tự động vì thế giảm được can thiệp vào hệ thống.
+- DHCP (Dynamic Host Configuration Protocol - giao thức cấu hình host động) là giao thức cho phép cấp phát địa chỉ IP một cách tự động cùng với cấu hình liên quan khác như subnet mark và gateway mặc định. Máy tính được cấu hình tự động vì thế giảm được can thiệp vào hệ thống.
 
-DHCP cung cấp một database trung tâm để theo dõi tất cả các máy tính trong một hệ thống mạng. Mục đích là tránh trường hợp 2 máy tính khác nhau lại có chung 1 địa chỉ IP
+- DHCP cung cấp một database trung tâm để theo dõi tất cả các máy tính trong một hệ thống mạng. Mục đích là tránh trường hợp 2 máy tính khác nhau lại có chung 1 địa chỉ IP
 
-DHCP client là thiết bị nói vào mạng và sử dụng dụng giao thức DHCP để lấy các thông tin cấu hình như là địa chỉ mạng, DNS
+- DHCP client là thiết bị nói vào mạng và sử dụng dụng giao thức DHCP để lấy các thông tin cấu hình như là địa chỉ mạng, DNS
 
-DHCP server là thiết bị nối vào mạng có chức năng trả về các thông tin cần thiết cho Client DHCP khi có yêu cầu
+- DHCP server là thiết bị nối vào mạng có chức năng trả về các thông tin cần thiết cho Client DHCP khi có yêu cầu
 
 <a name="2"></a>
 ### 2. Hoạt động
