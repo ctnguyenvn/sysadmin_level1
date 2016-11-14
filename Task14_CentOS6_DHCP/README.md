@@ -70,7 +70,7 @@ Sau khi cài đặt xong sẽ xuất hiện file **dhcpd.conf** trong thư mục
 
 Sau khi cấu hình xong lưu lại vào khởi động dịch vụ
 
-- **service dhcpd start**
+- **service dhcpd start** 
 
 Tiếp tục qua máy client chuyển sang dhcp và xin cấp lại IP ta được
 
