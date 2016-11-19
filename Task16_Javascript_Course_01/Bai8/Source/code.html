@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+
+	<script language="javascript">
+		
+		// Tạo hàm
+		function check_number(number) {
+			if (number%2 == 0) {
+				alert(number + '  là số chẵn');
+			}else{
+				alert(number + '  là số lẽ');
+			}
+		}
+
+		var number1 = prompt("Nhập số thứ nhất", "0");
+		var number2 = prompt("Nhập số thứ hai", "0");
+
+		number1 = parseFloat(number1);
+		number2 = parseFloat(number2);
+
+		check_number(number1);
+		check_number(number2);
+
+		// Hàm có return
+		function sum(num1, num2) {
+			return num1+num2;
+		}
+
+		alert('Tổng 2 số = ' + sum(number1, number2));
+
+	</script>
+
+</body>
+</html>
