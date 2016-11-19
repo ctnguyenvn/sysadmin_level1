@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+	
+	<script language="javascript">
+		
+		// giải phương trình bật hai
+		function pt_bac_hai(a, b, c) {
+
+			if(a==0){
+
+				if (b == 0 && c==0) {
+					alert("Phương trình vô số nghiệm");
+				}else if (b != 0 && c == 0) {
+					alert("Phương trình có nghiệm x = 0");
+				}else if (b == 0 && c == 0) {
+					alert("Phương trình vô nghiệm");
+				}else {
+					alert("Phương trình có nghiệm x = " + (-c/b));
+				}
+			}else{
+				var  x1, x2, z = b*b - 4*a*c;
+
+				if(z< 0){
+					alert("Phương trình vô nghiệm");
+				}else if (z==0) {
+					alert("Phương trình có nghiệm kép x = " + (-b/(2*a)));
+				}else{
+					x1 = (-b + Math.sqrt(z))/(2*a);
+					x2 = (-b  - Math.sqrt(z))/(2*a);
+					alert("Phương trình có 2 nghiệm\nx1 = " + x1 + "\nx2 = " + x2);
+				}
+			}
+		}
+
+		var a = prompt("pt: ax^2 + bx  +c = 0\nNhập a");
+		var b = prompt("pt: ax^2 + bx  +c = 0\nNhập b");
+		var c = prompt("pt: ax^2 + bx  +c = 0\nNhập c");
+
+		a = parseFloat(a);
+		b = parseFloat(b);
+		c = parseFloat(c);
+
+		pt_bac_hai(a, b, c);
+
+	</script>
+
+</body>
+</html>
