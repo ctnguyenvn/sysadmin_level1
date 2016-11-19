@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+	
+	<script language="javascript">
+		
+	function kiem_tra(year) {
+		if((year%4==0 && year%100!=0) || (year%400==0)){
+			alert(year + " là năm nhuận");
+		}
+		else{
+			alert(year + " không phải là năm nhuận");	
+		}
+
+	}
+
+		var year = prompt("Nhập năm cần kiểm tra");
+
+		year = parseFloat(year);
+
+		kiem_tra(year);
+
+	</script>
+
+</body>
+</html>
