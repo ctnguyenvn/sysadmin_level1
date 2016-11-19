@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+	
+	<script language="javascript">
+		
+		//  Tìm số nguyen to
+		function so_nguyen_to(a){
+
+			for (var i = 2; i < a; i++) 
+				if(a%2 == 0) return false;
+			return true;
+		}
+
+		var a = prompt("Nhập số cần kiểm tra");
+
+		a = parseFloat(a);
+
+		if(so_nguyen_to(a)){
+			alert(a + " là số nguyên tố");
+		}else{
+			alert(a + " không phải là số nguyên tố");
+		}
+
+	</script>
+
+</body>
+</html>
