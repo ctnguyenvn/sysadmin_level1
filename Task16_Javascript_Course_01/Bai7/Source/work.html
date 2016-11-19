@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+	
+	<script language="javascript">
+		var i = 1;
+		// in các số từ 1 đến 100
+		while(i<=100){
+			document.write(i + " - ");
+			i++;
+		}
+
+		// in ra các số (1 -> 100) chia hết cho 5 dùng while 
+		document.write("</br></br></br> các số chia hết cho 5: </br>");
+		var j = 1;
+		while(j<=100){
+			if((j%5) ==0){
+				document.write(j + " - ");
+			}
+			j++;
+		}
+
+		// in ma trận 10x10 
+		document.write("</br></br></br> Ma trận: </br>");
+		var value = 11;
+		var z1 = 1;
+		do{
+			var z2 = 1;
+			while(z2 <= 10){
+				
+				if(z2 == 10){
+					document.write(value+'</br>');
+				}
+				else{
+					document.write(value+'  -  ');
+				}
+				z2++;
+				value++;
+			}
+			z1++;
+		}while(z1 <= 9);
+
+	</script>
+
+</body>
+</html>
