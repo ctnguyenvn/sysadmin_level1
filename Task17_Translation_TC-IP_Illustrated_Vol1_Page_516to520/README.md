@@ -1,6 +1,6 @@
 ### Name Resolution and the Domain Name System (DNS)
 
-> Tài liệu: Phân giải tên và hệ thống tên miền
+> Tài liệu: Phân giải tên miền và hệ thống tên miền
 
 > Thực hiện: Nguyễn Công Trứ
 
