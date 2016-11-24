@@ -137,15 +137,15 @@ TigerVNC là một nguồn và đa nền tảng dự án mở cung cấp cho ng�
 
 Để sử dụng tightVNC đầu tiên ta cài đặt như sau
 
-	**#apt-get -y install tigervnc**
+**#apt-get -y install tigervnc**
 
 Kết nối với một máy chủ VNC sử dụng lệnh sau
 
-	**# vncviewer host_name:port**
+**# vncviewer host_name:port**
 
-	hoặc
+hoặc
 	
-	**# vncviewer 192.168.0.4:3**
+**# vncviewer 192.168.0.4:3**
 
 <a name="4.3"></a>
 #### 4.3 RealVNC
@@ -154,13 +154,13 @@ Kết nối với một máy chủ VNC sử dụng lệnh sau
 
 Đối với windows bạn tải về tại [đây](https://www.realvnc.com/download/vnc/). Sau khi bạn tải về thì có thể sử dụng ngay mà không cần cài đặt
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/14.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/14.png)
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/15.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/15.png)
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/16.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/16.png)
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/17.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/17.png)
 
 Tương tự như các phần mềm trên thì RealVNC cũng hỗ trợ các thao tác cơ bản trên thanh công cụ
 
