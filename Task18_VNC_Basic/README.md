@@ -16,6 +16,12 @@
 
 [4. Cài đặt và sử dụng các VNC client phổ biến](#4)
 
+- [4.1 TightVNC](#4.1)
+
+- [4.2 TigerVNC](#4.2)
+
+- [4.3 RealVNC](#4.3)
+
 ---
 
 <a name="1"></a>
@@ -69,7 +75,93 @@ Bạn có thể xem thêm tại [đây](http://www.hep.phy.cam.ac.uk/vnc_docs/ho
 
 - Trên CentOS ta sử dụng tigervnc để cài đặt vnc server. Để cài đặt tigervnc-server ta dùng lệnh sau
 
-	** yum -y install tigervnc-server**
+	**yum -y install tigervnc-server**
+
+- Sau khi cài xong, ta đăng nhập vào user muốn làm vnc server (có thể tạo user riêng hoặc lấy user bất kỳ kể cả root).  Lệnh tạo user mới **useradd [user_name]**
+
+- Tiếp tục ta đổi password cho vnc server như sau
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/5.png)
+
+- Tiếp tục ta vào file cấu hình **/etc/sysconfig/vncserver** và sửa như sau
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/6.png)
+
+- Sau đó ta cần accept port cần thiết (thường là 5901, 5902,...) trên firewall. Bạn có thể dùng giao diện, hoặc vào file **/etc/sysconfig/iptables** để chỉnh sửa hay có thể dùng lệnh sau
+
+	**sudo iptables -I INPUT 5 -m state --state NEW -m tcp -p tcp -m multiport --dports 5901:5903 -j ACCEPT**
+
+	**service iptables restart** // khởi động lại firewall
+
+- Cuối cùng bạn start vncserver với lệnh
+
+	**sudo service vncserver start**
+
+> Bạn có thể thêm vncserrver vào lúc khởi động với lệnh **sudo chkconfig vncserver on**
 
 <a name="4"></a>
 ### 4. Cài đặt và sử dụng các VNC client phổ biến
+
+<a name="4.1"></a>
+#### 4.1 TightVNC 
+
+TightVNC là phần mềm mã nguồn mở.
+
+TightVNC có chứa sằn 2 phần TightVNC server(chạy trên máy chủ) và TightVNC client(máy khách). TightVNC server khi chạy sẽ biến máy bạn trở thành máy chủ cho phép các máy khách truy cập từ xa để điền khiển máy này. TightVNC client phía bên máy khách thì sẽ cung cấp cho bạn cách để truy cập vào máy chủ.
+
+- Mở file vừa tải về và làm như hình 
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/7.png)
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/8.png)
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/9.png)
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/10.png)
+
+- Sau khi cài xong ta đăng nhập vào vncserver như sau
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/11.png)
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/12.png)
+
+- Ta có thể xem thanh công cụ mà tigerVNC hỗ trợ như share file, add key,... và một số cơ bản khác
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/13.png)
+
+
+<a name="4.2"></a>
+#### 4.2 TigerVNC
+
+TigerVNC là một nguồn và đa nền tảng dự án mở cung cấp cho người dùng với một khách hàng và máy chủ thực hiện, nó hỗ trợ Linux, Microsoft Windows và các hệ điều hành Mac OS X.
+
+Để sử dụng tightVNC đầu tiên ta cài đặt như sau
+
+	**#apt-get -y install tigervnc**
+
+Kết nối với một máy chủ VNC sử dụng lệnh sau
+
+	**# vncviewer host_name:port**
+
+	hoặc
+	
+	**# vncviewer 192.168.0.4:3**
+
+<a name="4.3"></a>
+#### 4.3 RealVNC
+
+Đây là phần mềm phổ biến nhất, hỗ trợ hầu hết các nền tảng hệ điều hành hiện nay như windows, linux, solaris,...
+
+Đối với windows bạn tải về tại [đây](https://www.realvnc.com/download/vnc/). Sau khi bạn tải về thì có thể sử dụng ngay mà không cần cài đặt
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/14.png)
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/15.png)
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/16.png)
+
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task18_VNC_Basic/img/17.png)
+
+Tương tự như các phần mềm trên thì RealVNC cũng hỗ trợ các thao tác cơ bản trên thanh công cụ
+
+Ngoài 3 phần mềm trên thì còn nhiều phần mềm hỗ trợ clien VNC khác như [UltraVNC ](http://www.uvnc.com/) hay có thể remote qua add-on trình duyệt
