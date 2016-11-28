@@ -22,7 +22,7 @@
 
 - [2.5 runit](#2.5)
 
---------
+---
 
 <a name="1"></a>
 ### 1. Giới thiệu init system
@@ -41,7 +41,7 @@ Trước khi nói về hệ thống khởi động (init system) ta tìm hiểu 
 
 - Nhân Linux sẽ thực thi chương trình init và init sẽ làm các công việc còn lại.
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/1.png))
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/1.png)
 
 Như vây ta đã biết `init` nằm ở đâu trong quá trình khởi động. Trong các hệ điều hành Linux và các hệ thống Unix, init process (khởi tạo tiến trình) là quá trình được thực hiện bởi nhân lúc khởi động. Nó có process ID là 1 (nó được chạy cho đến khi hệ thống tắt).
 
@@ -75,9 +75,9 @@ Sau khi kernel được khởi chạy, nó sẽ gọi chương trình `init` và
 
 Tất cả các script trong system V init đều nằm ở thư mục **/etc/rc.d/init.d/** hoặc **/etc/init.d**
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System\img\2.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/2.png)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System\img\3.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/3.png)
 
 Chúng ta có thể khởi động các dịch vụ này với lệnh
 
