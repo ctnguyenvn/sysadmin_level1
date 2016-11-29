@@ -22,14 +22,12 @@
 
 - [2.5 runit](#2.5)
 
----
+--------
 
 <a name="1"></a>
 ### 1. Giới thiệu init system
 
-Trước khi nói về hệ thống khởi động (init system) ta tìm hiểu sơ qua về quá trình khởi động của 1 hệ thống (PC).
-
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/1.png)
+Trước khi nói về hệ thống khởi động (init system) ta tìm hiểu sơ qua về quá trình khởi động của 1 hệ thống (PC). 
 
 - Khi nhấn power on, BIOS (Base In/Out System) sẽ khởi động quá trình POST (Power-on Self-test) máy nhằm kiểm tra các thiết bị phần cứng máy tính đồng thời cũng cho phép thay đổi các thiết lập, cấu hình của nó.
 
@@ -42,6 +40,8 @@ Trước khi nói về hệ thống khởi động (init system) ta tìm hiểu 
 - Sau đó, GRUB tải nhân Linux và ramdisk vào RAM.
 
 - Nhân Linux sẽ thực thi chương trình init và init sẽ làm các công việc còn lại.
+
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/1.png))
 
 Như vây ta đã biết `init` nằm ở đâu trong quá trình khởi động. Trong các hệ điều hành Linux và các hệ thống Unix, init process (khởi tạo tiến trình) là quá trình được thực hiện bởi nhân lúc khởi động. Nó có process ID là 1 (nó được chạy cho đến khi hệ thống tắt).
 
@@ -75,9 +75,9 @@ Sau khi kernel được khởi chạy, nó sẽ gọi chương trình `init` và
 
 Tất cả các script trong system V init đều nằm ở thư mục **/etc/rc.d/init.d/** hoặc **/etc/init.d**
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/2.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System\img\2.png)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/3.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System\img\3.png)
 
 Chúng ta có thể khởi động các dịch vụ này với lệnh
 
@@ -182,10 +182,104 @@ Systemd ngày càng phổ biến và chúng được sử dụng rộng rãi tr�
 
 - Tích hợp tốt hơn với Gnome
 
-[script systemd](https://www.freedesktop.org/software/systemd/man/systemd.service.html)
+[Xem thêm script systemd](https://www.freedesktop.org/software/systemd/man/systemd.service.html)
 
 <a name="2.3"></a>
 #### 2.3 Upstart
+
+Upstart là một hệ thống init dựa trên phát triển bởi các nhà sản xuất của Ubuntu như một thay thế cho hệ thống system V. Nó bắt đầu các nhiệm vụ và tiếng trình hệ thống khác nhau, kiểm tra chúng trong khi hệ thống đang chạy và dừng chúng khi hệ thống shutdown. Upstart là một hệ thống init trong đó sử dụng cả 2 script system V và systemd
+
+Upstart dựa trên nguyên tắc sự kiện (event) và hoạt động không đồng bộ. Nó quản lý start và stop các dịch vụ để bắt đầu hoặc kết thúc hoặc giám sát hoạt động của hệ thống. Hầu hết các dịch vụ vẫn thực thi với các từ khóa và start và stop script được chạy bởi RCX. d (vì lý do tương thích ...). Các khái niệm về cấp độ (runlevel) init vẫn còn hiện diện, mặc dù nó được quản lý bởi các khái niệm của event. 
+
+Nguyên tắc hoạt động của Upstart dựa vào `event`. Dịch vụ này được bắt đầu hoặc dừng lại khi nhận được 1 event nào đó. Hành động này sẽ thông báo sự kiện này cho các dịch vụ khác, các program hay tiến trình khác
+
+Đối với Upstart chúng ta có thêm 1 khái niệm nữa đó là `jobs`. Với system V init sử dụng runlevel based system (runlevel 0-6)và không phản ứng kịp thời đối với các sự kiện của hệ thống như hot plug, cắm USB, Projector,... Vì vậy với cơ chế mềm dẻo hơn để kích hoạt các dịch vụ với `event based system` sẽ kích hoạt các `jobs` tùy thuộc vào sự kiện phát sinh.
+
+jobs (công việc) là
+
+- Một chuỗi các lệnh mà Upstart init read
+
+- Các lệnh này bao gồm các tập tin thực thi hoặc các
+tập tin dạng script
+
+-  Là một tác vụ (task) hoặc một dịch vụ (service)
+
+- Được init kích hoạt khi một sự kiện nào đó phát sinh
+
+- Được định nghĩa trong các files (mô tả lệnh và sự
+kiện kích hoạt ) nằm trong thư mục /etc/event.d
+
+- Mặc định có các jobs tương ứng với các scripts thực
+thi ở các runlevel khác nhau của SysV init 
+
+Tất cả các file `job` là một exec hoặc một script. Điều này chỉ ra rằng nó sẽ được chạy như `job`. exec nhận đường dẫn tới file nhị phân trên hệ thống và đối số để thực thi nó, bất kỳ một ký tự đặc biệt sẽ trả về kết quả thông qua shell để giai thích thay thế
+
+	exec /bin/foo --opt -xyz foo bar
+
+Script sẽ thay thế shell script code và thực thi sử dụng `/sbin/sh`. Tùy chọn `-e` được sử dụng, vì vậy bất kỳ lệnh nào thất bại sẽ kết thúc script. cú pháp của 1 đoạn script phải kết thúc bằng `end script` như
+
+```sh
+script 
+	# do some here
+end script   # bắt buộc
+```
+Mã shell bổ sung có thể được đưa ra để được chạy trước hoặc sau khi script quy định với exec hoặc script . Đây không phải là dự kiến sẽ start quá trình này, trên thực tế, nó không thể. Chúng được sử dụng để chuẩn bị môi trường và làm sạch sau đó.
+
+pre-start script chỉ định mã shell để chạy trước khi quá trình chính, như với script bất kỳ lệnh nào sẽ không chấm dứt các kịch bản và nó được chấm dứt với " end script "
+
+```sh
+ pre-start script
+     # prepare environment
+     mkdir -p /var/run/foo
+ end script
+ ```
+
+post-stop script định mã shell để chạy sau khi quá trình chính kết thúc hoặc bị giết, như với script và post-start script bất kỳ lệnh nào sẽ không chấm dứt các kịch bản và nó được chấm dứt với " end script "
+
+```sh
+ post-stop script
+     # clean up
+     rm -rf /var/run/foo
+ end script
+```
+
+Bạn có thể chỉnh bằng tay các công việc trên, tuy nhiên bạn có thể enable nó khi khởi động hệ thống khi thêm 1 số lệnh sau vào script của mình
+
+```sh
+start on startup  	# start khi khởi động
+
+start on runlevel            	#start khi vào runlevel [23]] 
+
+start on stopped rcS    	#start khi shutdown RCS] 
+
+start on started tty1      	#start khi vào tty1
+```
+
+Đối với hệ thống Upstart thì nó dử dụng initctl để quản trị trực tiếp giao tiếp với hệ thống cũng như quản lý các event, job ở phiên làm việc hiện tại (như systemctl hay service)
+
+- Để liệt kê các jobs 
+
+	`# initctl list`
+
+- Để start/stop 1 jobs
+
+	`# initctl [start | stop | status | restart | reload | help] [job-name]`
+
+> 	Lưu ý có thể dùng `service` để thực hiện các công việc trên
+
+Upstart ngày càng mở rộng, được sử dụng trên Ubuntu, Debian, Fedora, Red Hat Enterprise Linux, CentOS, Oracle Linux, OpenSUSE .Một số điều đáng chú ý ở Upstart là
+
+- Được phát triển trên ubuntu nhưng tương thích với hầu hết các hệ thống Linux khác
+
+- Sử lí các event tốt với cơ chế sử dụng các jobs 
+
+- Người dùng có thẻ dể quản lý các tiến trình của họ
+
+- Khôi phục các dịch vụ die đột ngột
+
+Tuy nhiên Upstart init là một init system mới nên có thể một số dịch vụ vẫn còn quản lý theo mô hình system V init, ví dụ như Apache2,... nên việc chuyển đổi đôi khi gặp nhiều vấn đề.
+
+[Xem thông tin đầy đủ hơn tại đây](http://upstart.ubuntu.com/cookbook)
 
 <a name="2.4"></a>
 #### 2.4 OpenRC
