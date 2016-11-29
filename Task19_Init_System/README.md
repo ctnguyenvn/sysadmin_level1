@@ -29,6 +29,8 @@
 
 Trước khi nói về hệ thống khởi động (init system) ta tìm hiểu sơ qua về quá trình khởi động của 1 hệ thống (PC). 
 
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/1.png))
+
 - Khi nhấn power on, BIOS (Base In/Out System) sẽ khởi động quá trình POST (Power-on Self-test) máy nhằm kiểm tra các thiết bị phần cứng máy tính đồng thời cũng cho phép thay đổi các thiết lập, cấu hình của nó.
 
 - Nếu POST thành công, BIOS sẽ đọc trong cấu hình của mình để biết khởi động từ thiết bị nào, BIOS sẽ đọc và tải vào RAM sector đầu tiên (MBR - Master Boot Record) của thiết bị khởi động. MBR được tạo khi phân vùng ổ cứng nhưng là sector nằm ngoài các partition này (khác với boot sector - là sector đầu tiên của primary partition)
@@ -40,8 +42,6 @@ Trước khi nói về hệ thống khởi động (init system) ta tìm hiểu 
 - Sau đó, GRUB tải nhân Linux và ramdisk vào RAM.
 
 - Nhân Linux sẽ thực thi chương trình init và init sẽ làm các công việc còn lại.
-
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/1.png))
 
 Như vây ta đã biết `init` nằm ở đâu trong quá trình khởi động. Trong các hệ điều hành Linux và các hệ thống Unix, init process (khởi tạo tiến trình) là quá trình được thực hiện bởi nhân lúc khởi động. Nó có process ID là 1 (nó được chạy cho đến khi hệ thống tắt).
 
@@ -75,9 +75,9 @@ Sau khi kernel được khởi chạy, nó sẽ gọi chương trình `init` và
 
 Tất cả các script trong system V init đều nằm ở thư mục **/etc/rc.d/init.d/** hoặc **/etc/init.d**
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System\img\2.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/2.png)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System\img\3.png)
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/3.png)
 
 Chúng ta có thể khởi động các dịch vụ này với lệnh
 
