@@ -10,13 +10,13 @@
 
 - [5 The DNS Protocol](#5)
 
-- [5.3 UDP or TCP](#5.3)
+	+ [5.3 UDP or TCP](#5.3)
 
-- [5.4 Question (Query) and Zone Section Format](#5.4)
+	+ [5.4 Question (Query) and Zone Section Format](#5.4)
 
-- [5.5 Answer, Authority, and Additional Information Section Formats](#5.5)
+	+ [5.5 Answer, Authority, and Additional Information Section Formats](#5.5)
 
-- [5.6 Resource Record Types](#5.6)
+	+ [5.6 Resource Record Types](#5.6)
 
 ---
 
