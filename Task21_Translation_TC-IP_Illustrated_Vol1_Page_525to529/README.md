@@ -56,7 +56,7 @@
 
 	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task21_Translation_TC-IP_Illustrated_Vol1_Page_525to529/img/3.png)
 
-> 	Định dạng của một DNS resource record. Đối với DNS trên Internet, trường class luôn luôn có giá trị 1. Các trường TTL cho giá trị tối đa thời gian RR có thể được lưu trữ (tính bằng giây)
+> 	Định dạng của một DNS resource record. Đối với DNS trên Internet, trường class luôn luôn có giá trị 1. Các trường TTL cho giá trị tối đa thời gian RR có thể được lưu trữ (tính bằng giây)  
 
 - Các trường `Name` (đôi khi được gọi là "owning name", "owner", hoặc "record owner’s  name) là tên miền mà các dữ liệu tài nguyên tương ứng. Đó là giống các định dạng tương tự như chúng ta đã mô tả trước đó để ghi tên và lables. Trường `type` xác định một trong những loại mã RR. Đây giống như giá trị kiểu truy vấn chúng ta đã mô tả trước đó. Trường class 1 cho dữ liệu Internet. Các trường TTL là số giây mà RR có thể được cached. Trường `Resource Data Length` (RDLENGTH)  xác định số byte chứa trong trường dữ liệu tài nguyên (RDATA). Các định dạng của dữ liệu này phụ thuộc vào type. Ví dụ, một record (loại 1) có một địa chỉ IPv4 32-bit trong vùng RDATA.
 
