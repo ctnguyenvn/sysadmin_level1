@@ -1,0 +1,1 @@
+[HTML](http://vi.wikipedia.org/wiki/HTML) là chữ viết tắt của Hyper Text Markup Langiage - dịch là ngôn ngữ đánh dấu siêu văn bản được sử dụng để tạo một trang web, trên mỗi website có thể có nhiều trang và mỗi trang được quy ra là một ài liệu html
