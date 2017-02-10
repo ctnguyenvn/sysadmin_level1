@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+	
+	<script language="javascript">
+		
+		var number1 = prompt("Nhập số thứ nhất");
+		var number2 = prompt("Nhập số thứ hai");
+
+		number1 = parseFloat(number1);
+		number2 = parseFloat(number2);
+
+		// Tìm max, min của 2 số
+		alert("Tìm min, max ");
+		if (number1 > number2) {
+			alert("Max = " + number1 + "\nMin = " + number2);
+		}
+		else if(number1 < number2){
+			alert("Max = " + number2 + "\nMin = " + number1);
+		}
+		else{
+			alert("Max = Min = " + number1);
+		}
+
+		// Kiểm tra số chẵn, lẻ
+		alert("Kiểm tra chẵn lẻ");
+		if((number1 % 2) == 0){
+			if ((number2%2) == 0) {
+				alert("Cả 2 số đều là số chẵn");
+			}
+			else{
+				alert("Số thứ nhất là số chẵn\nSố thứ hai là số lẻ");
+			}
+		}
+		else{
+			if ((number2%2) != 0) {
+				alert("Cả 2 số đều là số lẻ");
+			}
+			else{
+				alert("Số thứ nhất là số lẻ\nSố thứ hai là số chẵn");
+			}	
+		}
+
+	</script>
+
+</body>
+</html>

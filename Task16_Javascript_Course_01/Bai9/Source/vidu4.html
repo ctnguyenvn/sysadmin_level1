@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+	
+	<script language="javascript">
+		
+		//  Tìm số chính phương
+		function so_chinh_phuong(a) {
+			if (Math.sqrt(a) % 1 == 0) {
+				alert(a + " là số chính phương");
+			} else {
+				alert(a + " không phải là số chính phương");
+			}
+		}
+
+		var a = prompt("Nhập số cần kiểm tra");
+
+		a = parseFloat(a);
+
+		so_chinh_phuong(a);
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+	
+	<script language="javascript">
+		
+		// Tìm số lớn nhất, nhỏ nhất
+		var min = null;
+		var max = null;
+		var value = ' ';
+		while(value != null){
+			value = prompt("Nhập số\nNếu muốn dừng nhấn canel");
+			if(value != null){
+				if(min == null){
+					min = value;
+					max = value;
+				}
+				if(min >= value) {
+					min = value;
+				}
+				if(max <= value) {
+					max = value;
+				}
+			}
+		}
+		alert("Min = " + min + "\nMax = " + max);
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+
+	<script language="javascript">
+		
+		var number1 = prompt("Nhập số thứ nhất");
+		var number2 = prompt("Nhập số thứ hai");
+
+		number1 = parseFloat(number1);
+		number2 = parseFloat(number2);
+
+		// if...else
+
+		if(number1 == number2){
+			alert("Hai số bằng nhau");
+		}
+		else{
+			alert("Hai số không bằng nhau");
+		}
+
+		// if...else if...else
+		if (number1 < 0) {
+			alert("Số thứ nhất là số âm");
+		}
+		else if(number1 == 0){
+			alert("Số thứ nhất là bằng 0");
+		}
+		else{
+			alert("Số thứ nhất là số dương");
+		}
+
+		// if else lồng nhau
+		if (number1 > 0) {
+			if (number2 > 0) {
+				alert("Hai số đều là số dương");
+			}
+			else if(number2 == 0){
+				alert("Số thứ nhất là số dương\nsố thứ 2 là số 0");
+			}
+			else{
+				alert("Số thứ nhất là số dương\nsố thứ 2 là số âm");
+			}
+		}
+		else if (number1 < 0){
+			if (number2 < 0) {
+				alert("Hai số đều là số âm");
+			}
+			else if(number2 == 0){
+				alert("Số thứ nhất là số âm\nsố thứ 2 là số 0");
+			}
+			else{
+				alert("Số thứ nhất là số âm\nsố thứ 2 là số dương");
+			}
+		}
+		else {
+			if(number2 == 0){
+				alert("Hai số bằng nhau = 0");
+			}
+			else if (number2 > 0) {
+				alert("Số thứ nhất bằng 0\n Số thứ 2 là số dương");
+			}
+			else{
+				alert("Số thứ nhất bằng 0\n Số thứ 2 là số âm");
+			}
+		}
+
+		document.write("sucessfull");
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+
+	<script language="javascript">
+		
+		function so_nguyen_to(a){
+
+			for (var i = 2; i < a; i++) 
+				if(a%2 == 0) return false;
+			return true;
+		}
+
+		var array = [];
+		for (var i = 0; i < 10; i++) {
+			var a = prompt("Nhập số thứ " + (i+1));
+			array[i] = a;
+		}
+
+		document.write("Các số là số nguyên tố trong mảng vừa nhập là" + "</br>");
+		for(var i = 0; i < 10; i++){
+			if(so_nguyen_to(array[i])){
+				document.write(array[i] + "</br>");
+			}
+		}
+	</script>
+</body>
+</html>

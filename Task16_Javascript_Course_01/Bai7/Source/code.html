@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+
+	<script language="javascript">
+	
+	// in gia tri tu 1 den 20
+	var i =1;
+	while(i <= 20){
+		document.write(i + "</br>");
+		i++;
+	}
+
+	// Nhập giá trị bất kỳ và dừng nếu nằm tròng khoảng 1 - 20
+	alert("vòng lặp while");
+	var value1 = null;
+	while(value1 < 1 || value1 >20){
+		value1 = prompt("Nhập vào số từ 1 -> 20");
+	}
+
+	alert("Số bạn vừa nhập là " + value1);
+
+	// Vòng lặp do...while
+	alert("vòng lặp do...while");
+	var value2 = null;
+	do{
+		value2 = prompt("Nhập vào số từ 1 -> 10");
+	}while(value2 <1 || value2 >10)
+
+	alert("Số bạn vừa nhập là " + value2);
+
+	</script>
+
+</body>
+</html>

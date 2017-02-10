@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<title>Học javascript căn bản</title>
+
+</head>
+<body>
+	
+	<script language="javascript">
+		
+		// giải phương trình bật nhất
+		function pt_bac_nhat(a, b) {
+			if (a == 0 && b==0) {
+				alert("Phương trình vô số nghiệm");
+			}else if (a != 0 && b == 0) {
+				alert("Phương trình có nghiệm x = 0");
+			}else if (a == 0 && b == 0) {
+				alert("Phương trình vô nghiệm");
+			}else {
+				alert("Phương trình có nghiệm x = " + (-b/a));
+			}
+		}
+
+		var a = prompt("pt: ax + b = 0\nNhập a");
+		var b = prompt("pt: ax + b = 0\nNhập b");
+
+		a = parseFloat(a);
+		b = parseFloat(b);
+
+		pt_bac_nhat(a, b);
+
+	</script>
+
+</body>
+</html>
