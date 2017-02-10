@@ -1,0 +1,49 @@
+#px {
+	width: 300px;
+	height: 250px;
+	background-color: red;
+}
+
+#pt {
+	width: 300px;
+	height: 250px;
+	background-color: green;
+}
+
+#cha1 {
+	width: 700px;
+	height: 550px;
+	background-color: red;
+}
+
+#con1 {
+	width: 40%;
+	height: 50%;
+	background-color: green;
+}
+
+#cha2 {
+	font-size: 16px;
+	background-color: red;
+}
+
+#con2 {
+	width: 4em;
+	height: 4em;
+	background-color: green;
+}
+
+#html {
+	font-size: 16px;
+}
+
+#cha3 {
+	font-size: 16px;
+	background-color: red;
+}
+
+#con3 {
+	width: 5rem;
+	height: 5rem;
+	background-color: green;
+}

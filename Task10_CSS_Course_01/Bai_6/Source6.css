@@ -1,0 +1,15 @@
+.trang-tri1 {
+	text-align: justify;
+	text-indent: 30px;
+	text-decoration: underline;
+}
+
+.trang-tri2 {
+	text-align: justify;
+}
+.trang-tri3 {
+	font-size: 60px;
+	text-align: center;
+	text-shadow: blue 5px 4px 5px;
+	text-transform: capitalize;
+}

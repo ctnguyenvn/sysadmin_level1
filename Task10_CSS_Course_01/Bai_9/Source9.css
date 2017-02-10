@@ -1,0 +1,31 @@
+body {
+	width: 1160px;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: white;
+}
+#header {
+	background-color: #333;
+	padding: 10px 25px;
+}
+
+#content {
+	background-color: #555;
+	width: 796px;
+	float: left;
+	padding: 1em;
+}
+
+#sidebar {
+	background: #444;
+	width: 300px;
+	float: right;
+	padding: 1em;
+}
+
+#footer{
+	clear: both;
+	background-color: #666;
+	padding: 1em;
+}

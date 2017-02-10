@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+div {
+	width: 500px;
+	height: 500px;
+	padding: 20px;
+	background-color: blue;
+	border: 5px solid black;
+	box-sizing: border-box;
+}
