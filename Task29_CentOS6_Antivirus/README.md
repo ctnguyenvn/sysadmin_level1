@@ -208,12 +208,12 @@ yum remove clamd
 
 ### Tham khảo
 
-[1]. (2016). Cài đặt LMD (Linux Malware Detect) và ClamAV để scan malware trên Linux? http://wiki.matbao.net/Cai-dat-LMD-Linux-Malware-Detect-va-ClamAV-de-scan-malware-tren-may-chu-Linux.ashx
+[1]. Cài đặt LMD (Linux Malware Detect) và ClamAV để scan malware trên Linux. http://wiki.matbao.net/Cai-dat-LMD-Linux-Malware-Detect-va-ClamAV-de-scan-malware-tren-may-chu-Linux.ashx
 
-[2]. Quách Chí Cường. (2015) [Securirty Linux] Quét virus trojan hay malware với Clamav? https://cuongquach.com/2015/07/securirty-linux-quet-virus-trojan-hay-malware-voi-clamav/
+[2]. Quách Chí Cường. (2015). [Securirty Linux] Quét virus trojan hay malware với Clamav. https://cuongquach.com/2015/07/securirty-linux-quet-virus-trojan-hay-malware-voi-clamav/
 
-[3]. Linux Malware Detect? https://www.rfxn.com/projects/linux-malware-detect/
+[3]. Linux Malware Detect. https://www.rfxn.com/projects/linux-malware-detect/
 
-[4]. Gabriel Cánepa. (2015). How to Install and Use Linux Malware Detect (LMD) with ClamAV as Antivirus Engine http://www.tecmint.com/install-linux-malware-detect-lmd-in-rhel-centos-and-fedora/
+[4]. Gabriel Cánepa. (2015). How to Install and Use Linux Malware Detect (LMD) with ClamAV as Antivirus Engine. http://www.tecmint.com/install-linux-malware-detect-lmd-in-rhel-centos-and-fedora/
 
 ***
