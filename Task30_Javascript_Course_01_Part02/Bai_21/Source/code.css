@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#dropdow {
+	width: 200px;
+	
+}
+
+#dropdow li{
+	list-style: none;
+	line-height: 30px;
+	background: blue;
+	margin: 2px;
+	
+}
+
+#dropdow li a {
+	margin-left: 10px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#dropdow ul {
+	display: none;
+	background: red;
+}
+
+#dropdow ul li {
+	background-color: red;
+
+}
+
+
+/*
+ Menu ngang
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+#dropdow {
+	background: #1F568B;
+  	list-style-type: none;
+ 	text-align: center;
+ 
+}
+
+#dropdow li{
+	
+	line-height: 45px;
+	width: 150px;
+	
+	margin: 2px;
+	display: inline-block
+}
+
+#dropdow li a {
+	margin-left: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+#dropdow li a:hover {
+	margin-left: 10px;
+	color: #ffffff;
+	background: red;
+	text-decoration: none;
+	display: block;
+}
+
+#dropdow ul li{
+	display: none;
+}
+*/
