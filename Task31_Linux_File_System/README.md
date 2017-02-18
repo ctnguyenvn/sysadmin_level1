@@ -213,7 +213,8 @@ Trong đó 1 số option thường dùng như:
 > Lưu ý: Sau khi đã tạo partition thì hệ thống file vẫn chưa được sẵn sàng cho việc sử dụng mà phải format chúng với `mkfs` mới được xem là hoàn tất. Ví dụ: `sudo mkfs.ext4 /dev/sda4`
 
 --- 
-### # Tham khảo
+
+#### Tham khảo
 
 [1] File System and Disk Administration trong UNIX. https://voer.edu.vn/m/file-system-and-disk-administration-trong-unix/bdb328f6
 
