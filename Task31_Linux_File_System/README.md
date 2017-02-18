@@ -186,7 +186,9 @@ Trên Linux, fdisk là 1 chương trình mạnh mẽ dùng để xem và quản 
 
 - Fdisk sử dụng chế độ dòng lệnh để làm việc, ta sẽ sử dụng các lệnh 1 chữ cái để xác định hành động cần thực hiện. Gõ “m” và ấn Enter để xem danh sách các lệnh sẵn có.
 
-<p  text-align="center"><img src=" https://github.com/hellsins/sysadmin_level1/blob/master/Task31_Linux_File_System/Image/2.png"/></p>
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task31_Linux_File_System/Image/2.png)
+
+Trong đó 1 số option thường dùng như:
 
 - __p__ In ra các partition đã chia
 
