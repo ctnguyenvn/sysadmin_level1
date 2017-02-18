@@ -186,7 +186,7 @@ Trên Linux, fdisk là 1 chương trình mạnh mẽ dùng để xem và quản 
 
 - Fdisk sử dụng chế độ dòng lệnh để làm việc, ta sẽ sử dụng các lệnh 1 chữ cái để xác định hành động cần thực hiện. Gõ “m” và ấn Enter để xem danh sách các lệnh sẵn có.
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task31_Linux_File_System/Image/2.png)
+<p  text-align="center"><img src=" https://github.com/hellsins/sysadmin_level1/blob/master/Task31_Linux_File_System/Image/2.png"/></p>
 
 - __p__ In ra các partition đã chia
 
@@ -199,7 +199,7 @@ Trên Linux, fdisk là 1 chương trình mạnh mẽ dùng để xem và quản 
 	+ Cuối cùng, xác định sector cuối của phân vùng. Ấn Enter để chấp nhật sử dụng hết phần ổ đĩa còn trống. Thay vì chỉ định sector, bạn có thể chỉ định kích thước, chữ viết tắt tương ứng: K – Kilobyte, M – Megabyte và G – Gigabyte. Ví dụ, gõ “+5G” cho phân vùng với kích thước 5 Gigabyte. Nếu bạn không gõ đơn vị sau dấu “+”, fdisk sẽ lựa chọn sector làm đơn vị. Ví dụ, nếu bạn gõ “+10000”, fdisk sẽ cộng thêm 10000 sector để làm điểm kết thúc của phân vùng.
 	
 	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task31_Linux_File_System/Image/3.png)
-
+ 
 - __d__ Xoá partition. Sau khi nhấn d thì bạn sẽ được lựa chọn phân vùng để xóa.
 
 - __t__ Thay đổi loại phân vùng. Sau khi gõ t bạn sẽ được yêu cầu nhập mã hex của loại phân vùng (có thể nhấn L để xem mã hex của từng phân vùng)
