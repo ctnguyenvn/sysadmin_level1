@@ -1,0 +1,47 @@
+*{
+	margin:0;
+	padding: 0;
+}
+#group1{
+	border: solid 1px red;
+	padding: 1px;
+	/*co the su dung overflow: auto; thay vi dung #group1:after phia duoi*/
+}
+
+.trai{
+	color: white;
+	background: red;
+	width: 400px;
+	height: 100px;
+	line-height: 100px;
+	text-align:center;
+	font-size: 20px;
+	float: left;
+}
+
+.phai{
+	color: white;
+	background: blue;
+	width: 400px;
+	height: 100px;
+	line-height: 100px;
+	text-align:center;
+	font-size: 20px;
+	float: right;
+}
+
+#group2{
+	background: yellow;
+	height: 100px;
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}
+
+#group1:after{
+	content: ".";
+	height: 0px;
+	width: 0px;
+	clear: both;
+	display: block;
+}

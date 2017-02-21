@@ -1,0 +1,40 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+ul{
+	background: blue;
+	list-style-type: none;
+	text-align: center;
+}
+
+ul li{
+	color: red;
+	display: inline-table;
+	height: 50px;
+	width: 150px;
+	line-height: 50px;
+	position: relative;
+	
+}
+
+ul a{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+ul a:hover{
+	background: red;
+}
+
+ul li ul{
+	display: none;
+	position: absolute;
+	
+}
+
+ul li:hover ul{
+	display: block;
+}

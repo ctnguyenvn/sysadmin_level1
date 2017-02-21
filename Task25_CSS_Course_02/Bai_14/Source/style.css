@@ -1,0 +1,9 @@
+#after:after{
+  content: "hello";
+  color: red;
+}
+
+#before:before{
+  content: "Phần này";
+  color: red;
+}

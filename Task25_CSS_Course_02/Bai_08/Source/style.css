@@ -1,0 +1,38 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#header{
+	height: 100px;
+	background: blue;
+	text-align: center;
+}
+
+#main{
+	overflow: hidden;
+}
+
+.content{
+	float: left;
+	width: 70%;
+	height: 400px;
+	background:red;
+}
+
+.sidebar{
+	float: right;
+	width: 30%;
+	height: 400px;
+	background:green;
+}
+
+#footer{
+	background:#001;
+	height: 100px;
+}
+
+p{
+	color:#fff;
+	text-align: center;
+	font-size: 30px;
+}

@@ -1,0 +1,17 @@
+
+body{
+	background: url('https://scripps.ucsd.edu/centers/iceshelfvibes/wp-content/uploads/sites/44/2015/11/angry-penguin-animation.gif');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;	
+}
+
+h1{
+	color: red;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p{
+
+}

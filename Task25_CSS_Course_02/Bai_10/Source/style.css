@@ -1,0 +1,49 @@
+
+*{
+	margin:0;
+}
+
+.relative{
+	height: 500px;
+	width: 450px;
+	position: relative;
+	background-color: #00F;
+	margin-top: 90px;
+	margin-left: 450px;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.red1{
+	height: 50px;
+	width: 100px;
+	background-color: red;
+	margin-top: 100px;
+	margin-left: 80px;
+}
+
+.red2{
+	height: 50px;
+	width: 100px;
+	background-color: red;
+	margin-top: 100px;
+	margin-left: 270px;
+}
+
+.black{
+	height: 160px;
+	width: 100px;
+	background-color: black;
+	margin-top: 180px;
+	margin-left: 177px;
+}
+
+.green{
+	height: 70px;
+	width: 240px;
+	background-color: green;
+	margin-top: 390px;
+	margin-left: 107px;
+}
