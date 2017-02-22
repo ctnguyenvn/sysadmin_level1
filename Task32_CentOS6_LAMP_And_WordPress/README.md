@@ -62,7 +62,7 @@ Một số ưu điểm khi dùng LAMP:
 
 Sau đó chỉnh như sau
 
-<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/tree/master/Task32_CentOS6_LAMP_And_WordPress/Image/1.png" /></p>
+<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/1.png" /></p>
 
 Lưu và khởi động lại network
 
@@ -167,7 +167,7 @@ Khởi động lại httpd
 
 Cuối cùng dùng trình duyệt sẽ được
 
-<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/tree/master/Task32_CentOS6_LAMP_And_WordPress/Image/2.png" /></p>
+<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/2.png" /></p>
 
 <a name="5.2"></a>
 #### 5.2 Cài đặt MySQL 5.1
@@ -178,7 +178,7 @@ Cuối cùng dùng trình duyệt sẽ được
 
 Sau đó thêm dòng sau như hình vào file `/etc/my.cnf`
 
-<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/tree/master/Task32_CentOS6_LAMP_And_WordPress/Image/3.png" /></p>
+<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/3.png" /></p>
 
 Khởi động mysqld như sau
 
@@ -279,7 +279,7 @@ phpinfo();
 ?>
 ```
 
-<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/tree/master/Task32_CentOS6_LAMP_And_WordPress/Image/4.png" /></p>
+<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/4.png" /></p>
 
 <a name="6"></a>
 ### 6. Cài đặt WordPress 
@@ -292,7 +292,7 @@ phpinfo();
 
 Tiếp theo dùng MySQL tạo database kết nối với wordpress như sau
 
-<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/tree/master/Task32_CentOS6_LAMP_And_WordPress/Image/5.png" /></p>
+<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/5.png" /></p>
 
 Tiếp theo vào thư mục wordpress vừa giải nén trên và copy filưp`wp-config-sample.php` mẫu thành filưp`wp-config.php` và chỉnh như sau
 
@@ -300,7 +300,7 @@ Tiếp theo vào thư mục wordpress vừa giải nén trên và copy filưp`wp
 
 	vi  ~/wordpress/wp-config.php
 
-<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/tree/master/Task32_CentOS6_LAMP_And_WordPress/Image/6.png" /></p>
+<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/6.png" /></p>
 
 Sau đó copy hoặc move thư mục này vào /var/www/html
 
@@ -318,11 +318,11 @@ Cuối cùng khởi động lại httpd
 
 Sau khi cấu hình thành công ta có thể đăng ký tài khoản và login
 
-<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/tree/master/Task32_CentOS6_LAMP_And_WordPress/Image/7.png" /></p>
+<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/7.png" /></p>
 
-<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/tree/master/Task32_CentOS6_LAMP_And_WordPress/Image/8.png" /></p>
+<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/8.png" /></p>
 
-<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/tree/master/Task32_CentOS6_LAMP_And_WordPress/Image/9.png" /></p>
+<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/9.png" /></p>
 
 ***
 
