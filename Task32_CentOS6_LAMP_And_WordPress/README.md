@@ -62,7 +62,7 @@ Một số ưu điểm khi dùng LAMP:
 
 Sau đó chỉnh như sau
 
-<p align="center"<img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/1.png" /></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/1.png" /></p>
 
 Lưu và khởi động lại network
 
