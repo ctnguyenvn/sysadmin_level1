@@ -294,7 +294,7 @@ Tiếp theo dùng MySQL tạo database kết nối với wordpress như sau
 
 <p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task32_CentOS6_LAMP_And_WordPress/Image/5.png" /></p>
 
-Tiếp theo vào thư mục wordpress vừa giải nén trên và copy filưp`wp-config-sample.php` mẫu thành filưp`wp-config.php` và chỉnh như sau
+Tiếp theo vào thư mục wordpress vừa giải nén trên và copy file mẫu `wp-config-sample.php` thành file`wp-config.php` và chỉnh như sau
 
 	cp ~/wordpress/wp-config-sample.php ~/wordpress/wp-config.php
 
@@ -315,6 +315,8 @@ Cuối cùng khởi động lại httpd
 > 	-  **php70w-gd** và `php70w-mysql` là package quan trọng khi cài wordpress vì vậy nếu thiếu package này thì sẽ xuất hiện lỗi `Your PHP installation appears to be missing the MySQL extension which is required by WordPress.`
 
 > 	- Vì bây giờ có thêm thư mục wordpress nữa nên ta phải đổi DocumentRoot và Directory của service httpd thành `/var/www/html`
+
+> 	- Thông tin trên database tạo với MySQL phải trùng với file wp-config.php nếu không sẽ lỗi
 
 Sau khi cấu hình thành công ta có thể đăng ký tài khoản và login
 
