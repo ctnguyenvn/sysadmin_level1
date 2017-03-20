@@ -10,27 +10,25 @@
 
 [1. Giới thiệu](#1)
 
-[2. Cài đặt Grub trong môi trường Linux](#2)
+[2. Sử dụng Grub](#3)
 
-[3. Sử dụng Grub](#3)
+- [2.1 Chuẩn bị](#3.1)
 
-- [3.1 Chuẩn bị](#3.1)
+- [2.2 Một số thuật ngữ và xác định tập tin](#3.2)
 
-- [3.2 Một số thuật ngữ và xác định tập tin](#3.2)
+- [2.3 Các tập tin hình ảnh](#3.3)
 
-- [3.3 Các tập tin hình ảnh](#3.3)
+- [2.4 Cơ chế hoạt động trong Grub](#3.4)
 
-- [3.4 Cơ chế hoạt động trong Grub](#3.4)
+- [2.5 Tạo đĩa mềm khởi động](#3.5)
 
-- [3.5 Tạo đĩa mềm khởi động](#3.5)
+[3. Cài đặt grub 2.0 trên CentOS 6.8](#4)
 
-[4. Cài đặt grub 2.0 trên CentOS 6.8](#4)
+[4. File cấu hình](#5)
 
-[5. File cấu hình](#5)
+[5. Cách lấy lại quyền root](#6)
 
-[6. Cách lấy lại quyền root](#6)
-
-[7. Đặt mật khẩu cho grub](#7)
+[6. Đặt mật khẩu cho grub](#7)
 
 ---
 
@@ -40,35 +38,10 @@
 Grub là trình khởi động máy tính - có nhiệm vụ tải nhân và khởi động hệ thống Linux cũng như một số HĐH khác như FreeBSD, OpenBSD, DOS, Windows,...
 
 <a name="2"></a>
-### 2. Cài đặt Grub trong môi trường Linux
+### 2. Sử dụng Grub
 
-Cài đặt Grub cần phân biệt 2 bước:
-
-- Cài đặt trong môi trường HĐH có thể sử dụng được Grub
-
-	+ Đầu tiên có thể tải Grub về tại [đây](http://alpha.gnu.org/gnu/grub/)
-
-	+ Tiếp theo sử dụng các lệnh sau
-
-		__tar xzvf [file_name.tar.gz]__
-
-		__cd [file_name]__
-	
-		__./configure__
-	
-		__make__
-	
-		__make install__
-
-		> Bạn có thể dùng dụng `grub-reboot -V` để xem phiên bản đã được cài đặt
-
-- Cài đặt Grub để làm trình khởi động cho máy tính
-
-<a name="3"></a>
-### 3. Sử dụng Grub
-
-<a name="3.1"></a>
-#### 3.1 Chuẩn bị
+<a name="2.1"></a>
+#### 2.1 Chuẩn bị
 
 Có 2 cách cài đặt Grub 
 
@@ -76,11 +49,11 @@ Có 2 cách cài đặt Grub
 
 - Dùng môi trường hệ điều hành giống Unix
 
-<a name="3.2"></a>
-#### 3.2 [Một số thuật ngữ và xác định tập tin](http://vnoss.org/docs/?id=2#s3.2)
+<a name="2.2"></a>
+#### 2.2 [Một số thuật ngữ và xác định tập tin](http://vnoss.org/docs/?id=2#s3.2)
 
-<a name="3.3"></a>
-#### 3.3 Các tập tin hình ảnh
+<a name="2.3"></a>
+#### 2.3 Các tập tin hình ảnh
 
 Grub bao gồm 1 số hình ảnh
 
@@ -92,8 +65,8 @@ Grub bao gồm 1 số hình ảnh
 
 - __nbrub, pxebrub__: Là các hình ảnh khởi động mạng
 
-<a name="3.4"></a>
-#### 3.4 Cơ chế hoạt động trong Grub
+<a name="2.4"></a>
+#### 2.4 Cơ chế hoạt động trong Grub
 
 -  Trên sector thứ nhất của đĩa cứng (ngoài bảng phân vùng), một đoạn mã thực thi được là giai đoạn đầu tiên của quá trình khởi động máy tính (hoặc đoạn mã IPL - initial program load) - đoạn này là lệnh fdisk/mbr trên dos tạo ra
 
@@ -127,8 +100,8 @@ Grub bao gồm 1 số hình ảnh
 
 	+ Giai đoạn 1.5 cho phép giai đoạn 2 được nạp từ 1 hệ thống tập tin bằng đường dẫn thông thường mà không phải dùng danh sách khối. vì vậy có thể đặt stage2 ở bất kỳ đâu, ngay cả sau khi cài đặt grub
 
-<a name="3.5"></a>
-#### 3.5 Tạo đĩa mềm khởi động
+<a name="2.5"></a>
+#### 2.5 Tạo đĩa mềm khởi động
 
 Là quá trình chép các tập tin stage1 và stage2 từ thư mục hình ảnh vào block thứ nhất và thứ 2 của đĩa mềm. Quá trình này sẽ phá hủy dữ liệu hiện đang lưu trên đĩa mềm
 
@@ -146,8 +119,8 @@ Là quá trình chép các tập tin stage1 và stage2 từ thư mục hình ả
 	
 	153+1 records out
 
-<a name="4"></a>	
-###4. Cài đặt grub 2.0 trên CentOS 6.8
+<a name="3"></a>	
+### 3. Cài đặt grub 2.0 trên CentOS 6.8
 
 Đầu tiên có thể gỡ grub 0.97 với lệnh sau:
 
@@ -186,7 +159,7 @@ Cài grub với grub-install
 	./grub-mkconfig  -o  /boot/grub/grub.cfg
 
 <a name="5"></a>
-###5. File cấu hình
+### 4. File cấu hình
 
 File cấu hình grub 2.0 nằm ở file `/boot/grub/grub.cfg` với 1 số thông số lưu ý sau
 
@@ -202,8 +175,8 @@ File cấu hình grub 2.0 nằm ở file `/boot/grub/grub.cfg` với 1 số thô
 
 > Ngoài ra còn 1 số khác nữa, tuy nhiên bạn cũng có thể edit trong các file header tại thư mục `/usr/local/etc/grub.d/`
 
-<a name="6"></a>
-###6. Cách lấy lại quyền root
+<a name="5"></a>
+### 5. Cách lấy lại quyền root
 
 Trên CentOS 6.8 ta có thể lấy lại quyền root dựa vào cách edit grub. Đầu tiên khi vào menu chọn boot ta có thể chọn phần `Advandced optinons...` (có thể title bạn khác). 
 
@@ -219,8 +192,8 @@ Tuy nhiên với những máy không thấy dòng (hoặc có) `advandced option
 
 ![](https://github.com/hellsins/sysadmin_level1/blob/master/Task12_GRUB_Linux/Image/4.png)
 
-<a name="7"></a>
-###7. Đặt mật khẩu cho grub
+<a name="6"></a>
+### 6. Đặt mật khẩu cho grub
 
 Chính vì có thể lấy lại mật khẩu như trên nên việc an toàn của hệ thống hầu như không còn nữa. Vì vậy để ngăn chặn điều này ta cần dùng mật khẩu yêu cầu khi muốn vào chế độ `recovery mode`
 
