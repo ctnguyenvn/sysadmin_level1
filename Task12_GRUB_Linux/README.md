@@ -130,7 +130,7 @@ Là quá trình chép các tập tin stage1 và stage2 từ thư mục hình ả
 
 > 	sudo rm -rf /boot/grub/*
 
-Tiếp theo chúng ta tải grub 2.0 về ở [đây](ftp://ftp.gnu.org/gnu/grub/) hoặc sử dụng wget tải về như sau
+Tiếp theo chúng ta tải grub 2.0 về ở ftp://ftp.gnu.org/gnu/grub/ hoặc sử dụng wget tải về như sau
 
 	wget  ftp://ftp.gnu.org/gnu/grub/grub-2.00.tar.gz
 
