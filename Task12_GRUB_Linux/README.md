@@ -4,31 +4,31 @@
 
 > Thực hiện: Nguyễn Công Trứ
 
-> Cập nhật: 11/11/2016
+> Cập nhật: 20/03/2017
 
 #### Mục lục
 
 [1. Giới thiệu](#1)
 
-[2. Sử dụng Grub](#3)
+[2. Sử dụng Grub](#2)
 
-- [2.1 Chuẩn bị](#3.1)
+- [2.1 Chuẩn bị](#2.1)
 
-- [2.2 Một số thuật ngữ và xác định tập tin](#3.2)
+- [2.2 Một số thuật ngữ và xác định tập tin](#2.2)
 
-- [2.3 Các tập tin hình ảnh](#3.3)
+- [2.3 Các tập tin hình ảnh](#2.3)
 
-- [2.4 Cơ chế hoạt động trong Grub](#3.4)
+- [2.4 Cơ chế hoạt động trong Grub](#2.4)
 
-- [2.5 Tạo đĩa mềm khởi động](#3.5)
+- [2.5 Tạo đĩa mềm khởi động](#2.5)
 
-[3. Cài đặt grub 2.0 trên CentOS 6.8](#4)
+[3. Cài đặt grub 2.0 trên CentOS 6.8](#3)
 
-[4. File cấu hình](#5)
+[4. File cấu hình](#4)
 
-[5. Cách lấy lại quyền root](#6)
+[5. Cách lấy lại quyền root](#5)
 
-[6. Đặt mật khẩu cho grub](#7)
+[6. Đặt mật khẩu cho grub](#6)
 
 ---
 
