@@ -198,7 +198,7 @@ File cấu hình grub 2.0 nằm ở file `/boot/grub/grub.cfg` với 1 số thô
 
 - __menuentry 'title here'__: Với grub cũ thì title sẽ có dòng riêng sau title nhưng đối với grub 2.0 thì nó được đặt sau `menuentry`
 
-hình 1
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task12_GRUB_Linux/Image/1.png)
 
 > Ngoài ra còn 1 số khác nữa, tuy nhiên bạn cũng có thể edit trong các file header tại thư mục `/usr/local/etc/grub.d/`
 
@@ -207,17 +207,17 @@ hình 1
 
 Trên CentOS 6.8 ta có thể lấy lại quyền root dựa vào cách edit grub. Đầu tiên khi vào menu chọn boot ta có thể chọn phần `Advandced optinons...` (có thể title bạn khác). 
 
-hình 2
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task12_GRUB_Linux/Image/2.png)
 
 Sau đó chọn dòng có `(recovery mode)` ở cuối cùng. 
 
-hình 3 
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task12_GRUB_Linux/Image/3.png)
 
 Nhấn enter bạn sẽ login vào root và có thể đổi mật khẩu tại đây
 
 Tuy nhiên với những máy không thấy dòng (hoặc có) `advandced options ...` ta có thể nhấn `e` khi vào menu chọn boot và tìm đến dòng `linux...`, sau đó thêm `1` hoặc `single` vào cuối. Nhấn `F10` hoặc `Ctrl X` để login vào và đổi password root
 
-hình 4
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task12_GRUB_Linux/Image/4.png)
 
 <a name="7"></a>
 ###7. Đặt mật khẩu cho grub
@@ -226,11 +226,11 @@ Chính vì có thể lấy lại mật khẩu như trên nên việc an toàn c�
 
 Đầu tiên ta cần tạo chuỗi password đã bị encode với lệnh `grub-mkpasswd-pbkdf2` như sau
 
-hình 5
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task12_GRUB_Linux/Image/5.png)
 
 Sau đó copy đoạn hash và thêm đoạn sau vào file /usr/local/etc/grub.d/40_custom
 
-hình 6
+![](https://github.com/hellsins/sysadmin_level1/blob/master/Task12_GRUB_Linux/Image/6.png)
 
 ***
 #### Tham khảo
