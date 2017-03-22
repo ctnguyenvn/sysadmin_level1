@@ -32,9 +32,9 @@
 <a name="1"></a>
 ### 1. Giới thiệu về PhpBB
 
-phpBB lần đầu tiên được tạo ra bởi James Atkinson (theFinn) vào tháng 6 năm 2000, Sau khi phát hành cho công chúng thông qua SourceForge, nó trở nên phổ biến rất nhanh chóng
+phpBB lần đầu tiên được tạo ra bởi James Atkinson (theFinn) vào tháng 6/2000, Sau khi phát hành cho công chúng thông qua SourceForge, nó trở nên phổ biến rất nhanh chóng
 
-Phiên bản dùng thử phpBB3 beta5 được công bố vào tháng 3 năm 2007. Phiên bản RC, đánh dấu đầy đủ hỗ trợ cho dòng 3.0, đã được phát hành tháng 5 năm 2007. phpBB 3.0.0 đã được phát hành vào ngày 13 Tháng Mười Hai 2007.
+Phiên bản dùng thử phpBB3 beta5 được công bố vào tháng 3/2007. Phiên bản RC, đánh dấu đầy đủ hỗ trợ cho dòng 3.0, đã được phát hành tháng 5/2007. phpBB 3.0.0 đã được phát hành vào ngày 13/2007.
 
 Một số điểm nổi bậc
 
