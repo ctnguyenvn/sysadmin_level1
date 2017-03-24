@@ -5,7 +5,7 @@
 
 > Thực hiện: Nguyễn Công Trứ
 
-> Cập nhật: 22/03/2017
+> Cập nhật: 24/03/2017
 
 ### Mục lục
 
@@ -26,6 +26,10 @@
 - [5.3 Cài đặt PHP](#5.3)
 
 [6. Cài đặt PhpBB ](#6)
+
+- [6.1 Cài đặt phpBB 3.2 trên LAMP CentOS 6.8](#6.1)
+
+- [6.2 Một số chức năng cơ bản của phpBB 3.2](#6.2)
 
 ***
 
@@ -269,7 +273,7 @@ rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
 
 Sau đó cài đặt PHP 7.0 ta dùng lệnh sau
 
-	yum install  php70w  
+	yum install  php70w  php70w-gd php70w-mysql php70w-xml
 
 Để kiểm tra ta tạo file info.php ở thư mục mysite phía trên với nội dung sau
 
@@ -284,6 +288,9 @@ phpinfo();
 <a name="6"></a>
 ### 6. Cài đặt phpBB
 
+<a name="6.1"></a>
+#### 6.1 Cài đặt phpBB 3.2 trên LAMP CentOS 6.8
+
 Đầu tiên ta dùng wget tải phpbb về và giải nén sau đó copy vào thư mục /var/www/html/ (đây xem như là thư mục root cho phpbb) như sau
 
 ```
@@ -296,3 +303,39 @@ Tiếp theo ta cần tạo 1 database với mysql như sau
 
 <p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/5.png" /></p>
 
+Sau đó khởi động lại apache và mở trình duyệt ở client như sau
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/6.png" /></p>
+
+Chọn phần `install` và nhấn submit
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/7.png" /></p>
+
+> Lưu ý: Có 1 số file cần phần quyền để có thể ghi dữ liệu. Chúng có thể là `cache, files, stories, file config.php, images/avatar/upload`. Chúng ta nên sử dụng `chmod 777` cho những file/folder này
+
+Tạo tài khoản quản trị
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/8.png" /></p>
+
+Kết nối database
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/9.png" /></p>
+
+Tiếp theo để configure 1 số thứ ta làm như sau
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/10.png" /></p>
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/11.png" /></p>
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/12.png" /></p>
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/13.png" /></p>
+
+Giao diện chung của phpBB
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/14.png" /></p>
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/15.png" /></p>
+
+<a name="6.2"></a>
+#### 6.2 Một số chức năng cơ bản của phpBB 3.2
