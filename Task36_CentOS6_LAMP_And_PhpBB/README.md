@@ -31,6 +31,20 @@
 
 - [6.2 Một số chức năng cơ bản của phpBB 3.2](#6.2)
 
+	+ [6.2.1 Forums](#6.2.1)
+
+	+ [6.2.2 Posting](#6.2.2)
+	
+	+ [6.2.3 Users and Groups](#6.2.3)
+	
+	+ [6.2.4 Permission](#6.2.4)
+	
+	+ [6.2.5 Customise](#6.2.5)
+	
+	+ [6.2.6 Mantenance](#6.2.6)
+	
+	+ [6.2.7 System](#6.2.7)
+
 ***
 
 <a name="1"></a>
@@ -88,7 +102,7 @@ Và comment dòng sau để tắt sử dụng xác thực bằng pasword
 
 	PasswordAuthentication yes
 
-Tiếp theo ta tạo RSA key trên server như sau
+Tiếp theo vào client tạo key rsa như sau
 
 	ssh-keygen -t rsa
 
@@ -98,26 +112,23 @@ Tiếp theo ta tạo RSA key trên server như sau
 
 > 	- Key tạo ra được lưu tại ~/.ssh
 
-Tiếp theo ta tạo file `authorized_keys` (nội dung là nội dung của file `id_rsa.pub`) và phân quyền cho nó
+Sau đó phân quyền cho ~/.ssh/id_sa 
 
-	mv id_rsa.pub authorized_keys
+	chmod 600 ~/.ssh/id_rsa
 
-	chmod 600 authorized_keys
+Tiếp theo copy nội dung file id_rsa.pub
 
-Tiếp theo đối với file `id_rsa` ta copy nội dung. Sau đó vào máy client tạo thư mục `.ssh` tại home của user muốn kết nối ssh tới server. Cuối cùng tạo 1 file mới trong thư mục `.ssh` có tên là `id_rsa` và paste nội dung vừa copy phía trên vào, sau đó phân quyền file này như sau
+Sau đó vào server tạo file authorized_keys (nếu chưa có) tại thư mục .ssh và paste nội dung đã copy phía trên vào file này
 
-	mkdir ~/.ssh
+	vi ~/.ssh/authorized_key
 
-	cd ~/.ssh
-	
-	vi id_rsa  `(paste nội dung copy ở trên vào file này)`
-	
-	chmod 600 id_rsa
+Phân quyền cho authorized_keys
+
+	chmod 600 ~/.ssh/authorized_keys
 
 Cuối cùng restart lại ssh trên server 
 
 	service sshd restart
-
 	
 <a name="4"></a>
 ### 4. Cập nhật CentOS 6.8
@@ -339,3 +350,110 @@ Giao diện chung của phpBB
 
 <a name="6.2"></a>
 #### 6.2 Một số chức năng cơ bản của phpBB 3.2
+
+<a name="6.2.1"></a>
+#### 6.2.1 Forums
+
+Ở Forums ta có thể cấp quyền cho các chuyên mục, các thành viên, tạo, xóa, sửa các chuyên mục.
+
+Ví dụ để xóa chuyên mục bất kỳ ta chọn dấu `x` tại chuyên mục muốn xóa và làm như sau
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/16.png" /></p>
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/17.png" /></p>
+
+Để tạo 1 chuyên mục ta chọn `create new forum` và làm như hình
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/18.png" /></p>
+
+> Lưu ý: nếu muốn tạo 1 chủ đề cho chuyên mục nào thì phần `parent forum` chọn chuyên mục đó
+
+Tiếp theo có thể thiết lập quyền cho các chuyên mục hay chủ đề bằng cách bôi đen phần muốn chọn (bên group hoặc bên user) và nhấn `add permission` 
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/19.png" /></p>
+
+Tiếp tục phân quyền cho các mục. Có thể phân như sau
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/20.png" /></p>
+
+> Lưu ý: Đối với group và user đều làm như nhau
+
+<a name="6.2.2"></a>
+#### 6.2.2 Posting
+
+Ở mục này ta có thể thiết lập tin nhắn, gửi bài, biểu tượng, kiểm duyệt từ, thiết lập các tập tin...
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/23.png" /></p>
+
+Để tạo 1 post mới ta có thể đăng nhập vào trang web và chọn chủ đề muốn tạo post và làm như sau
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/21.png" /></p>
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/22.png" /></p>
+
+<a name="6.2.3"></a>
+#### 6.2.3 Users and Groups
+
+Ở phần này ta có thể quản lý thành viên, cấp phép, xem, xóa... Ngoài ra ta cũng có thể quản lý và cấp phép nhóm và 1 số vấn đề bảo mật với các user và group như cấm theo email, theo nhóm hay chặn theo IP...
+
+Ví dụ để quản lý user ta chọn `manager user` và nhập tên user cần quản lý và xem, sửa 1 số thông tin như sau
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/24.png" /></p>
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/25.png" /></p>
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/26.png" /></p>
+
+Hoặc để đăng ký tài khoản mới ta vào trang web chọn registry và làm như sau
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/27.png" /></p>
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/28.png" /></p>
+
+<a name="6.2.4"></a>
+#### 6.2.4 Permission
+
+Tiếp theo phần này ta có thể cấp quyền cho các chuyên mục, thành viên, group...
+
+Ví dụ để cấp quyền cho user ta làm như sau. Chọn `user permission` và điền username của user cần cấp quyền và nhấn `submit`
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/29.png" /></p>
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/30.png" /></p>
+
+<a name="6.2.5"></a>
+#### 6.2.5 Customise
+
+Ở phần này ta có thể quản lý và cài đặt thêm các extentions` hoặc có thể thay đổi, cài đặt giao diện cho forum 
+
+Ví dụ để thay đổi giao diện ta làm như sau
+
+Đầu tiên tìm kiếm và tải theme muốn về (lưu ý chọn đúng phiên bản phpBB hiện tại). Sau đó giải nén và copy vào thư mục style trên server. Tiếp theo ta quay lại trình duyệt và chọn `Install Style` trong mục `CUSTOMISE` và chọn style vừa thêm xong nhấn install để hoàn tất cài đặt
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/35.png" /></p>
+
+Sau khi cài xong ta vào phần `Style` uninstall (lưu ý không xóa file từ hệ thống) và kích hoạt style vừa cài
+
+Kết quả sau khi thay đổi giao diện
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/36.png" /></p>
+
+<a name="6.2.6"></a>
+#### 6.2.6 Mantenance
+
+Phần này cho phép ta xem các nhật ký như thao tác, thông tin IP, username... Ngoài ra ta có thể backup dữ liệu, phục hồi dữ liệu...
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/31.png" /></p>
+
+<a name="6.2.7"></a>
+#### 6.2.7 System
+
+Ở phần nay hỗ trợ ta update bản phpBB cũng như xem các thông tin hệ thống. Trình điều khiển của admin, các thành viên...
+
+Ví dụ ta có thể xem phiên bản PHP của hẹ thống đang sử dụng hiện tại
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/32.png" /></p>
+
+Hoặc vô hiệu những quyền quản lý bằng cách `disable` mục muốn thay đổi
+
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/33.png" /></p>
