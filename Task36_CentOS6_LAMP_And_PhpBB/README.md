@@ -457,3 +457,9 @@ Ví dụ ta có thể xem phiên bản PHP của hẹ thống đang sử dụng 
 Hoặc vô hiệu những quyền quản lý bằng cách `disable` mục muốn thay đổi
 
 <p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/33.png" /></p>
+
+***
+
+### Tham khảo
+
+[1]. Installing & Using Styles. https://www.phpbb.com/styles/installing/
