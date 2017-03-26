@@ -104,21 +104,21 @@ Tiếp theo ta tạo file `authorized_keys` (nội dung là nội dung của fil
 
 	chmod 600 authorized_keys
 
-Tiếp theo đối với file `id_rsa` ta copy nội dung. Sau đó vào máy client dùng quyền root tạo thư mục `.ssh` tại home của user muốn kết nối ssh tới server. Cuối cùng tạo 1 file mới trong thư mục `.ssh` có tên là `id_rsa` và paste nội dung vừa copy phía trên vào, sau đó phân quền file này như sau
+Tiếp theo đối với file `id_rsa` ta copy nội dung. Sau đó vào máy client tạo thư mục `.ssh` tại home của user muốn kết nối ssh tới server. Cuối cùng tạo 1 file mới trong thư mục `.ssh` có tên là `id_rsa` và paste nội dung vừa copy phía trên vào, sau đó phân quyền file này như sau
 
-	mkdir /home/[user]/.ssh
+	mkdir ~/.ssh
 
-	cd /home/[user]/.ssh
+	cd ~/.ssh
 	
 	vi id_rsa  `(paste nội dung copy ở trên vào file này)`
 	
-	chmod 600 /home/[user]/.ssh/id_rsa
+	chmod 600 id_rsa
 
 Cuối cùng restart lại ssh trên server 
 
-	service ssh restart
+	service sshd restart
 
-
+	
 <a name="4"></a>
 ### 4. Cập nhật CentOS 6.8
 
