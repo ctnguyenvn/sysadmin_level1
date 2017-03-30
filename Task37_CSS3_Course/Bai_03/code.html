@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS3 border-image</title>
+	<style type="text/css">
+		
+		.zone1{
+			width: 130px;
+			height:  130px;
+			border-style: solid;
+			border-width: 30px;
+			border-image: url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 stretch;
+			--moz-border-image: url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 stretch;
+			--webkit-border-image: url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 stretch;
+			--o-border-image:  url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 stretch;
+		}
+
+		.zone2{
+			width: 130px;
+			height:  130px;
+			border-style: solid;
+			border-width: 30px;
+			border-image: url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 repeat;
+			--moz-border-image: url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 repeat;
+			--webkit-border-image: url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 repeat;
+			--o-border-image:  url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 repeat;
+
+		}
+
+		.zone3{
+			width: 130px;
+			height:  130px;
+			border-style: solid;
+			border-width: 30px;
+			border-image: url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 round;
+			--moz-border-image: url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 round;
+			--webkit-border-image: url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 round;
+			--o-border-image:  url(http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png) 30 round;
+
+		}
+
+	</style>
+</head>
+<body>
+	<p>Image</p>
+	<img src="http://www.lauracasale.com/music/albums/now_is_where_you_are/files/stacks-image-e70f273-122x122.png">
+
+	<p>stretch</p>
+	<div class="zone1"></div>
+
+	<p>repeat</p>
+	<div class="zone2"></div>
+	
+	<p>round</p>
+	<div class="zone3"></div>
+
+
+</body>
+</html>

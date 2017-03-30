@@ -1,0 +1,56 @@
+
+h2{
+	margin: 50px 0px;
+	text-align: center;
+}
+
+#text11{
+	text-shadow: 0px 0px 20px blue;
+}
+#text12{
+	text-shadow: 20px 20px 10px green;
+}
+#text13{
+	text-shadow: 0px 0px 20px #124ee1;
+}
+#text14{
+
+	text-shadow: 
+		0px 0px 20px blue,
+		0px 0px 50px red,
+		0px 0px 10px pink
+	;
+}
+
+#box21{
+	box-shadow: 0px 0px 15px 10px red;
+	--moz-box-shadow: 0px 0px 15px 10px red;
+	--webkit-box-shadow: 0px 0px 15px 10px red;
+}
+#box22{
+	box-shadow: 0px 0px 15px 20px red inset;
+	--moz-box-shadow: 0px 0px 15px 20px red inset;
+	--webkit-box-shadow: 0px 0px 15px 20px red inset;
+}
+#box23{
+	box-shadow: 5px 5px 15px 0px green;
+	--moz-box-shadow: 5px 5px 15px 0px green;
+	--webkit-box-shadow: 5px 5px 15px 0px green;
+}
+#box24{
+	box-shadow: 
+	-5px -5px 5px 0px red,
+	10px 10px 15px 5px blue,
+	0px 0px 5px 5px green
+	;
+	--moz-box-shadow: 
+	-5px -5px 5px 0px red,
+	10px 10px 15px 5px blue,
+	0px 0px 5px 5px green
+	;
+	--webkit-box-shadow: 
+	-5px -5px 5px 0px red,
+	10px 10px 15px 5px blue,
+	0px 0px 5px 5px green
+	;
+}

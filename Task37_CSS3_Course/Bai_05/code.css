@@ -1,0 +1,74 @@
+/*RGBA Color*/
+#red{
+	background-color: rgba(255, 0, 0, 1);
+}
+#green{
+	background-color: rgba(0, 255, 0, 1);
+}
+#yellow{
+	background-color: rgba(255, 255, 0, 1);
+}
+
+/*HSL Colors*/
+#green1{
+	background-color: hsl(120, 100%, 50%);
+}
+#light-green1{
+	background-color: hsl(120, 100%, 75%);
+}
+#violet{
+	background-color: hsl(290, 100%, 50%);
+}
+#pastel-violet{
+	background-color: hsl(290, 60%, 90%);
+}
+
+/*HSLA Colors*/
+#green2{
+	background-color: hsla(120, 100%, 50%, 0.3);
+}
+#light-green2{
+	background-color: hsla(120, 100%, 75%, 0.3);
+}
+#violet1{
+	background-color: hsla(290, 100%, 50%, 0.3);
+}
+#pastel-violet1{
+	background-color: hsla(290, 60%, 90%, 0.3);
+}
+
+/*Opacity*/
+#green3{
+	background-color: hsl(120, 100%, 50%); Opacity: 0.3
+}
+#light-green3{
+	background-color: hsl(120, 100%, 75%); Opacity: 0.3
+}
+#violet2{
+	background-color: hsl(290, 100%, 50%); Opacity: 0.3
+}
+#pastel-violet2{
+	background-color: hsl(290, 60%, 90%); Opacity: 0.3
+}
+
+/*HEX Colors*/
+#green4{
+	background-color: #00CC00;
+}
+#light-green4{
+	background-color: #00FF99;
+}
+#violet3{
+	background-color: #CC0099;
+}
+#pastel-violet3{
+	background-color: #FF00FF;
+}
+
+/*Color Name*/
+#green5{
+	background-color: green;
+}
+#red{
+	background-color: red;
+}

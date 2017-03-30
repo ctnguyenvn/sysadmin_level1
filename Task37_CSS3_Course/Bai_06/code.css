@@ -1,0 +1,157 @@
+
+div{
+	float: left;
+	width: 150px;
+	height: 130px;
+	margin: 10px;
+}
+
+/*Using linear-gradient*/
+#div1{
+	background: linear-gradient(red, yellow);
+}
+
+#div2{
+	background: linear-gradient(to left, red, yellow);
+	background: --moz-linear-gradient(left, red, yellow)
+	background: --webkit-linear-gradient(left, red, yellow)
+	background: --o-linear-gradient(left, red, yellow)
+}
+
+#div3{
+	background: linear-gradient(to right, red, yellow);
+	background: --moz-linear-gradient(right, red, yellow)
+	background: --webkit-linear-gradient(right, red, yellow)
+	background: --o-linear-gradient(right, red, yellow)
+}
+
+#div4{
+	background: linear-gradient(to bottom left, red, yellow);
+	background: --moz-linear-gradient(bottom left, red, yellow)
+	background: --webkit-linear-gradient(bottom left, red, yellow)
+	background: --o-linear-gradient(bottom left, red, yellow)
+}
+
+/*Use Angles*/
+
+#diva1{
+	background: linear-gradient(0deg, red, yellow);
+	background: --moz-linear-gradient(0deg, left, red, yellow)
+	background: --webkit-linear-gradient(0deg, left, red, yellow)
+	background: --o-linear-gradient(0deg, left, red, yellow)
+}
+
+#diva2{
+	background: linear-gradient(90deg, red, yellow);
+	background: --moz-linear-gradient(90deg, left, red, yellow)
+	background: --webkit-linear-gradient(90deg, left, red, yellow)
+	background: --o-linear-gradient(90deg, left, red, yellow)
+}
+
+#diva3{
+	background: linear-gradient(180deg, red, yellow);
+	background: --moz-linear-gradient(180deg, left, red, yellow)
+	background: --webkit-linear-gradient(180deg, left, red, yellow)
+	background: --o-linear-gradient(180deg, left, red, yellow)
+}
+
+#diva4{
+	background: linear-gradient(360deg, red, yellow);
+	background: --moz-linear-gradient(360deg, left, red, yellow)
+	background: --webkit-linear-gradient(360deg, left, red, yellow)
+	background: --o-linear-gradient(360deg, left, red, yellow)
+}
+
+/*Using many color*/
+#divb{
+	background: linear-gradient(to bottom, red, yellow, green, blue);
+	background : -moz-linear-gradient(bottom, red, yellow, green, blue);
+            background : -webkit-linear-gradient(bottom, red, yellow, green, blue);
+            background : -o-linear-gradient(bottom, red, yellow, green, blue);
+}
+
+/*Using Transparency*/
+#divc{
+	background: linear-gradient(to bottom, rgba(255, 0,0,1), blue);
+	background : -moz-linear-gradient(bottom, rgba(255,0,0,0.5), blue);
+            background : -webkit-linear-gradient(bottom, rgba(255,0,0,0.5), blue);
+            background : -o-linear-gradient(bottom, rgba(255,0,0,0.5), blue);
+}
+
+/*Using repeat*/
+#divd{
+	background: repeating-linear-gradient(to bottom, red 10%, green 20%);
+	background : -moz-repeating-linear-gradient(bottom, red 10%, green 20%);
+            background : -webkit-repeating-linear-gradient(bottom, red 10%, green 20%);
+            background : -o-repeating-linear-gradient(bottom, red 10%, green 20%);
+}
+
+/*Radial gradient*/
+
+/*phan chia khong dong deu*/
+#dive{
+	background: radial-gradient(red, green, yellow);
+	background: --moz-radial-gradient(red, green, yellow);
+	background: --webkit-radial-gradient(red, green, yellow);
+	background: --o-radial-gradient(red, green, yellow);
+
+}
+
+/*Tuy chon khoang mau*/
+#divf{
+	background: radial-gradient(red 10%, blue 10%, pink 30%);
+	background: --moz-radial-gradient(red 10%, blue 10%, pink 30%);
+	background: --webkit-radial-gradient(red 10%, blue 10%, pink 80%);
+	background: --o-radial-gradient(red 10%, blue 10%, pink 30%);
+}
+
+/*shape*/
+#divg{
+	background: radial-gradient(circle, red 10%, blue 50%);
+	background: --moz-radial-gradient(circle, red 10%, blue 50%);
+	background: --webkit-radial-gradient(circle, red 10%, blue 50%);
+	background: --o-radial-gradient(circle, red 10%, blue 50%);
+}
+
+/*size*/
+#divh1{
+	background: radial-gradient(circle closest-side, red, blue);
+	background: --moz-radial-gradient(circle closest-side, red, blue);
+	background: --webkit-radial-gradient(circle closest-side, red, blue);
+	background: --o-radial-gradient(circle closest-side, red, blue);
+}
+#divh2{
+	background: radial-gradient(circle farthest-side, red, blue);
+	background: --moz-radial-gradient(circle farthest-side, red, blue);
+	background: --webkit-radial-gradient(circle farthest-side, red, blue);
+	background: --o-radial-gradient(circle farthest-side, red, blue);
+}
+#divh3{
+	background: radial-gradient(circle closest-corner, red, blue);
+	background: --moz-radial-gradient(circle closest-corner, red, blue);
+	background: --webkit-radial-gradient(circle closest-corner, red, blue);
+	background: --o-radial-gradient(circle closest-corner, red, blue);
+}
+#divh4{
+	background: radial-gradient(circle farthest-corner, red, blue);
+	background: --moz-radial-gradient(circle farthest-corner, red, blue);
+	background: --webkit-radial-gradient(circle farthest-corner, red, blue);
+	background: --o-radial-gradient(circle farthest-corner, red, blue);
+}
+
+/*using position*/
+#divj{
+	background : -moz-radial-gradient(circle, 100px 200px, farthest-side, red 10%, blue 90%);
+            background : -webkit-radial-gradient(circle, 100px 200px, farthest-side, red 10%, blue 90%);
+            background : -o-radial-gradient(circle, 100px 200px, farthest-side, red 10%, blue 90%);
+            background : radial-gradient(circle farthest-side at 100px 200px, red 10%, blue 90%);
+}
+
+/*using repeat*/
+#divk{
+	background : repeating-radial-gradient(circle closest-side, green 10%, blue 40%);
+            background : -moz-repeating-radial-gradient(circle, closest-side, green 10%, blue 40%);
+            background : -webkit-repeating-radial-gradient(circle, closest-side, green 10%, blue 40%);
+            background : -o-repeating-radial-gradient(circle, closest-side, green 10%, blue 40%);
+}
+}

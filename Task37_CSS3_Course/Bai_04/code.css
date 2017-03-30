@@ -1,0 +1,14 @@
+
+.div1{
+	width: 800px;
+	height: 500px;
+	background-image:
+	url(http://appimage.org/images/distributions/arch.svg),
+	url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf0xo29qtTlfKnz348exQp3bVoseWOUqAK5Wv1T-x1ZRgHoj2NlA)
+	;
+	background-position: center center, center center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: contain;
+	background-origin: padding-box;
+	background-clip: border-box;
+}
