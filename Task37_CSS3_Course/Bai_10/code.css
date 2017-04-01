@@ -1,0 +1,45 @@
+
+#translate{
+	height: 100px;
+	width: 150px;
+	background: red;
+}
+#translate:hover{
+	transform: translate(-10px, 10px);
+	--ms-transform: translate(-10px, 10px);
+	--webkit-transform: translate(-10px, 10px);
+}
+
+
+#rotate{
+	height: 100px;
+	width: 150px;
+	background: blue;
+}
+#rotate:hover{
+	transform: rotate(20deg);
+	--ms-transform: rotate(20deg);
+	--webkit-transform: rotate(20deg);
+}
+
+#scale{
+	height: 100px;
+	width: 150px;
+	background: green;
+}
+#scale:hover{
+	transform: scale(1.5, 2);
+	--ms-transform: scale(1.5, 2);
+	--webkit-transform: scale(1.5, 2);
+}
+
+#skew{
+	height: 100px;
+	width: 250px;
+	background: pink;
+}
+#skew:hover{
+	transform: skew(10deg, 10deg);
+	--ms-transform: skew(10deg, 10deg);
+	--webkit-transform: skew(10deg, 10deg);
+}
