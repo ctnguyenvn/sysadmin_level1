@@ -101,7 +101,7 @@ __Nhược điểm__:
 ### 2. Cài đặt
 
 <a name="2.1"></a>
-#### 2.1 Cài đặt LAMP
+### 2.1 Cài đặt LAMP
 
 <a name="2.1.1"></a>
 #### 2.1.1 Cài đặt apache 2
@@ -218,7 +218,7 @@ Tiếp theo cài đặt PHP 7.0 ta dùng lệnh sau
 > Lưu ý: `php70w-gd php70w-mysql php70w-xml php70w-mcrypt` là những gói hỗ trợ cho các website chạy trên nền `phpBB`, `wordpress`, `opencart` mà ta sẽ cài phía dưới
 
 <a name="2.2"></a>
-#### 2.2 Cấu hình VirtualHost và cài đặt nhiều website lên 1 server
+### 2.2 Cấu hình VirtualHost và cài đặt nhiều website lên 1 server
 
 Để cấu hình VirtualHost trên apache 2 trong CentOS 6.8 ta là như sau
 
