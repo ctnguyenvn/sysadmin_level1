@@ -7,27 +7,27 @@
 
 ### Mục lục:
 
-- [1 . Giới thiệu về RAIN](#1)
+- [1 . Giới thiệu về RAID](#1)
 
-- [2 . Phân loại RAIN](#2)
+- [2 . Phân loại RAID](#2)
 
-	+ [RAIN 0](#2.1)
+	+ [RAID 0](#2.1)
 
-	+ [RAIN 1](#2.2)
+	+ [RAID 1](#2.2)
 	
-	+ [RAIN 2](#2.3)
+	+ [RAID 2](#2.3)
 	
-	+ [RAIN 3](#2.4)
+	+ [RAID 3](#2.4)
 	
-	+ [RAIN 4](#2.5)
+	+ [RAID 4](#2.5)
 	
-	+ [RAIN 5](#2.6)
+	+ [RAID 5](#2.6)
 	
-	+ [RAIN 6](#2.7)
+	+ [RAID 6](#2.7)
 	
-	+ [RAIN 10](#2.8)
+	+ [RAID 10](#2.8)
 
-- [3 Setup RAIN Arrays trên CentOS sử dụng mdadm](#3)
+- [3 Setup RAID Arrays trên CentOS sử dụng mdadm](#3)
 
 	+ [3.1 Setup RAID 0 (Stripe)](#3.1)
 
@@ -40,13 +40,13 @@
 ***
 
 <a name="1"></a>
-### 1 . Giới thiệu về RAIN
+### 1 . Giới thiệu về RAID
 
-RAIN (Redundant Arrays of Inexpensive Disks hoặc Redundant Arrays of Independent Disks) là hình thức ghép nhiều ổ đĩa cứng vật lý thành một hệ thống ổ đĩa cứng nhằm tăng tốc độ và hiệu suất làm việc, cũng như làm tăng khả năng đảm bảo an toàn cho dữ liệu trên hệ thống ổ đĩa
+RAID (Redundant Arrays of Inexpensive Disks hoặc Redundant Arrays of Independent Disks) là hình thức ghép nhiều ổ đĩa cứng vật lý thành một hệ thống ổ đĩa cứng nhằm tăng tốc độ và hiệu suất làm việc, cũng như làm tăng khả năng đảm bảo an toàn cho dữ liệu trên hệ thống ổ đĩa
 
 RAID được sử dụng và triển khai thành phương pháp lưu trữ trong doanh nghiệp và các máy chủ, nhưng gần đây RAID đã trở nên phổ biến đối với mọi người dùng
 
-Lý do chính để RAIN được sử dụng phổ biến là:
+Lý do chính để RAID được sử dụng phổ biến là:
 
 - Sự dự phòng là nhân tố quan trọng nhất trong quá trình phát triển RAID cho môi trường máy chủ. Dự phòng cho phép sao lưu dữ liệu bộ nhớ khi gặp sự cố
 
@@ -55,12 +55,12 @@ Lý do chính để RAIN được sử dụng phổ biến là:
 - Giảm giá thành
 
 <a name="2"></a>
-### 2 . Phân loại RAIN
+### 2 . Phân loại RAID
 
-RAIN có thể phân ra 2 loại là RAIN chuẩn và RAIN không tiêu chuẩn. Theo RAB thì RAID (chuẩn) được chia thành 7 cấp độ (level), mỗi cấp độ có các tính năng riêng, hầu hết chúng được xây dựng từ hai cấp độ cơ bản là RAID 0 và RAID 1. Với RAIN không tiêu chuẩn có thể là RAIN 10, RAIN 50, RAIN 0+1, RAIN S... Tuy nhiên phổ biến nhất trong 2 loại này là RAIN 0, RAIN 1, RAIN 5, RAIN 10
+RAID có thể phân ra 2 loại là RAID chuẩn và RAID không tiêu chuẩn. Theo RAB thì RAID (chuẩn) được chia thành 7 cấp độ (level), mỗi cấp độ có các tính năng riêng, hầu hết chúng được xây dựng từ hai cấp độ cơ bản là RAID 0 và RAID 1. Với RAID không tiêu chuẩn có thể là RAID 10, RAID 50, RAID 0+1, RAID S... Tuy nhiên phổ biến nhất trong 2 loại này là RAID 0, RAID 1, RAID 5, RAID 10
 
 <a name="2.1"></a>
-#### RAIN 0
+#### RAID 0
 
 <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/0.gif"/></p>
 
@@ -75,7 +75,7 @@ __Nhược điểm__: Tiềm ẩn rủi ro về dữ liệu. Do dữ liệu đư
 __Đối tượng sử dụng__: Thích hợp với những dịch vụ cần lưu trữ và truy xuất với tốc độ cao. Chẳng hạn như video streaming.
 
 <a name="2.2"></a>
-#### RAIN 1
+#### RAID 1
 
 <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/1.jpg"/></p>
 
@@ -90,14 +90,14 @@ __Nhược điểm__: Hiệu suất không cao, chi phí cao
 __Đối tượng sử dụng__: Các dịch vụ lưu trữ, các website vừa và nhỏ không yêu cầu quá cao về tốc độ đọc ghi (in/out) của ổ cứng. Các đối tượng yêu cầu sự an toàn về dữ liệu như các dịch vụ kế toán,lưu trữ thông tin khách hàng, bất động sản v.v…
 
 <a name="2.3"></a>	
-#### RAIN 2
+#### RAID 2
 
 <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/2.jpg"/></p>
 
 Raid 2 ít được sử dụng trong thực tế, tuy nhiên theo https://www.raid.com thì có thể giải thích sơ về Raid 2 như sau: RAID 2 gồm hai cụm ổ đĩa, cụm thứ nhất chứa các dữ liệu được phân tách giống như là RAID 0, cụm thứ hai chứa các mã ECC dành cho sửa chữa lỗi ở cụm thứ nhất. Sự hoạt động của các ổ đĩa ở RAID 2 là đồng thời để đảm bảo rằng các dữ liệu được đọc đúng, chính do vậy chúng không hiệu quả bằng một số loại RAID khác nên ít được sử dụng.
 
 <a name="2.4"></a>	
-#### RAIN 3
+#### RAID 3
 
 <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/3.jpg"/></p>
 
@@ -108,14 +108,14 @@ Dữ liệu ở RAID 3 sẽ hoạt động như sau: Giả sử dữ liệu A đ
 RAID 3 yêu cầu tối thiểu của RAID 3 là có ít nhất 3 ổ cứng.
 
 <a name="2.5"></a>	
-#### RAIN 4
+#### RAID 4
 
 <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/4.jpg"/></p>
 
 RAID 4 tương tự như RAID 3 nhưng ở một mức độ các khối dữ liệu lớn hơn. Chúng cũng yêu cầu tối thiểu 3 đĩa cứng (ít nhất hai đĩa dành cho chứa dữ liệu và ít nhất 1 đĩa dùng cho lưu trữ dữ liệu tổng thể)
 
 <a name="2.6"></a>	
-#### RAIN 5
+#### RAID 5
 
 <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/5.gif"/></p>
 
@@ -130,7 +130,7 @@ __Nhược điểm__: Chi phí phát sinh thêm 1 ổ so với hình thức lưu
 __Đối tượng sử dụng__: Tất cả những website, dịch vụ, ứng dụng có số lượng truy cập và yêu cầu tài nguyên từ nhỏ đến vừa và lớn.
 
 <a name="2.7"></a>	
-#### RAIN 6
+#### RAID 6
 
 <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/6.jpg"/></p>
 
@@ -143,7 +143,7 @@ __Nhược điểm: chi phí cao. Chưa cải thiện nhiều về tốc độ �
 Đối tượng sử dụng: Nhà cung cấp nơi đặt website, máy chủ lưu trữ dữ liệu, database server,…
 
 <a name="2.8"></a>	
-#### RAIN 10
+#### RAID 10
 
 <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/10.png"/></p>
 
@@ -158,7 +158,7 @@ Nhược điểm: Chi phí cao. Đối với Raid 10 dung lượng sẵn sàng s
 Đối tượng sử dụng: Raid 10 thích hợp với tất cả các đối tượng sử dụng (từ những yêu cầu về hiệu suất đến việc đảm bảo an toàn dữ liệu). Về ổ cứng yêu cầu phải 4 ổ cùng dung lượng, nếu 4 ổ khác dung lượng thì lấy ổ thấp nhất.
 
 <a name="3"></a>
-### 3 . Setup RAIN Arays trên CentOS sử dụng mdadm
+### 3 . Setup RAID Arays trên CentOS sử dụng mdadm
 
 Đầu tiên ta update và cài đặt **mdadm** như sau
 
