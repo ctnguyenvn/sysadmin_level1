@@ -3,7 +3,7 @@
 
 > Thực hiện: Nguyễn Công Trứ
 
-> Cập nhật: 14/05/2017
+> Cập nhật: 17/05/2017
 
 ### Mục lục:
 
@@ -62,7 +62,7 @@ RAIN có thể phân ra 2 loại là RAIN chuẩn và RAIN không tiêu chuẩn.
 <a name="2.1"></a>
 #### RAIN 0
 
-<p align='center'> <img src="/home/sins/MEGA/sysadmin_level1/Task40_CentOS6_RAID_Arrays/Image/0.gif"/></p>
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/0.gif"/></p>
 
 Raid 0 là loại Raid khá phổ biến và được nhiều người sử dụng hiện nay do có khả năng nâng cao hiệu suất tốc độc đọc ghi trao đổi dữ liệu của ổ cứng. Để tiến hành setup Raid 0 thì server cần tối thiểu 2 ổ đĩa (Disk 0, Disk 1).
 
@@ -77,7 +77,7 @@ __Đối tượng sử dụng__: Thích hợp với những dịch vụ cần l�
 <a name="2.2"></a>
 #### RAIN 1
 
-<p align='center'> <img src="/home/sins/MEGA/sysadmin_level1/Task40_CentOS6_RAID_Arrays/Image/1.jpg"/></p>
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/1.jpg"/></p>
 
 Raid 1 là loại Raid cơ bản được sử dụng khá nhiều hiện nay do khả năng đạt an toàn về dữ liệu. để tiến hành setup Raid 1 thì cũng giống như Raid 0, server cần tối thiểu 2 ổ cứng để lưu trữ. Không giống như Raid 0, Raid 1 đảm bảo an toàn hơn về dữ liệu do dữ liệu được ghi vào 2 ổ giống hệt nhau (Mirroring)
 
@@ -92,14 +92,14 @@ __Đối tượng sử dụng__: Các dịch vụ lưu trữ, các website vừa
 <a name="2.3"></a>	
 #### RAIN 2
 
-<p align='center'> <img src="/home/sins/MEGA/sysadmin_level1/Task40_CentOS6_RAID_Arrays/Image/2.jpg"/></p>
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/2.jpg"/></p>
 
 Raid 2 ít được sử dụng trong thực tế, tuy nhiên theo https://www.raid.com thì có thể giải thích sơ về Raid 2 như sau: RAID 2 gồm hai cụm ổ đĩa, cụm thứ nhất chứa các dữ liệu được phân tách giống như là RAID 0, cụm thứ hai chứa các mã ECC dành cho sửa chữa lỗi ở cụm thứ nhất. Sự hoạt động của các ổ đĩa ở RAID 2 là đồng thời để đảm bảo rằng các dữ liệu được đọc đúng, chính do vậy chúng không hiệu quả bằng một số loại RAID khác nên ít được sử dụng.
 
 <a name="2.4"></a>	
 #### RAIN 3
 
-<p align='center'> <img src="/home/sins/MEGA/sysadmin_level1/Task40_CentOS6_RAID_Arrays/Image/3.jpg"/></p>
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/3.jpg"/></p>
 
 RAID 3 là sự cải tiến của RAID 0 nhưng có thêm (ít nhất) một ở cứng chứa thông tin có thể khôi phục lại dữ liệu bị hỏng của các ổ cứng RAID 0. 
 
@@ -110,14 +110,14 @@ RAID 3 yêu cầu tối thiểu của RAID 3 là có ít nhất 3 ổ cứng.
 <a name="2.5"></a>	
 #### RAIN 4
 
-<p align='center'> <img src="/home/sins/MEGA/sysadmin_level1/Task40_CentOS6_RAID_Arrays/Image/4.jpg"/></p>
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/4.jpg"/></p>
 
 RAID 4 tương tự như RAID 3 nhưng ở một mức độ các khối dữ liệu lớn hơn. Chúng cũng yêu cầu tối thiểu 3 đĩa cứng (ít nhất hai đĩa dành cho chứa dữ liệu và ít nhất 1 đĩa dùng cho lưu trữ dữ liệu tổng thể)
 
 <a name="2.6"></a>	
 #### RAIN 5
 
-<p align='center'> <img src="/home/sins/MEGA/sysadmin_level1/Task40_CentOS6_RAID_Arrays/Image/5.gif"/></p>
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/5.gif"/></p>
 
 Raid 5 cũng là một loại Raid được phổ biến khá rộng rãi. Nguyên tắc cơ bản của Raid 5 cũng gần giống với 2 loại raid lưu trữ truyền thống là Raid 1 và Raid 0. Tức là cũng có tách ra lưu trữ các ổ cứng riêng biệt và vẫn có phương án dự phòng khi có sự cố phát sinh đối với 1 ổ cứng bất kì trong cụm.
 
@@ -132,7 +132,7 @@ __Đối tượng sử dụng__: Tất cả những website, dịch vụ, ứng 
 <a name="2.7"></a>	
 #### RAIN 6
 
-<p align='center'> <img src="/home/sins/MEGA/sysadmin_level1/Task40_CentOS6_RAID_Arrays/Image/6.jpg"/></p>
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/6.jpg"/></p>
 
 RAID 6 cần ít nhất 4 ổ đĩa cứng vật lý riêng biệt.
 
@@ -145,7 +145,7 @@ __Nhược điểm: chi phí cao. Chưa cải thiện nhiều về tốc độ �
 <a name="2.8"></a>	
 #### RAIN 10
 
-<p align='center'> <img src="/home/sins/MEGA/sysadmin_level1/Task40_CentOS6_RAID_Arrays/Image/10.png"/></p>
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/10.png"/></p>
 
 Raid 10 là sự kết hợp giữa 2 loại raid phổ biến và Raid 1 và Raid 0. Để setup Raid 10 cần sử dụng tối thiểu 4 ổ cứng.
 
@@ -162,9 +162,9 @@ Nhược điểm: Chi phí cao. Đối với Raid 10 dung lượng sẵn sàng s
 
 Đầu tiên ta update và cài đặt **mdadm** như sau
 
-	# yum update
+```# yum update```
 
-	# yum install mdadm -y
+```# yum install mdadm -y```
 
 <a name="3.1"></a>
 #### 3.1 Setup RAID 0 (Stripe)
