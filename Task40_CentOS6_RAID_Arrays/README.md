@@ -173,6 +173,7 @@ Nhược điểm: Chi phí cao. Đối với Raid 10 dung lượng sẵn sàng s
 |---|---|
 |Hệ thống|CentOS 6.9 Final|
 |Số lượng ổ đĩa|4 (mỗi ổ 20G)|
+|RAID level| 5|
 
 - Kiểm tra ổ đĩa
 
