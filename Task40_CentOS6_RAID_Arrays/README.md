@@ -29,13 +29,17 @@
 
 - [3 Setup RAID Arrays trên CentOS sử dụng mdadm](#3)
 
-	+ [3.1 Setup RAID 0 (Stripe)](#3.1)
+	+ [3.1 Sơ đồ, kiểm tra ổ đĩa và cài đặt mdadm cho hệ thống](#3.1)
 
-	+ [3.2 Setup RAID 1 (Mirror)](#3.2)
+	+ [3.2 Tạo phân vùng cho RAID](#3.2)
 	
-	+ [3.3 Setup RAID 5 (Stripe with Distributed Parity)](#3.3)
+	+ [3.3 Tạo RAID Array](#3.3)
 	
-	+ [3.4 Setup RAID 10 (Nested)](#3.4)
+	+ [3.4 Tạo định dạng filesystem cho RAID và mount vào hệ thống](#3.4)
+
+	+ [3.5 Lưu cấu hình RAID](#3.5)
+
+	+ [3.6 Thêm ổ đĩa vào RAID](#3.6)
 
 ***
 
@@ -160,31 +164,154 @@ Nhược điểm: Chi phí cao. Đối với Raid 10 dung lượng sẵn sàng s
 <a name="3"></a>
 ### 3 . Setup RAID Arays trên CentOS sử dụng mdadm
 
-Đầu tiên ta update và cài đặt **mdadm** như sau
+<a name='3.1'></a>
+#### 3.1 Sơ đồ, kiểm tra ổ đĩa và cài đặt mdadm cho hệ thống
 
-```# yum update```
-
-```# yum install mdadm -y```
-
-<a name="3.1"></a>
-#### 3.1 Setup RAID 0 (Stripe)
-
-Thông tin máy CentOS
+- Yêu cầu 
 
 |||
 |---|---|
-|OS|CentOS 6.5 Final|
-|IP Address|192.168.1.100|
-|Number of Disk| 2 (20GB each)|
+|Hệ thống|CentOS 6.9 Final|
+|Số lượng ổ đĩa|4 (mỗi ổ 20G)|
 
-<a name="3.2"></a>
-#### 3.2 Setup RAID 1 (Mirror)
+- Kiểm tra ổ đĩa
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/11.jpg"/></p>
+
+- Cài đặt mdadm: Nếu hệ thống chưa cài đặt mdadm bạn có thể update và cài như sau
+
+	yum update
+
+	yum install mdadm -y
+
+<a name='3.2'></a>
+#### 3.2 Tạo phân vùng cho RAID
+
+Trên Linux có nhiều chương trình giúp bạn tạo partition như cfdisk, fdisk. Ở đây tôi sử dụng fdisk, trong sơ đồ này yêu cầu tạo RAID với 4 ổ đĩa trên do đó tôi chỉ thực hành 1 cái và 3 cái còn lại đều tương tự.
+
+Làm như sau:
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/12.jpg"/></p>
+
+Sau khi tạo partition ta chọn định dạng cho partition
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/13.jpg"/></p>
+
+Cuối cùng xem kết quả. Nếu đã xong thì nhấn `w` để ghi ổ đĩa và thoát.
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/14.jpg"/></p>
+
+Một số option:
+
+|Option|Ý nghĩa|
+|--|--|
+|n| Tạo 1 partition mới|
+|d| Xóa 1 partition|
+|L| Xem tất cả các định dạng partition hỗ trợ (dạng hex)|
+|t| Thay đổi định dạng partition|
+|w| Ghi thay đổi và thoát|
+
+Sau khi làm tương tự với các ổ còn lại ta được kết quả như sau
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/15.jpg"/></p>
+
+Chúng ta cũng có thể kiểm tra lại với mdadm để xác định các partition đã tạo ra đúng hay chưa
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/16.jpg"/></p>
+
+<a name='3.3'></a>	
+#### 3.3 Tạo RAID Array
+
+Đối với mỗi level RAID khác nhau sẽ khác nhau, tuy nhiên chúng đều tuân theo cấu trúc sau để tạo 1 RAID Array
+
+	mdadm --create /dev/**X** --level=**Y** --raid-devices=**Z** **M**
+
+Trong đó:
+
+- __X__: là ổ RAID sẽ được tạo thành từ các ổ kia
+
+- __Y__: là level của RAID. Ví dụ RAID 0 thì sẽ là `--level=0`. Có thể thay thế option `--level` bằng `-l`
+
+- __Z__: là số lượng ổ đĩa đã chuẩn bị để gộp thành RAID. Có thể thay thế option `--raid-devices` bằng `-n`
+
+- __M__: là path của tất cả các ổ đĩa đã chuẩn bị phía trên
+
+Trong sơ đồ này tôi sẽ tạo 1 ổ RAID gồm 1 ổ đã chuẩn bị phía trên như sau:
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/17.jpg"/></p>
+
+> Lưu ý: Đối với RAID 10 ta có thể dùng 2 cách để tạo. Thứ nhất ở option --level ta chọn 10 và tiếp tục làm bình thường. Cách thứ 2 ta có thể tạo 2 ổ RAID 1 (từ 4 ổ tạo thành 2) xong sau đó tạo 1 ổ RAID 0 (từ 2 ổ RAID 1 vừa tạo)
+
+Chúng ta có thể xem 1 số thông tin về ổ RAID đã tạo như sau
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/18.jpg"/></p>
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/19.jpg"/></p>
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/20.jpg"/></p>
+
+<a name='3.4'></a>	
+#### 3.4 Tạo định dạng filesystem cho RAID và mount vào hệ thống
+
+Để định dạng filesysem cho ổ RAID vừa tạo ta dùng lệnh `mkfs.ext4` như sau (chọn định dạng ext4):
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/21.jpg"/></p>
+
+Sau khi xong ta có thể tạo thư mục mới và mount RAID đã tạo như sau:
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/22.jpg"/></p>
+
+Ta có thể tạo 1 nội dung trong ổ RAID vừa mount để kiểm tra
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/23.jpg"/></p>
+
+<a name='3.5'></a>
+#### 3.5 Lưu cấu hình RAID và cấu hình tự động mount lần khởi động sau
+
+Chúng ta lưu cấu hình RAID như sau
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/24.jpg"/></p>
+
+> Lưu ý: Có thể thay option `--scan` bằng `-s`, `--verbose` bằng `-v`,...
+
+Để lần khởi động sau có thể tự động mount ổ RAID này ta cần cấu <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/2.jpg"/></p>
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/25.jpg"/></p>
+
+> Lưu ý: `/dev/md0` là path của RAID và `/mnt/raid5` là path của thư mục được mount
+
+Chúng ta có thể xem lại toàn bộ các phân vùng cho thấy chúng ẫ gộp với nhau như sau
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/26.jpg"/></p>
+
+<a name='3.6'></a>
+#### 3.6 Thêm ổ đĩa vào RAID
+
+Để thêm ổ mới vào RAID bất kỳ. Đầu tiên ta gắn thêm ổ (/dev/sdf) vào và được:
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/27.jpg"/></p>
+
+Tương tự chúng ta cũng tạo partition mới như trên và được 
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/28.jpg"/></p>
+
+Tiếp theo ta add thêm ổ mới này vào RAID theo cấu trúc sau
+
+	mdadm --add /dev/**X** /dev/**Y**
+
+Trong đó: 
 	
-<a name="3.3"></a>	
-#### 3.3 Setup RAID 5 (Stripe with Distributed Parity)
-	
-<a name="3.4"></a>	
-#### 3.4 Setup RAID 10 (Nested)
+- __X__: là ổ RAID
+
+- __Y__: là ổ được thêm vào RAID (nhiều ổ thì thêm path phía sau)
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/29.jpg"/></p>
+
+Chúng ta có thể xem 1 số thông tin sau khi add thêm vào như sau
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/30.jpg"/></p>
+
+<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/31.jpg"/></p>
 
 ***
 ### Tham khảo
