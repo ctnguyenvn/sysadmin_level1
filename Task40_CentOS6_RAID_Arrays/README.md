@@ -226,7 +226,7 @@ Chúng ta cũng có thể kiểm tra lại với mdadm để xác định các p
 
 Đối với mỗi level RAID khác nhau sẽ khác nhau, tuy nhiên chúng đều tuân theo cấu trúc sau để tạo 1 RAID Array
 
-	mdadm --create /dev/**X** --level=**Y** --raid-devices=**Z** **M**
+	mdadm --create /dev/[X]  --level=[Y]  --raid-devices=[Z]  [M]
 
 Trong đó:
 
@@ -299,7 +299,7 @@ Tương tự chúng ta cũng tạo partition mới như trên và được
 
 Tiếp theo ta add thêm ổ mới này vào RAID theo cấu trúc sau
 
-	mdadm --add /dev/**X** /dev/**Y**
+	mdadm --add /dev/[X] /dev/[Y]
 
 Trong đó: 
 	
