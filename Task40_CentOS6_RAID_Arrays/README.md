@@ -144,7 +144,7 @@ __Hoạt động__ : Raid 6 được phát triển từ Raid 5. Cơ chế hoạt
 
 __Ưu điểm__: như ta đã biết đối với Raid 5 nếu 2 trong 3 ổ đĩa vật lý bị hư thì ta sẽ mất trắng dữ liệu còn Raid 6(2 trong 4 ổ đĩa vật lý bị hư) thì vẫn đảm bảo an toàn dữ liệu.
 
-__Nhược điểm: chi phí cao. Chưa cải thiện nhiều về tốc độ đọc/ghi dữ liệu.
+__Nhược điểm__: chi phí cao. Chưa cải thiện nhiều về tốc độ đọc/ghi dữ liệu.
 
 __Đối tượng sử dụng__: Nhà cung cấp nơi đặt website, máy chủ lưu trữ dữ liệu, database server,…
 
