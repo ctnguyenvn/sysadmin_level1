@@ -143,8 +143,10 @@ RAID 6 cần ít nhất 4 ổ đĩa cứng vật lý riêng biệt.
 __Hoạt động__ : Raid 6 được phát triển từ Raid 5. Cơ chế hoạt động phần nào giống Raid 5 nhưng lập lại nhiều hơn số lần phân tách dữ liệu.
 
 __Ưu điểm__: như ta đã biết đối với Raid 5 nếu 2 trong 3 ổ đĩa vật lý bị hư thì ta sẽ mất trắng dữ liệu còn Raid 6(2 trong 4 ổ đĩa vật lý bị hư) thì vẫn đảm bảo an toàn dữ liệu.
+
 __Nhược điểm: chi phí cao. Chưa cải thiện nhiều về tốc độ đọc/ghi dữ liệu.
-Đối tượng sử dụng: Nhà cung cấp nơi đặt website, máy chủ lưu trữ dữ liệu, database server,…
+
+__Đối tượng sử dụng__: Nhà cung cấp nơi đặt website, máy chủ lưu trữ dữ liệu, database server,…
 
 <a name="2.8"></a>	
 #### RAID 10
