@@ -277,7 +277,7 @@ Chúng ta lưu cấu hình RAID như sau
 
 > Lưu ý: Có thể thay option `--scan` bằng `-s`, `--verbose` bằng `-v`,...
 
-Để lần khởi động sau có thể tự động mount ổ RAID này ta cần cấu <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/2.png"/></p>
+Để lần khởi động sau có thể tự động mount ổ RAID này ta cần cấu hình file `/etc/fstab` như sau
 
 <p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/25.png"/></p>
 
