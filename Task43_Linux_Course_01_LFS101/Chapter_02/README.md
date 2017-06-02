@@ -35,7 +35,7 @@
 
 - Linux Distribution
 
-	![](/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_02/Images/1.png)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_02/Images/1.png)
 
 
 	+ Như hình minh họa trên thì một bản phân phối Linux đầy đủ bao gồm các kernel cộng với một số công cụ phần mềm khác cho các hoạt động liên quan đến file, quản lý người dùng và quản lý gói phần mềm. 
@@ -44,7 +44,7 @@
 
 - Dịch vụ gắn với bản phân phối (distributions)
 
-	![](/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_02/Images/2.png)
+	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_02/Images/2.png)
 
 
 	+ Sự đa dạng của các bản phân phối được tạo ra cho tất cả mọi người, tùy theo nhu cầu và công việc, giải trí... Tuy nhiên, các tổ chức lớn như các công ty và tổ chức chính phủ thường có xu hướng sử dụng các bản phân phối thương mại như Red Hat, SUSE và Canonical (Ubuntu)
