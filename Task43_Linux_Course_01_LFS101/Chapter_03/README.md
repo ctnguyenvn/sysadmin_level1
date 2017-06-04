@@ -37,26 +37,26 @@
 
 __Boot process__ là quá trình khởi động máy tính, quá trình từ khi nhấn nút nguồn **power** đến khi xuất hiện giao diện interface.
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/1.jpg"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/1.jpg"></p>
 
 <a name="1.1"></a>
 #### 1.1 BIOS: 
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/2.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/2.png"></p>
 
 Bắt đầu trên nền tảng hệ thống linux **x86**. Khi ta nhấn nút nguồn, **BIOS** (Basic Input/Output System) sẽ thực hiện công việc gọi là **POST** (Power On Self Test) để kiểm tra trạng thái cũng như tính sẵn sàng của phần cứng bao gồm màn hình, bàn phím và kiểm tra bộ nhớ chính CPU. **BIOS** được lưu trên ROM. Sau khi thực hiện **POST** xong, quyền điều khiển sẽ được giao lại cho hệ điều hành.
 
 <a name="1.2"></a>
 #### 1.2 Master Boot Record (MBR):
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/3.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/3.png"></p>
 
 Nếu quá trình **POST** thành công, quyền điều khiển của **BIOS** sẽ được chuyển cho **boot loader**. **Boot loader** thường được lưu trữ trên một trong các phân vùng trên hệ thống. Có thể trên các boot sector (đối với các hệ thống BIOS/MBR) hoặc phân vùng EFI (Extensible Firmware Interface hoặc hệ thống EFI/UEFI). Ở giai đoạn này, máy không truy cập vào bất kỳ phương tiện lưu trữ nào. Sau đó thông tin về ngày tháng, thời gian, và các thiết bị ngoại vi quan trọng nhất được nạp vào các giá trị CMOS.
 
 <a name="1.3"></a>
 #### 1.3 Boot Loader:
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/4.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/4.png"></p>
 
 Một số boot loader tồn tại trên Linux, phổ biến nhất là GRUB (GRand Unified Boot), ISOLINUX và DAS U-Boot. Hầu hết các boot loader đều hỗ trợ giao diện cho người dùng cho phép chọn hệ điều hành khi load. Khi khởi động Linux, boot loader làm nhiệm vụ tải kernel image và initial RAM hoặc filesystem (chứa một số tệp quan trọng và trình điều khiển thiết bị cần thiết để khởi động hệ thống) vào bộ nhớ.
 
@@ -77,7 +77,7 @@ Quá trình boot loader trải qua 2 phần
 <a name="1.4"></a>
 #### 1.4 Initial RAM Disk:
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/5.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/5.png"></p>
 
 - initramfs chứa các chương trình và tệp nhị phân thực hiện tất cả các hành động cần thiết để mount hệ thống tập tin gốc thích hợp, như cung cấp kernel functionality cho hệ thống tập tin cần thiết và trình điều khiển thiết bị cho bộ điều khiển lưu trữ với một thiết bị có tên là udev (cho User Device) Để tìm ra thiết bị nào đang có trên hệ thống hiện tại, định vị các trình điều khiển cần thiết để hoạt động đúng, và nạp chúng. Sau khi hệ thống tập tin gốc đã được tìm thấy, nó được kiểm tra lỗi và mount chúng.
 
@@ -86,7 +86,7 @@ Quá trình boot loader trải qua 2 phần
 <a name="1.5"></a>
 #### 1.5 Text-Mode Login
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/6.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/6.png"></p>
 
 - Trước khi kết thúc quá trình khởi động, **init** sẽ khởi động chương trình cho phép login vào hệ thống bằng username và password, cuối cùng nhận được shell nếu login thành công. Tuy nhiên nếu chạy trên hệ thống với GUI, nghĩa là bạn sử dụng giao diện đồ họa thì sẽ không thấy quá trình này. Thường thì trên các hệ thống sử dụng **CTRL-ALT + phím chức năng** để chuyển giữa các mode (phím này thường là F1, F7). Mặc định trên các hệ thống linux thì command shell thường là **bash** (the GNU Bourne Again Shell)
 
@@ -96,7 +96,7 @@ Quá trình boot loader trải qua 2 phần
 <a name="2.1"></a>
 #### 2.1 The Linux Kernel
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/7.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/7.png"></p>
 
 Boot loader tải cả kernel và initramfs vào bộ nhớ, vì vậy nó có thể được sử dụng trực tiếp bởi kernel.
 
@@ -105,7 +105,7 @@ Khi kernel được nạp vào RAM, nó ngay lập tức khởi tạo và cấu 
 <a name="2.2"></a>
 #### 2.2 /sbin/init and Services
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/8.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/8.png"></p>
 
 Khi kernel thiết lập tất cả các phần cứng và mount các hệ thống tập tin, kernel sẽ chạy chương trình `/sbin/init`. Đây sẽ là chương trình đầu tiên trên hệ thống. Tất cả các tiến trình khác đều có nguồn gốc từ `init` ngoài trừ kernel processes, tiến trình này do kernel khởi tạo trực tiếp để quản lý các chi tiết nội bộ hệ điều hành.
 
@@ -164,25 +164,25 @@ __Filesystems__ cơ bản là phương thức tổ chức và lưu trữ hệ th
 
 Một so sánh giữa hệ thống tập tin trên windows và linux như bản sau
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/9.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/9.png"></p>
 
 <a name="3.1"></a>
 #### 3.1 Filesystem Hierarchy Standard
 
 Linux lưu trữ các file của mình theo một tiêu chuẩn chung gọi là **Filesystem Hierarchy Standard (FHS)**, nó được duy trì từ lâu bởi [The Linux Foundation](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf)
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/10.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/10.png"></p>
 
 Linux sử dụng ký tự `/` để chỉ gốc (root) mà không giống như windows với `\` và cũng phân theo ổ đĩa. Mọi thư mục, file đều bắt đầu từ `/`. Ví dụ nếu bạn có tên là `student` thì thư mục home của bạn sẽ là `/home/student`
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/11.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/11.png"></p>
 
 > Lưu ý: Filesystem trên Linux phân biệt rõ ràng, tránh nhầm lẫn giữa /boot, /Boot, và /BOOT
 
 <a name="4"></a>
 ### 4. Linux Distribution Installation
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/12.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/12.png"></p>
 
 Một lưu ý khi chọn bản phân phối, chúng ta nên trả lời các câu hỏi sau
 
@@ -217,65 +217,65 @@ Nhiều trình cài đặt có thể cài đặt tự động, chúng sử dụn
 
 Đầu tiên sau khi khởi động trên vmware ta sẽ được như sau
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/13.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/13.png"></p>
 
 Sau khi chọn **installation** và Enter ta được
 
 
 Tại đây cho phép ta chọn ngôn ngữ hỗ trợ và keyboard
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/14.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/14.png"></p>
 
 Tiếp tục nhấn next và ta được 
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/15.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/15.png"></p>
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/16.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/16.png"></p>
 
 Tại đây cho phép ta tick chọn thêm các repo hoặc các add-on trước khi cài đặt. Ta có thể bỏ qua và chọn next được
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/17.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/17.png"></p>
 
 Ở bước này ta thấy openSUSE đã tự động chia các phân vùng cho ta, tuy nhiên ta có thể chọn `Expert partitioner...` để thay đổi theo ý muốn
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/18.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/18.png"></p>
 
 Sau khi chia phân vùng xong ta nhấn `accept` và quay lại nhấn next ta được 
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/19.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/19.png"></p>
 
 Tại đây ta chọn timezone như hình
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/20.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/20.png"></p>
 
 Tiếp theo ta chọn Desktop Evironment. Có thể chọn other (có tùy chọn cho xfce)
 
 Tiếp theo ta nhấn next và tạo username như ví dụ ở hình sau (có thể không tạo bằng cách nhấn chọn `Skip user creation`)
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/21.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/21.png"></p>
 
 Tiếp theo hệ thống cho ta xem lại và chọn, cấu hình một số chương trình, phần mềm theo ý muốn
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/22.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/22.png"></p>
 
 Ví dụ như ta có thể config lại `booting` bằng cách nhấn vào `booting` và ta sẽ được 
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/23.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/23.png"></p>
 
 hoặc chọn software và ta được
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/24.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/24.png"></p>
 
 Sau khi tùy chỉnh xong ta chọn `OK` và nhấn next để tiếp tục
 
 Hệ thống sẽ đưa ra yêu cầu nhắc nhở có muốn cài đặt với tất cả những gì đã thiết lập hay không. Chọn `install` để bắt đầu
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/25.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/25.png"></p>
 
 Quá trình cài đặt được bắt đầu
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/26.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/26.png"></p>
 
 Sau khi cài đặt hoàn tất. Hệ thống sẽ yêu cầu reboot và kết quả ta hoàn thành quá trình cài đặt openSUSE-LEAP-42 trên VMware 
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_03/Images/27.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_03/Images/27.png"></p>
