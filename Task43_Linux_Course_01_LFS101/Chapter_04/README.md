@@ -16,13 +16,13 @@
 
 Trên hệ thống Linux, **X Window System** được nạp như là bước cuối cùng trong quá trình khởi động.
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_04/Images/1.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_04/Images/1.png"></p>
 
 Một service gọi là **display manager** theo dõi hiển thị được cung cấp, và tải **X server** (chương trình cung cấp các dịch vụ đồ họa cho các ứng dụng). **Display manager** xử lý thông tin đăng nhập đồ họa, và bắt đầu môi trường đồ họa thích hợp  sau khi người dùng đăng nhập
 
 Một Desktop Environment là một môi trường bao gồm một session manager mà bắt đầu và duy trì các session đồ họa, các cửa sổ làm việc, kiểm soát và di chuyển chúng, các title-bars, các trình điều khiển,...
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_04/Images/2.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_04/Images/2.png"></p>
 
 Nếu **display manager ** không được bắt đầu một cách mặc định trong các runlevel, ta có thể bắt đầu với nhiều cách như chúng ta có thể chạy lệnh **startx** trên mô trường dòng lệnh để bắt đầu chế độ đồ họa.
 
