@@ -18,7 +18,7 @@ Internet là một mạng lưới toàn cầu, cho phép người dùng thực h
 
 - Online media applications
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_06/Images/1.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_06/Images/1.png"></p>
 
 
 #### Web Browsers
@@ -27,7 +27,7 @@ Trên hệ thống Linux cung cấp các trình duyệt Firefox, Google Chrome, 
 
 #### Email Applications
 
-<p align="center"><img src="/home/sins/MEGA/sysadmin_level1/Task43_Linux_Course_01_LFS101/Chapter_06/Images/2.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_06/Images/1.png"></p>
 
 Ứng dụng Email cho phép gửi, nhận, và đọc thư qua Internet. Các hệ thống Linux cung cấp một số lượng lớn các khách hàng email, cả đồ họa và text-based. Bên cạnh đó, nhiều người dùng chỉ cần sử dụng trình duyệt của họ để truy cập vào tài khoản email của họ. 
 

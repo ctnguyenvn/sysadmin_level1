@@ -45,3 +45,4 @@ Cuối cùng phần quyền cho file này như sau
 
 > Lưu ý ta có thể đặt tên file tạo mới theo tên người dùng như trên là người dùng `student`
 
+Ứng dụng terminal emulator
