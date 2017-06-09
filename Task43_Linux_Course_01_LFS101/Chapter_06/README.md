@@ -73,7 +73,7 @@ Graphic editors  cho phép người dùng tạo, sửa, xóa, định dạng cá
 
 GIMP là một trình chỉnh sửa ảnh mạnh mẽ trên các hệ thống Linux. GIMP có thể 
 
--Xử lý bất kỳ định dạng tập tin hình ảnh. 
+- Xử lý bất kỳ định dạng tập tin hình ảnh. 
 
 - Có nhiều plugin mục đích đặc biệt và các bộ lọc. 
 
