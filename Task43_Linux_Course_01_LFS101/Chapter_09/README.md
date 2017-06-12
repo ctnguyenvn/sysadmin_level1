@@ -54,7 +54,7 @@ Tuy nhiên, đôi khi process rơi vào trạng thái sleep, nói chung là khi 
 
 Có một số tiến trình đặc biệt, đặc biệt là khi nó đã stop. Ví dụ khi một process con hoàn tất nhưng các tiến trình cha vẫn chưa được thông báo về trạng thái này, process như vậy gọi là **zombie**. Nó không thực sống nhưng vẫn hiển thị trên danh sách các process
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_08/Images/2.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/2.png"></p>
 
 #### Process and Thread IDs
 
@@ -76,11 +76,11 @@ Người xác định các quyền truy cập cho người sử dụng được 
 
 Người dùng có thể được phân loại thành các nhóm khác nhau. Mỗi nhóm được xác định bởi Real Group ID (RGID). Quyền truy cập của nhóm được xác định bởi Effective Group ID (EGID). Mỗi người sử dụng có thể là một thành viên của một hoặc nhiều nhóm. 
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_08/Images/3.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/3.png"></p>
 
 #### Priorities
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_08/Images/4.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/4.png"></p>
 
 Tại bất kỳ thời điểm nào, nhiều quá trình đang chạy (nghĩa là trong hàng đợi chạy) trên hệ thống. Tuy nhiên, một CPU thực sự chỉ có thể chứa một nhiệm vụ một lúc. Một số tiến trình quan trọng hơn những tiến trình khác, vì vậy Linux cho phép thiết lập và vận dụng độ ưu tiên process.
 
@@ -105,7 +105,7 @@ Ta có thể sử dụng lệnh **w**, **top** hoặc **uptime** để xem chún
 
 Xem load averages với lệnh trên
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_08/Images/5.png"></p>
+<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/5.png"></p>
 
 - Hiệu suất 1 phút trước của hệ thống là 48% 
 
