@@ -13,7 +13,6 @@
 
 ***
 
-
 <a name="1"></a>
 ### 1. Basic Editors: nano and gedit
 
