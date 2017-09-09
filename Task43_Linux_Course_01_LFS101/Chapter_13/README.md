@@ -203,7 +203,7 @@ __split__ được sử dụng để chia nhỏ một tập tin thành các phâ
 	split  infile  <Prefix>
 
 ví dụ
-	
+
 	split  american-english  dictionary
 
 #### Regular Expressions and Search Patterns
