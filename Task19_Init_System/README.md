@@ -29,7 +29,7 @@
 
 Trước khi nói về hệ thống khởi động (init system) ta tìm hiểu sơ qua về quá trình khởi động của 1 hệ thống (PC). 
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/1.png))
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task19_Init_System/img/1.png))
 
 - Khi nhấn power on, BIOS (Base In/Out System) sẽ khởi động quá trình POST (Power-on Self-test) máy nhằm kiểm tra các thiết bị phần cứng máy tính đồng thời cũng cho phép thay đổi các thiết lập, cấu hình của nó.
 
@@ -75,9 +75,9 @@ Sau khi kernel được khởi chạy, nó sẽ gọi chương trình `init` và
 
 Tất cả các script trong system V init đều nằm ở thư mục **/etc/rc.d/init.d/** hoặc **/etc/init.d**
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task19_Init_System/img/2.png)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task19_Init_System/img/3.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task19_Init_System/img/3.png)
 
 Chúng ta có thể khởi động các dịch vụ này với lệnh
 

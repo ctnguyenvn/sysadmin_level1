@@ -30,13 +30,13 @@
 
 - Các thiết lập của tất cả các tên được sử dụng với DNS tạo thành không gian tên miền DNS. Không gian này được phân chia theo thứ bậc và là trường hợp quan trọng, như file hệ thống hay tập tin cá nhân. Các không gian tên miền DNS hiện tại là cây domain với gốc là không rõ ràng (null root) ở trên đầu. Các cấp trên của cây gọi là domain cấp cao (TDL) trong đó gồm tên miền cấp cao dùng chung, theo quốc gia (ccTLDs), việc theo mã quốc gia được quốc tế hóa  (IDN  ccTLDs), cộng với một cơ sở hạ tầng đặt biệt, cho những lý do lịch sử. ARPA [RFC3172]
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task15_Translation_TC-IP_Illustrated_Vol1_Page_511to516/img/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task15_Translation_TC-IP_Illustrated_Vol1_Page_511to516/img/1.png)
 
 - Có năm nhóm thường được sử dụng tên miền cấp cao, và một nhóm các lĩnh vực chuyên ngành được sử dụng cho tên miền quốc tế (IDNs) .1 Lịch sử của IDNs, một phần của "quốc tế hóa" của Internet, dài và một số  điều phức tạp. Trên thế giới, có rất nhiều ngôn ngữ, và từng sử dụng một hoặc nhiều kịch bản được viết. Trong khi chuẩn Unicode [U11] nhằm mục đích nắm bắt được toàn bộ các ký tự, nhiều ký tự trông giống nhau nhưng có giá trị mã Unicode tương ứng khác nhau. Hơn nữa, ký tự được viết dưới dạng văn bản có thể viết từ phải sang trái, từ trái sang phải, hoặc cả hai hướng. 
 
 - Các gTLDs được nhóm lại thành các loại: generic, generic-restricted, và sponsored. Các gTLDs generic (generic xuất hiện hai lần) được mở để sử dụng không hạn chế. Còn lại được giới hạn cho các loại khác nhau . Ví dụ, EDU được sử dụng cho các tổ chức giáo dục, MIL và Chính phủ Việt Nam được sử dụng cho quân sự và tổ chức chính phủ của Hoa Kỳ, và INT được sử dụng cho tổ chức chính trị quốc tế (như NATO). Sau đây chương trình và các chính sách liên quan đến quản lý TLD nói chung được duy trì bởi Tổng công ty Internet cho tên miền và số (ICANN) [ICANN].
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task15_Translation_TC-IP_Illustrated_Vol1_Page_511to516/img/2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task15_Translation_TC-IP_Illustrated_Vol1_Page_511to516/img/2.png)
 
 - Các ccTLD bao gồm 2 từ theo mã quốc gia theo quy định của tiêu chuẩn ISO 3166, cộng năm mà không phải là: uk, su, ac, eu, và tp (đang được loại bỏ). Bởi vì một số 2 từ theo mã quốc gia được gợi ý sử dụng và ý nghĩa khác, các quốc gia khác nhau đã có thể tìm thấy lợi nhuận cho thương mại từ việc bán tên trong ccTLD của họ. Ví dụ, tên miền cnn.tv thực sự là một đăng ký ởThái Bình Dương của Tuvalu, đã được bán tên miền liên quan đến ngành công nghiệp giải trí truyền hình. Tạo một tên trong một cách độc đáo như vậy đôi khi được gọi là `domain hack`.
 

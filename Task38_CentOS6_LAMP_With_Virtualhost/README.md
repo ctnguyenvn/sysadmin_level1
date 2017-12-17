@@ -248,7 +248,7 @@ Và chỉnh sửa
 
 Tiếp theo phần cấu hình cho nhiều website chạy trên 1 server. Cũng file `/etc/http/conf/httpd.conf` ta thêm như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/1.png)
 
 Lưu ý: Ở đây tôi muốn dùng 3 website nên cần cấu hình VirtualHost như sau
 
@@ -272,14 +272,14 @@ Tiếp theo để kiểm tra các trang web đã truy cập được chưa ta m�
 
 Ở đây tôi test trên máy local nên cần thay đổi file `/etc/hosts` như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/2.png)
 
 <a name="2.1.1"></a>
 #### 2.2.1 Cài đặt phpBB3
 
 Đầu tiên ta tạo database để sử dụng cho phpBB3 như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/3.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/3.png)
 
 Sau đó tải phpBB3 về và giải nén vào thư mục Root VirtualHost cấu hình phía trên
 
@@ -291,35 +291,35 @@ Sau đó tải phpBB3 về và giải nén vào thư mục Root VirtualHost cấ
 
 Tiếp theo có 1 số file cần phần quyền để có thể ghi dữ liệu. Chúng là `cache, files, stories, file config.php, images/avatar/upload`. Chúng ta nên sử dụng chmod 777 cho những file/folder này
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/3.1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/3.1.png)
 
 Tiếp theo ta lên trình duyệt vào trang web và cấu hình như sau
 
 Chọn phần install và nhấn submit
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/4.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/4.png)
 
 Tạo tài khoản quản trị
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/5.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/5.png)
 
 Kết nối database
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/6.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/6.png)
 
 Tiếp theo để configure 1 số thứ ta làm như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/7.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/7.png)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/8.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/8.png)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/9.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/9.png)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/10.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/10.png)
 
 Cài đặt thành công và đây là trang chủ
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/11.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/11.png)
 
 > Lưu ý: Chúng ta nên xóa thư mục `install` trong folder `/var/www/phpBB3` sau khi cài đặt
 
@@ -328,7 +328,7 @@ Cài đặt thành công và đây là trang chủ
 
 Để dể hiểu ta tạo database khác sử dụng cho wordpress như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/12.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/12.png)
 
 Tiếp tục ta tải wordpress, giải nén và copy vào thư mục Root VirtualHost đã cấu hình phía trên
 
@@ -344,7 +344,7 @@ Sau đó vào `/var/www/wordpress` và copy file mẫu `wp-config-sample.php` th
 
 	vi  /var/www/wordpress/wp-config.php
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/13.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/13.png)
 
 > Lưu ý: Ta phải điền đúng `database name`, `user`, `password` đúng giữa CSDL mysql và file `wp-config.php`
 
@@ -354,18 +354,18 @@ Khởi động lại service
 
 Tiếp theo lên trình duyệt và vào trang web và cấu hình như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/14.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/14.png)
 
 Trang chủ wp-admin
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/15.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/15.png)
 
 <a name="2.2.3"></a>
 ####2.2.3 Cài đặt Opencart
 
 Tiếp tục ta tạo database cho opencart như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/16.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/16.png)
 
 Bây giờ ta tải opencart và copy vào thư mục Root VirtualHost như sau
 
@@ -377,7 +377,7 @@ Bây giờ ta tải opencart và copy vào thư mục Root VirtualHost như sau
 
 Tiếp theo ta copy file `wp-config-sample.php` thành file `wp-config.php` ở thư mục hiện tại và thư mục `admin`. Sau đó phân quyền như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/17.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/17.png)
 
 Khởi động lại service
 
@@ -385,27 +385,27 @@ Khởi động lại service
 
 Tiếp theo lên trình duyệt và vào trang web và cấu hình như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/18.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/18.png)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/19.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/19.png)
 
 > Lưu ý: Nếu không phân quyền các file, folder như phía trên hoặc thiếu các gói `php70w` như `php70w-mcrypt` thì bưóc này sẽ sinh lỗi
 
 Connect database
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/20.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/20.png)
 
 > Lưu ý: Ta cần xóa thư mục `install` như cảnh báo trên hình
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/21.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/21.png)
 
 Login vào tài khoản quản trị
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/22.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/22.png)
 
 Đây là trang chủ quản trị của opencart
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/23.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task38_CentOS6_LAMP_With_Virtualhost/Image/23.png)
 
 > Lưu ý:  Ta cần vào đường dẫn đầy đủ là `http://domain.com/upload`. Nếu không thêm vào upload thì sẽ là đường dẫn sai. Bạn có thể đổi tên thư mục này hoặc cũng có thể copy toàn bộ nội dung thư mục `upload` và vào `http://domain.com` trên trình duyệt mà không cần thêm vào `upload` phía sau.
 

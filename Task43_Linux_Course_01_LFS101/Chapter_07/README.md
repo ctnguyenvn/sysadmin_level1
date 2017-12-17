@@ -91,7 +91,7 @@ Có hai cách để xác định đường dẫn
 
 - Relative pathname: Đường dẫn tương đối bắt đầu từ thư mục làm việc hiện tại. Đường dẫn tương đối không bao giờ bắt đầu từ `/`
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_07/Images/1.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_07/Images/1.png"></p>
 
 Hầu hết thì ta dùng đường dẫn tương đối (đỡ phải gõ) và để thuận tiện hơn ta có một số cách gõ như **.** để thể hiện cho thư mục hiện tại, **..** (thư mục cha) và **~** (thư mục home)
 
@@ -232,7 +232,7 @@ Chỉ tìm kiếm các tệp thông thường có tên "gcc":
 
 Nâng cao hơn ta có thể thực thi lệnh với lệnh find với option **-exec**. Ví dụ 
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_07/Images/2.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_07/Images/2.png"></p>
 
 > `{}` chỉ tất cả kết quả tìm được và `';'` thể hiện kết thúc lệnh thực thi. Ta cũng có thể thay thế `-exec` bằng `-ok`
 
@@ -252,7 +252,7 @@ Các nền tảng bản phân phối Linux và hầu hết các add-on phần m�
 
 Một số hệ thống package trên các nền tảng phổ biến
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_07/Images/3.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_07/Images/3.png"></p>
 
 Các Advanced Packaging Tool (apt) là cơ bản hệ thống quản lý gói để quản lý phần mềm trên nền tảng hệ thống Debian. Trong khi nó cũng cung cấp các bộ quản lý gói đồ họa, chẳng hạn như Ubuntu Software Center và synaptic, và cả giao diện dòng lệnh, với các chương trình bao gồm apt-get và apt-cache.
 
@@ -262,4 +262,4 @@ zypper là một hệ thống quản lý gói cho openSUSE đó là dựa trên 
 
 Ta có thể xem một số lệnh cơ bản khi quản lý các packages
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_07/Images/4.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_07/Images/4.png"></p>

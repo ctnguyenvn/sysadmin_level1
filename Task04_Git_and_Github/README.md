@@ -56,12 +56,12 @@ Mục lục:
 
 -- Github là một dịch vụ lưu trữ dựa trên web cho các dự án phát triển phần mềm trong đó sử dụng các hệ thống kiểm soát phiên bản Git. Github cung cấp phiên bản trả phí cho các kho tư nhân, doanh nghiệp hoặc có thể miễn phí cho dự án mã nguồn mở. Github đang trở nên ngày càng phổ biến và thiết yếu hơn đối với các doanh nghiệp - như là một sơ yếu lý lịch cho các nhà tuyển dụng.
 
--- Github chủ yếu được dùng để chứa mã, nhưng cũng thường được dùng với nhiều tài liệu hay với mục đích khác như theo dõi vấn đề và tính năng yêu cầu, tài liệu wiki, github cũng hỗ trợ cho bạn tạo các trang web  nhỏ có thể được lưu từ kho công cộng trên github. Định dạng là http://username.github.io ví vụ như [đây](https://hellsins.github.io)...
+-- Github chủ yếu được dùng để chứa mã, nhưng cũng thường được dùng với nhiều tài liệu hay với mục đích khác như theo dõi vấn đề và tính năng yêu cầu, tài liệu wiki, github cũng hỗ trợ cho bạn tạo các trang web  nhỏ có thể được lưu từ kho công cộng trên github. Định dạng là http://username.github.io ví vụ như [đây](https://ctnguyenvn.github.io)...
 
 -- Để sử dụng github, đầu tiên bạn [đăng ký](https://github.com/join?source=header-home) một tài khoản github và tất nhiên nó dể như ăn 1 tô cháo vậy. Sau đó có lẽ bạn nên học về ngôn ngữ Markdown (có thể không) để thể hiện rõ hơn cho bài viết của bạn và tất nhiên ngôn ngữ này cũng vô cùng đơn giản. Tiếp theo là tạo một repo và bắt đầu thôi.
 
 -- Tuy nhiên bạn nên hiểu sơ qua về cơ chế hoạt động của github
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git1.png)
 
 Như chúng ta đã thấy đó là những trạng thái của 1 repo github. Chúng ta sẽ nói sơ qua về các trạng thái còn những hành động tương ứng sẽ được bàn sau:
 
@@ -106,7 +106,7 @@ Như chúng ta đã thấy đó là những trạng thái của 1 repo github. C
 
 - Bạn mở terminal và gõ lệnh với cú pháp sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git2.png)
 
 > Bạn cũng có thể dùng lệnh sau để add key SSH (nếu dùng lệnh này thì thực hiện các lệnh trong hình tiếp theo)
 
@@ -120,17 +120,17 @@ Như chúng ta đã thấy đó là những trạng thái của 1 repo github. C
 
 - Tiếp theo
 	
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git3.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git3.png)
 
 - Sau đó bạn dùng cat hay bất cứ lệnh nào hay cách nào để copy đoạn mã trong file id_rsa.pub và truy cập đường dẫn https://github.com/settings/ssh và chọn New SSH key để thêm key vào (bạn nhớ là đăng nhập vào tài khoản github trước).
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git4.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git4.png)
 
 > Phần Title bạn ghi gì cũng được và phần key bạn paste đoạn mã lúc nãy vào. OK nhấn Add key
 
 - Quay lại với terminal bạn có thể kiểm tra bằng cách đánh `ssh git@github.com` Nếu xuất hiện Hi username! You've successfully authenticated... thì chúc mừng bạn đã được liên kết với tài khoản github.
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git5.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git5.png)
 
 <p name="Caching"></p>
 #### 2.4 Caching your Github password
@@ -157,7 +157,7 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 
 - Bạn vào github và chọn Create repository và điền thông tin như hình
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git6.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task04_Git_and_Github/img/git6.png)
 
 <p name="Clone"></p>
 ####  3. 1 Clone
@@ -168,9 +168,9 @@ Sau khi đã liên kết được với github ta sẽ đi qua một vài thao t
 
 - Ví vụ: 
 	
-	+ Clone SSH: git clone git@github.com:hellsins/hellsins.github.io.git ~/github
+	+ Clone SSH: git clone git@github.com:ctnguyenvn/ctnguyenvn.github.io.git ~/github
 
-	+ Clone HTTP: git clone https://github.com/hellsins/hellsins.github.io.git  ~/github
+	+ Clone HTTP: git clone https://github.com/ctnguyenvn/ctnguyenvn.github.io.git  ~/github
 
 	> Lưu ý bạn có thể không sử dụng ` thư mục chứa repo trên local ` và bạn sẽ clone repo đó về thư mục hiện tại (pwd) 
 

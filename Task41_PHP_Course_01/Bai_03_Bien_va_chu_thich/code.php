@@ -2,7 +2,7 @@
 
 	$variable_name = "Hello";
 
-	$name = "hellsins";
+	$name = "ctnguyenvn";
 	$age = 21;
 
 	echo $name

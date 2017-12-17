@@ -38,7 +38,7 @@ Tuy phiên bản 2.0 đã ra đời nhưng vì một số lý do mà nó hiện 
 
 HTTP hoạt động dựa trên mô hình client-server, sử dụng kết nối TCP port 80. Trình duyệt client thực hiện yêu cầu, nhận và hiển thị đối tượng web (gồm dữ liệu HTML, hình ảnh JPEG, Java applet, video, âm thanh, …). Trong khi, web server sẽ gửi trả lời khi nhận được yêu cầu từ client.
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task22_HTTP_Protocol/Image/1.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task22_HTTP_Protocol/Image/1.png" /></p>
 
 Có 2 loại kết nối HTTP là kết nối không bền vững và kết nối bền vững. 
 
@@ -80,11 +80,11 @@ Như chúng ta đã nói ở trên, HTTP là giao thức được thiết kế t
 
 Cấu trúc chung của 1 HTTP Resquest
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task22_HTTP_Protocol/Image/2.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task22_HTTP_Protocol/Image/2.png" /></p>
 
 Ví dụ về một HTTP Resquest
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task22_HTTP_Protocol/Image/3.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task22_HTTP_Protocol/Image/3.png" /></p>
 
 - Bắt đầu của HTTP Request sẽ là Request-Line tương ứng với 3 dòng là:
 
@@ -117,11 +117,11 @@ Cấu trúc HTTP response gần giống với HTTP request, chỉ khác nhau là
 
 Cấu trúc chung của 1 HTTP Response
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task22_HTTP_Protocol/Image/4.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task22_HTTP_Protocol/Image/4.png" /></p>
 
 Ví dụ về một HTTP Response
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task22_HTTP_Protocol/Image/5.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task22_HTTP_Protocol/Image/5.png" /></p>
 
 - Bắt đầu thông điệp HTTP Response là Status-Line với 3 dòng đầu là:
 

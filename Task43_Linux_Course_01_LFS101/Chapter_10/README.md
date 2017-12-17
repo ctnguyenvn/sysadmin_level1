@@ -22,7 +22,7 @@
 
 Trên Linux mọi thứ đều được xem như file hoặc ít nhất nó được coi là như vậy. Điều này có nghĩa là bạn đang xử lý các tập tin dữ liệu bình thường và các tài liệu, hoặc với các thiết bị như card âm thanh và máy in, bạn tương tác với chúng thông qua các việc Nhập/Xuất (I/O).
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_10/Images/1.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_10/Images/1.png"></p>
 
 Trong nhiều hệ thống bao gồm cả Linux, filesystem có cấu trúc như một cây. Cây thư mục này bắt đầu từ thư mục **root** hay biểu diễn bằng **/** và chúng cũng được phân thành cấp. Thư mục **root** khác với người dùng root. Hệ thống tập tin có thứ bậc cũng chứa các phần tử khác trong đường dẫn (tên thư mục), được phân tách bằng dấu gạch chéo (/), như trong /usr/bin/emacs, nơi phần tử cuối cùng là tên tập tin thực
 
@@ -40,13 +40,13 @@ Linux hỗ trợ một số loại filesystem như:  ext3, ext4, squashfs, và b
 
 Mỗi hệ thống filesystem trên Linux đều chiếm một partition đĩa cứng. Partition giúp tổ chức các file theo loại cụ thể. Ví dụ các chương trình quan trọng cần thiết để chạy hệ thống thường được đặt trên một phân vùng đặc biệt so với các file thông thường của người dùng. Một lợi thế của việc tổ chức phân chia này khi tất cả dung lượng của một phân vùng nhất định đã hết thì hệ thống vẫn hoạt động bình thường.
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_10/Images/2.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_10/Images/2.png"></p>
 
 Trước khi bắt đầu sử dụng filesystem, bạn cần **mount** nó vào cây thư mục tại một nơi gọi là **mount point**. Đây đơn giản là một thư mục, nơi mà hệ thống tập tin được gắn vào. Bạn có thể tạo thư mục mới để mount vào nếu nó không tòn tại
 
 > Lưu ý: Nếu mount vào một thư mục không rỗng thì nó sẽ bị ghi đè lại và ta không thể truy cập dữ liệu đó. Vì vậy nên mount vào thư mục rỗng.
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_10/Images/3.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_10/Images/3.png"></p>
 
 Để mount bất kỳ hệ thống nào vào cây thư mục ta có thể sử dụng lệnh **mount** và **unmount** với ý nghĩa ngược lại. Ví dụ
 
@@ -133,7 +133,7 @@ Thư mục **/dev** chứa các **device nodes** một loại pseudo-file đư�
 
 Thư mục **/var** chứa các tệp sẽ thay đổi nội dung khi hệ thống chạy. Ví dụ như thư mục:
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_10/Images/4.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_10/Images/4.png"></p>
 
 - Log hệ thống: /var/log
 

@@ -33,7 +33,7 @@ Với Linux, cho dù bạn là người dùng thiếu kinh nghiệm hoặc một
 
 - Các nguồn trực tuyến như https://www.gentoo.org/doc/en/ hoặc https://help.ubuntu.com/community/CommunityHelpWiki
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_08/Images/1.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_08/Images/1.png"></p>
 
 <a name="2"></a>
 ### 2. The man pages

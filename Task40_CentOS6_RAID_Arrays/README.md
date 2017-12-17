@@ -66,7 +66,7 @@ RAID có thể phân ra 2 loại là RAID chuẩn và RAID không tiêu chuẩn.
 <a name="2.1"></a>
 #### RAID 0
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/0.gif"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/0.gif"/></p>
 
 Raid 0 là loại Raid khá phổ biến và được nhiều người sử dụng hiện nay do có khả năng nâng cao hiệu suất tốc độc đọc ghi trao đổi dữ liệu của ổ cứng. Để tiến hành setup Raid 0 thì server cần tối thiểu 2 ổ đĩa (Disk 0, Disk 1).
 
@@ -81,7 +81,7 @@ __Đối tượng sử dụng__: Thích hợp với những dịch vụ cần l�
 <a name="2.2"></a>
 #### RAID 1
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/1.jpg"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/1.jpg"/></p>
 
 Raid 1 là loại Raid cơ bản được sử dụng khá nhiều hiện nay do khả năng đạt an toàn về dữ liệu. để tiến hành setup Raid 1 thì cũng giống như Raid 0, server cần tối thiểu 2 ổ cứng để lưu trữ. Không giống như Raid 0, Raid 1 đảm bảo an toàn hơn về dữ liệu do dữ liệu được ghi vào 2 ổ giống hệt nhau (Mirroring)
 
@@ -96,14 +96,14 @@ __Đối tượng sử dụng__: Các dịch vụ lưu trữ, các website vừa
 <a name="2.3"></a>	
 #### RAID 2
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/2.jpg"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/2.jpg"/></p>
 
 Raid 2 ít được sử dụng trong thực tế, tuy nhiên theo https://www.raid.com thì có thể giải thích sơ về Raid 2 như sau: RAID 2 gồm hai cụm ổ đĩa, cụm thứ nhất chứa các dữ liệu được phân tách giống như là RAID 0, cụm thứ hai chứa các mã ECC dành cho sửa chữa lỗi ở cụm thứ nhất. Sự hoạt động của các ổ đĩa ở RAID 2 là đồng thời để đảm bảo rằng các dữ liệu được đọc đúng, chính do vậy chúng không hiệu quả bằng một số loại RAID khác nên ít được sử dụng.
 
 <a name="2.4"></a>	
 #### RAID 3
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/3.jpg"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/3.jpg"/></p>
 
 RAID 3 là sự cải tiến của RAID 0 nhưng có thêm (ít nhất) một ở cứng chứa thông tin có thể khôi phục lại dữ liệu bị hỏng của các ổ cứng RAID 0. 
 
@@ -114,14 +114,14 @@ RAID 3 yêu cầu tối thiểu của RAID 3 là có ít nhất 3 ổ cứng.
 <a name="2.5"></a>	
 #### RAID 4
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/4.jpg"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/4.jpg"/></p>
 
 RAID 4 tương tự như RAID 3 nhưng ở một mức độ các khối dữ liệu lớn hơn. Chúng cũng yêu cầu tối thiểu 3 đĩa cứng (ít nhất hai đĩa dành cho chứa dữ liệu và ít nhất 1 đĩa dùng cho lưu trữ dữ liệu tổng thể)
 
 <a name="2.6"></a>	
 #### RAID 5
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/5.gif"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/5.gif"/></p>
 
 Raid 5 cũng là một loại Raid được phổ biến khá rộng rãi. Nguyên tắc cơ bản của Raid 5 cũng gần giống với 2 loại raid lưu trữ truyền thống là Raid 1 và Raid 0. Tức là cũng có tách ra lưu trữ các ổ cứng riêng biệt và vẫn có phương án dự phòng khi có sự cố phát sinh đối với 1 ổ cứng bất kì trong cụm.
 
@@ -136,7 +136,7 @@ __Đối tượng sử dụng__: Tất cả những website, dịch vụ, ứng 
 <a name="2.7"></a>	
 #### RAID 6
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/6.jpg"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/6.jpg"/></p>
 
 RAID 6 cần ít nhất 4 ổ đĩa cứng vật lý riêng biệt.
 
@@ -151,7 +151,7 @@ __Đối tượng sử dụng__: Nhà cung cấp nơi đặt website, máy chủ
 <a name="2.8"></a>	
 #### RAID 10
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/10.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/10.png"/></p>
 
 Raid 10 là sự kết hợp giữa 2 loại raid phổ biến và Raid 1 và Raid 0. Để setup Raid 10 cần sử dụng tối thiểu 4 ổ cứng.
 
@@ -179,7 +179,7 @@ __Đối tượng sử dụng__: Raid 10 thích hợp với tất cả các đ�
 
 - Kiểm tra ổ đĩa
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/11.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/11.png"/></p>
 
 - Cài đặt mdadm: Nếu hệ thống chưa cài đặt mdadm bạn có thể update và cài như sau
 
@@ -196,15 +196,15 @@ Trên Linux có nhiều chương trình giúp bạn tạo partition như cfdisk,
 
 Làm như sau:
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/12.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/12.png"/></p>
 
 Sau khi tạo partition ta chọn định dạng cho partition
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/13.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/13.png"/></p>
 
 Cuối cùng xem kết quả. Nếu đã xong thì nhấn `w` để ghi ổ đĩa và thoát.
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/14.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/14.png"/></p>
 
 Một số option:
 
@@ -218,11 +218,11 @@ Một số option:
 
 Sau khi làm tương tự với các ổ còn lại ta được kết quả như sau
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/15.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/15.png"/></p>
 
 Chúng ta cũng có thể kiểm tra lại với mdadm để xác định các partition đã tạo ra đúng hay chưa
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/16.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/16.png"/></p>
 
 <a name='3.3'></a>	
 #### 3.3 Tạo RAID Array
@@ -243,62 +243,62 @@ Trong đó:
 
 Trong sơ đồ này tôi sẽ tạo 1 ổ RAID gồm 1 ổ đã chuẩn bị phía trên như sau:
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/17.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/17.png"/></p>
 
 > Lưu ý: Đối với RAID 10 ta có thể dùng 2 cách để tạo. Thứ nhất ở option --level ta chọn 10 và tiếp tục làm bình thường. Cách thứ 2 ta có thể tạo 2 ổ RAID 1 (từ 4 ổ tạo thành 2) xong sau đó tạo 1 ổ RAID 0 (từ 2 ổ RAID 1 vừa tạo)
 
 Chúng ta có thể xem 1 số thông tin về ổ RAID đã tạo như sau
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/18.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/18.png"/></p>
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/19.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/19.png"/></p>
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/20.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/20.png"/></p>
 
 <a name='3.4'></a>	
 #### 3.4 Tạo định dạng filesystem cho RAID và mount vào hệ thống
 
 Để định dạng filesysem cho ổ RAID vừa tạo ta dùng lệnh `mkfs.ext4` như sau (chọn định dạng ext4):
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/21.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/21.png"/></p>
 
 Sau khi xong ta có thể tạo thư mục mới và mount RAID đã tạo như sau:
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/22.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/22.png"/></p>
 
 Ta có thể tạo 1 nội dung trong ổ RAID vừa mount để kiểm tra
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/23.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/23.png"/></p>
 
 <a name='3.5'></a>
 #### 3.5 Lưu cấu hình RAID và cấu hình tự động mount lần khởi động sau
 
 Chúng ta lưu cấu hình RAID như sau
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/24.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/24.png"/></p>
 
 > Lưu ý: Có thể thay option `--scan` bằng `-s`, `--verbose` bằng `-v`,...
 
 Để lần khởi động sau có thể tự động mount ổ RAID này ta cần cấu hình file `/etc/fstab` như sau
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/25.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/25.png"/></p>
 
 > Lưu ý: `/dev/md0` là path của RAID và `/mnt/raid5` là path của thư mục được mount
 
 Chúng ta có thể xem lại toàn bộ các phân vùng cho thấy chúng đã gộp với nhau như sau
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/26.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/26.png"/></p>
 
 <a name='3.6'></a>
 #### 3.6 Thêm ổ đĩa vào RAID
 
 Để thêm ổ mới vào RAID bất kỳ. Đầu tiên ta gắn thêm ổ (/dev/sdf) vào và được:
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/27.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/27.png"/></p>
 
 Tương tự chúng ta cũng tạo partition mới như trên và được 
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/28.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/28.png"/></p>
 
 Tiếp theo ta add thêm ổ mới này vào RAID theo cấu trúc sau
 
@@ -310,13 +310,13 @@ Trong đó:
 
 - __Y__: là ổ được thêm vào RAID (nhiều ổ thì thêm path phía sau)
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/29.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/29.png"/></p>
 
 Chúng ta có thể xem 1 số thông tin sau khi add thêm vào như sau
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/30.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/30.png"/></p>
 
-<p align='center'> <img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/31.png"/></p>
+<p align='center'> <img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task40_CentOS6_RAID_Arrays/Image/31.png"/></p>
 
 ***
 ### Tham khảo

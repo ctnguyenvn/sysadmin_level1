@@ -46,7 +46,7 @@ Một số loại process
 
 Một chức năng quan trọng của kernel gọi à scheduler hay là lập lịch tiến trình.
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/1.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/1.png"></p>
 
 Khi một quá trình hoặc đang trong trạng thái chạy, nghĩa là nó đang thực hiện bởi CPU, hoặc trạng thái chờ nghĩa là nó đang đợi được cấp phép thời gian để có thể thực thi. Tất cả các tiến trình này năm trong một nơi gọi là hàng đợi (run queue)
 
@@ -54,7 +54,7 @@ Tuy nhiên, đôi khi process rơi vào trạng thái sleep, nói chung là khi 
 
 Có một số tiến trình đặc biệt, đặc biệt là khi nó đã stop. Ví dụ khi một process con hoàn tất nhưng các tiến trình cha vẫn chưa được thông báo về trạng thái này, process như vậy gọi là **zombie**. Nó không thực sống nhưng vẫn hiển thị trên danh sách các process
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/2.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/2.png"></p>
 
 #### Process and Thread IDs
 
@@ -76,11 +76,11 @@ Người xác định các quyền truy cập cho người sử dụng được 
 
 Người dùng có thể được phân loại thành các nhóm khác nhau. Mỗi nhóm được xác định bởi Real Group ID (RGID). Quyền truy cập của nhóm được xác định bởi Effective Group ID (EGID). Mỗi người sử dụng có thể là một thành viên của một hoặc nhiều nhóm. 
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/3.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/3.png"></p>
 
 #### Priorities
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/4.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/4.png"></p>
 
 Tại bất kỳ thời điểm nào, nhiều quá trình đang chạy (nghĩa là trong hàng đợi chạy) trên hệ thống. Tuy nhiên, một CPU thực sự chỉ có thể chứa một nhiệm vụ một lúc. Một số tiến trình quan trọng hơn những tiến trình khác, vì vậy Linux cho phép thiết lập và vận dụng độ ưu tiên process.
 
@@ -105,7 +105,7 @@ Ta có thể sử dụng lệnh **w**, **top** hoặc **uptime** để xem chún
 
 Xem load averages với lệnh trên
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/5.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/5.png"></p>
 
 - Hiệu suất 1 phút trước của hệ thống là 48% 
 
@@ -136,7 +136,7 @@ Ngoài ra đối với hệ thống BSD của Unix, sẽ có option đặc biệ
 
 Với **ps** ta chỉ xem trạng thái hiện tại của các tiến trình, tuy nhiên như đã nói ở trên **top** sẽ cho ta xem quá trình trực tiếp của các process trong quá trình chúng running
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/6.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/6.png"></p>
 
 Dòng đầu tiên cho ta biết 
 
@@ -193,16 +193,16 @@ Khi sử dụng top với giao diện console ta có thể sử dụng các key 
 
 Để đặt lịch cho một công việc cụ thể trong thời gian nhất định ta có thể dùng **at**.
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/7.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/7.png"></p>
 
 Mạnh mẽ hơn là **cron**. Chương trình này có thể giúp ta lập lịch tại thời điểm bất kỳ với nhiều công việc và có thể làm theo chu kỳ nhất định với người dùng hoặc hệ thống. Ta có thể dùng **crontab -e** để mở crontab editer và thêm vào nội dung (với 6 trường) theo thứ tự của bảng sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/8.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_09/Images/8.png"></p>
 
 Ví dụ:
 
 ```sh
-* * * * * /user/hellsins/script.sh
+* * * * * /user/ctnguyenvn/script.sh
 30 08 10 06 * /home/sysadmin/full-backup
 ```
 

@@ -33,7 +33,7 @@ The Linux Foundation nhằm:
 
 Một số hệ thống
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_01/Images/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_01/Images/1.png)
 
 ||Debian|Fedora|SUSE|
 |---|---|---|---|

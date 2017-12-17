@@ -176,7 +176,7 @@ uniq -c filename
 <a name='4.3'></a>
 #### 4.3 paste
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_13/Images/01.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_13/Images/01.png"></p>
 
 Như hình ta thấy paste có thể paste vào nhau một cách nhanh chóng. Để sử dụng ta dùng
 
@@ -187,7 +187,7 @@ Có thể sử dụng option `-d` để chèn ký tự vào giữa 2 cột ghi n
 <a name='4.4'></a>
 #### 4.4 join
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_13/Images/02.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_13/Images/02.png"></p>
 
 Như hình ta thấy gữa 2 file có những hàng của cột giống nhau và ta muốn gộp chúng lại với nhau. Tương tự như paste ta dùng join với cú pháp
 

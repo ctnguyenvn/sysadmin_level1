@@ -70,15 +70,15 @@ ví dụ:
 
 -- Để chèn hyoerlink bạn chỉ cần dán link đó vào file .md 
 
-`https://github.com/hellsins`
+`https://github.com/ctnguyenvn`
 
-kq: https://github.com/hellsins
+kq: https://github.com/ctnguyenvn
 
 -- Hoặc cũng có thể rút ngắn với cú pháp sau:
 
-`[hellsins](https://github.com/hellsins)`
+`[ctnguyenvn](https://github.com/ctnguyenvn)`
 
-kq: [hellsins](https://github.com/hellsins)
+kq: [ctnguyenvn](https://github.com/ctnguyenvn)
 
 -- Để chèn ảnh bạn có thể chèn trực tiếp hoặc qua link
 

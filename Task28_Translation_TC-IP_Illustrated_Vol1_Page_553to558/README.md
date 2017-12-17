@@ -81,13 +81,13 @@ Phần zone của một thông điệp cập nhật có ghi tên của zone, 1 t
 
 Phần điều kiện tiên quyết của một thông điệp cập nhật chứa một hoặc nhiều điều kiện tiên quyết, thể hiện sử dụng định dạng cho các RR chúng ta đã thảo luận trước đó tại mục 5.5. Có năm loại điều kiện tiên quyết: `RRSet  exists` (RRSet tồn tại, giá trị phụ thuộc vào giá trị độc lập và không độc lập), `RRSet does not exist, name is in use` và `name is not in use`. Nhớ lại rằng một RRSet là một nhóm các RR từ cùng một zone chung `name, class` và `type`. Để thể hiện ngữ nghĩa của một điều kiện tiên quyết, một sự kết hợp của `class, type`, và `rdata` của một RR được thiết lập theo bảng dưới.
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task28_Translation_TC-IP_Illustrated_Vol1_Page_553to558/Image/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task28_Translation_TC-IP_Illustrated_Vol1_Page_553to558/Image/1.png)
 
 Các loại `RRSet exists` có nghĩa là ít nhất một RRSet tồn tại trong zone quy định trong phần zone đó phù hợp với name và type của RR tương ứng trong phần điều kiện tiên quyết. Trong trường hợp giá trị phụ thuộc, các điều kiện tiên quyết là đúng chỉ khi chứa RR phù hợp khớp với các giá trị rdata. Các loại `RRSet does not exist` nghĩa là không có RRSet trong zone quy định trong phần zone phù hợp với name và type của RR trong phần điều kiện tiên quyết. Hai trường hợp cuối cùng (`Name is in use` và `Name is not in use`) chỉ đề cập đến tên miền; các giá trị type không được sử dụng. Các giá trị cho NONE và ANY như các class DNS là 254 và 255, tương ứng.
 
 Sau phần điều kiện tiên quyết, phần update chứa RR được thêm vào hoặc xóa khỏi zone quy định tại phần zone. Có bốn loại update, mã hóa như một RR với sự kết hợp khác nhau của các giá trị trong các trường Class, Type, và rdata, như được chỉ ra trong bảng sau:
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task28_Translation_TC-IP_Illustrated_Vol1_Page_553to558/Image/2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task28_Translation_TC-IP_Illustrated_Vol1_Page_553to558/Image/2.png)
 
 Phần update chứa một bộ sưu tập của các RR được tiến trình cung cấp không có lỗi nào xảy ra do điều kiện tiên quyết hoặc các vấn đề máy chủ. Mỗi RR mã hóa một addition hoặc xóa hoạt động. Thay đổi có thể được thực hiện như xóa sau khi bổ sung. Để xem ví dụ về DNS UPDATE, chúng ta có thể tạo ra một máy tính Windows để thực hiện một cập nhật DNS động bằng cách sử dụng lệnh sau:
 
@@ -97,7 +97,7 @@ C:\> ipconfig /registerdns
 
 Windows clients phát hành bản cập nhật cho tên máy tính của họ và tên miền theo mặc định, nhưng hành vi này cũng có thể được kích hoạt cho IPv4 trên một cơ sở cho mỗi   per-DNS-sufix bằng cách kiểm tra các hộp có nhãn "Sử dụng DNS suffix của kết nối này trong DNS registration" trong phần DNS của các thiết lập TCP/IP nâng cao, được tìm thấy trên mục General của Internet Protocol (TCP/IP) Properties menu kết hợp với mỗi giao diện kích hoạt cho TCP/IP. Đối với IPv6, cùng một thủ tục được sử dụng, nhưng trên menu IPv6 Properties. Trong ví dụ thể hiện trong hình dưới, chúng ta có thể thấy máy có tên vista cập nhật local zone `dyn.home` cũng như các vấn đề thông báo cập nhật DNS hiện ra
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task28_Translation_TC-IP_Illustrated_Vol1_Page_553to558/Image/3.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task28_Translation_TC-IP_Illustrated_Vol1_Page_553to558/Image/3.png)
 
 > Một cập nhật DNS động chứa một SOA record trong phần zone và RR trong phần cập nhật. Trường hợp này bao gồm các địa chỉ IPv4 và IPv6 mới cho `vista.dyn.home`
 
@@ -105,7 +105,7 @@ Hình trên cho thấy làm thế nào một bản update động được mã h
 
 Trong trường hợp đặc biệt này,địa chỉ `10.0.0.57` và `200:5c0:1101:ed00:fd26:de93:5ab7:405a` phải được kết hợp với tên `vista.dyn.home`. Điều này được thực hiện bằng cách đầu tiên xóa các AAAA và A RRSets (tương ứng với hàng 2 trong bảng trên), và sau đó thêm các AAAA và A RRSets (tương ứng với hàng 1 trong bảng trên) cho các địa chỉ mong muốn.
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task28_Translation_TC-IP_Illustrated_Vol1_Page_553to558/Image/4.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task28_Translation_TC-IP_Illustrated_Vol1_Page_553to558/Image/4.png)
 
 > Trả lời một yêu cầu update động bao gồm một ID giao dịch và trạng thái cờ thiết lập
 

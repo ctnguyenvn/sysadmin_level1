@@ -33,7 +33,7 @@ Như đã nói ở trên, một snapshot sau khi được tạo ra có thể kh�
 	+ Đối với máy ảo đang chạy chọn **Take snapshot** từ "Machine" ở menu thả xuống của cửa sổ Snapshot. Sau đó đặt tên máy ảo mới
 	+ Đối với máy ảo ở trạng thái **save** hoặc **powered off** Bạn kích vào hình chiếc máy ảnh ở cửa sổ Snapshots hoặc nhấn *Strl+Shift+S* . Sau đó đặt tên máy ảo mới
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task03_Virtualbox_Snapshot_and_Clone/img/snap1.jpg)
+	![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task03_Virtualbox_Snapshot_and_Clone/img/snap1.jpg)
 
 > Virtualbox không hạn chế số lượng snapshot, tuy nhiên về mặt thực tế thì có thể do hạn chế về ổ cứng của bạn.
 
@@ -70,16 +70,16 @@ Clone máy ảo có 2 loại:
 
 Để tạo Clone máy ảo trong  Virtualbox bạn kích cuột phải vào máy ảo chọn Clone hoặc nhấn Ctrl+O
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task03_Virtualbox_Snapshot_and_Clone/img/Clone1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task03_Virtualbox_Snapshot_and_Clone/img/Clone1.png)
 
 Sau đó chọn full Clone hoặc link Clone như đã nói ở trên
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task03_Virtualbox_Snapshot_and_Clone/img/Clone2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task03_Virtualbox_Snapshot_and_Clone/img/Clone2.png)
 
 Nhấn Clone để hoàn thành
 
 > Đối với máy ảo đã từng Snapshot sẽ xuất hiện thêm một cửa sổ nữa để yêu cầu bạn chọn Clone tất cả các Snapshot của máy ảo ban đầu hoặc trạng thái của máy ảo hiện tại như hình sau:
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task03_Virtualbox_Snapshot_and_Clone/img/Clone3.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task03_Virtualbox_Snapshot_and_Clone/img/Clone3.png)
 
 Chọn và nhấn Clone để hoàn thành
 

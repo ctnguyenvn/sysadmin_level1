@@ -1,6 +1,6 @@
 
 <?php 
-	$name = "hellsins";
+	$name = "ctnguyenvn";
 	$age = 21;
 	$name .= " ! I am a noob";
  ?>

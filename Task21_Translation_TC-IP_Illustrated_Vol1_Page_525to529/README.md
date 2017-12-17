@@ -28,7 +28,7 @@
 
 - Chúng ta đã biết DNS sử dụng port 53, cho cả UDP và TCP. Định dạng phổ biến nhất sử dụng cấu trúc gói UDP/IPv4 như hình sau
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task21_Translation_TC-IP_Illustrated_Vol1_Page_525to529/img/1.png)
+	![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task21_Translation_TC-IP_Illustrated_Vol1_Page_525to529/img/1.png)
 
 > 	Thông điệp DNS thường được đóng trong 1 gói tin UDP/IPv4 và được giới hạn tối đa 152 byte trừ khi TCP hay EDNS0 được sử dụng. Mỗi phần (trừ phần question) chứa tập hợp các bản ghi
 
@@ -43,18 +43,18 @@
 
 - Các question hoặc query của một thông điệp DNS liệt kê các question đang được tham chiếu. Định dạng của mỗi question trong phần question được thể hiện trong hình dưới. Thường chỉ có một, mặc dù các giao thức có thể hỗ trợ nhiều hơn. Các cấu trúc tương tự cũng được sử dụng cho phần zone trong bản cập nhật động, nhưng với tên gọi khác nhau.
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task21_Translation_TC-IP_Illustrated_Vol1_Page_525to529/img/2.png)
+	![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task21_Translation_TC-IP_Illustrated_Vol1_Page_525to529/img/2.png)
 
 > 	Mỗi phần query (hoặc question) của thông điệp DNS không chứa TTL bởi vì nó không được lưu trữ
 
-- Query name là tên miền được tìm kiếm, bằng cách sử dụng mã hóa cho các `Lables` chúng ta đã mô tả trước đây. Mỗi question có một Query Type và Query Class. Các giá trị lớp là 1, 254, hoặc 255, cho thấy Internet class, không có class, hoặc tất cả các class, tương ứng, cho tất cả các trường hợp mà chúng ta quan tâm đến (các giá trị khác không thường được sử dụng cho các mạng TCP / IP). Các trường Query Type giữ một giá trị chỉ ra loại query được thực hiện bằng cách sử dụng các giá trị trong [Bảng này](https://github.com/hellsins/sysadmin_level1/blob/master/Task20_Translation_TC-IP_Illustrated_Vol1_Page_520to525/img/2.png). Các loại query phổ biến nhất là A (hoặc AAAA nếu phân giải DNS IPv6 được kích hoạt), có nghĩa là một địa chỉ IP là cần thiết cho các query name. Nó cũng có thể tạo ra một truy vấn kiểu bất kỳ, trả về tất cả RR của bất kỳ loại trong cùng một lớp phù hợp với query name.
+- Query name là tên miền được tìm kiếm, bằng cách sử dụng mã hóa cho các `Lables` chúng ta đã mô tả trước đây. Mỗi question có một Query Type và Query Class. Các giá trị lớp là 1, 254, hoặc 255, cho thấy Internet class, không có class, hoặc tất cả các class, tương ứng, cho tất cả các trường hợp mà chúng ta quan tâm đến (các giá trị khác không thường được sử dụng cho các mạng TCP / IP). Các trường Query Type giữ một giá trị chỉ ra loại query được thực hiện bằng cách sử dụng các giá trị trong [Bảng này](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task20_Translation_TC-IP_Illustrated_Vol1_Page_520to525/img/2.png). Các loại query phổ biến nhất là A (hoặc AAAA nếu phân giải DNS IPv6 được kích hoạt), có nghĩa là một địa chỉ IP là cần thiết cho các query name. Nó cũng có thể tạo ra một truy vấn kiểu bất kỳ, trả về tất cả RR của bất kỳ loại trong cùng một lớp phù hợp với query name.
 
 <a name="5.5"></a>
 #### 5.5 Answer, Authority, and Additional Information Section Formats
 
 - Ba phần cuối trong thông điệp DNS, Answer, Authority, and Additional Information, chứa thiết RR. RR trong các phần có thể, đối với hầu hết các phần, có tên miền `wildcard` (ký tự đại diện) như sở hữu tên. Đây là những tên miền trong đó đánh dấu nhãn data lables chỉ chứa các kí tự dấu `*` [RFC4592] xuất hiện đầu tiên (tức là, ngoài cùng bên trái). Mỗi bản ghi tài nguyên có hình thức thể hiện trong hình sau
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task21_Translation_TC-IP_Illustrated_Vol1_Page_525to529/img/3.png)
+	![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task21_Translation_TC-IP_Illustrated_Vol1_Page_525to529/img/3.png)
 
 > 	Định dạng của một DNS resource record. Đối với DNS trên Internet, trường class luôn luôn có giá trị 1. Các trường TTL cho giá trị tối đa thời gian RR có thể được lưu trữ (tính bằng giây)  
 
@@ -69,7 +69,7 @@
 
 - Có rất nhiều loại resource record (xem [DNSPARAMS] cho danh sách đầy đủ), và một tên có thể có nhiều RR. Bảng sau cung cấp danh sách các loại RR phổ biến nhất được sử dụng với _luật_ DNS (ví dụ, DNS mà không có phần mở rộng bảo mật DNSSEC)
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task21_Translation_TC-IP_Illustrated_Vol1_Page_525to529/img/4.png)
+	![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task21_Translation_TC-IP_Illustrated_Vol1_Page_525to529/img/4.png)
 
 > 	Các loại bản ghi tài nguyên và truy vấn phổ biến được sử dụng trong thông điệp DNS. Bổ sung records (không hiển thị) sử dụng khi bảo mật DNS (DNSSEC) được sử dụng
 

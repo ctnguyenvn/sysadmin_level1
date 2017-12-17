@@ -66,7 +66,7 @@ Quá trình trải qua 4 bước sau
 
 Sau khi cài đặt xong sẽ xuất hiện file **dhcpd.conf** trong thư mục **/etc/dhcp/**. Bạn có thể sử dụng file này hoặc copy file mẫu **/usr/share/doc/dhcp*/dhcpd.conf.sample** vào **/etc/dhcp/** để cấu hình với các thông số như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task14_CentOS6_DHCP/img/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task14_CentOS6_DHCP/img/1.png)
 
 Sau khi cấu hình xong lưu lại vào khởi động dịch vụ
 
@@ -74,7 +74,7 @@ Sau khi cấu hình xong lưu lại vào khởi động dịch vụ
 
 Tiếp tục qua máy client chuyển sang dhcp và xin cấp lại IP ta được
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task14_CentOS6_DHCP/img/2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task14_CentOS6_DHCP/img/2.png)
 
 > Lưu ý
  

@@ -26,7 +26,7 @@ Kết hợp với EDNS0, ở mô tả trước đây, một OPT đặc biệt l�
 
 Một OPT RR chứa 10 byte cố định và theo sau là phần biến. Phần cố định bao gồm 16 bit chỉ ra loại RR, 16 bit cho biết kích thước gói UDP, 32 bit tạo thành một trường mở rộng RCODE và flag, và 16 bit cho kích thước của phần biến trong số byte. Những trường được đặt tại các vị trí tương đối như Name, Type, Class, TTL, và các trường RDLEN, tương ứng, trong một RR thông thường (xem hình dưới). Các OPT RR sử dụng một tên miền null trong trường name (0 byte). Thêm trường RCODE và Flags (32 bit, tương ứng với trường TTL) được chia thành một khu vực 8 bit để thêm 8 bit bậc cao tăng độ lớn cho trường RCODE, và một trường 8-bit (hiện đang thiết lập là 0 để chỉ EDNS0). 16 bit còn lại chưa được xác định và là 0. 8 bit additional (bổ sung) cung cấp một bộ mở rộng các kiểu báo lỗi DNS có thể, và các giá trị được đưa ra trong bảng dưới. (Lưu ý rằng giá trị 16 được xác định bởi hai RFC khác biệt.)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task27_Translation_TC-IP_Illustrated_Vol1_Page_547to552/Image/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task27_Translation_TC-IP_Illustrated_Vol1_Page_547to552/Image/1.png)
 
 Như chúng ta đã đề cập, OPT RR chứa một trường RDATA chiều dài thay đổi (variable-length). Trường này được sử dụng để giữ một danh sách mở rộng của các cặp thuộc tính-giá trị (attribute-value). Các thiết lập hiện tại của các thuộc tính, ý nghĩa, và định nghĩa các RFC được duy trì bởi IANA [DNSPARAMS]. Một trong những tùy chọn, được gọi là NSID (tùy chọn EDNS mã 3) [RFC5001], chỉ ra một giá trị xác định đặc biệt cho một response DNS server. Định dạng của giá trị này không được cấu hình chuẩn mà được cấu hình bởi người quản trị hệ thống của máy chủ DNS. Điều này có thể hữu ích trong trường hợp một địa chỉ anycast được sử dụng để xác định một nhóm các máy chủ. Các NSID có thể xác định một máy chủ phản hồi cụ thể sử dụng một giá trị khác với địa chỉ IP gửi. Chúng ta sẽ thấy nhiều ví dụ về OPT RR và sử dụng EDNS0 về
 
@@ -62,7 +62,7 @@ Quá trình được minh họa như hình dưới bắt đầu bằng việc á
 
 Các trường `Order` là 1 kiểu nguyên không dấu 16-bit đặc biệt nêu rõ NAPTR record sử dụng trước khi những trường khác (số càng thấp thì càng cao), như kiến trúc DNS không đảm bảo trật tự của bất kỳ thiết lập riêng nào của tài nguyên record
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task27_Translation_TC-IP_Illustrated_Vol1_Page_547to552/Image/2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task27_Translation_TC-IP_Illustrated_Vol1_Page_547to552/Image/2.png)
 
 > Tóm tắt hoạt động của thuật toán DDDS. Non-terminal records được chấp nhận để tạo thành vòng lặp. Mỗi lần lặp liên quan đến một hoạt động chuỗi viết lại trên chuỗi duy nhất của ứng dụng
 

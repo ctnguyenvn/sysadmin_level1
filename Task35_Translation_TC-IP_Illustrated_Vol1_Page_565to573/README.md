@@ -33,7 +33,7 @@ Cho đến nay, chúng ta đã nói về việc tên miền được thiết l�
 
 Các loại topology (sơ đồ hay mô hình) thể hiện trong hình dưới là điển hình của một doanh nghiệp nhỏ. Có một mạng riêng và mạng công cộng bao gồm một máy chủ DNS. Ngoài ra, có một cặp host trên DMZ (A và B), một trên mạng nội bộ (C) và một trên Internet (R). Một máy chủ multihomed (M) kéo dài giữa DMZ và mạng nội bộ. do đó M có hai địa chỉ IP được rút ra từ hai tiền tố mạng khác nhau.
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task35_Translation_TC-IP_Illustrated_Vol1_Page_565to573/Image/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task35_Translation_TC-IP_Illustrated_Vol1_Page_565to573/Image/1.png)
 
 > Trong một cấu trúc liên kết doanh nghiệp nhỏ, DNS có thể được cấu hình để  trả lại địa chỉ khác nhau tùy thuộc vào địa chỉ IP yêu cầu
 
@@ -65,7 +65,7 @@ Một vấn đề khác phát sinh liên quan đến tính minh bạch khi các 
 
 Trong Chương 7, chúng ta nói về 1 framework để chuyển các IP datagram qua lại giữa IPv4 và IPv6. Chuyển đổi hỗ trợ khả năng đó đều hình dung được triển khai với một khả năng có liên quan là chuyển đổi giữa DNS A và ghi AAAA [RFC6147], cho phép client IPv6-only truy cập vào thông tin DNS xuất hiện trong một record (ví dụ, trong Internet IPv4). Khả năng được gọi là DNS64, và một trong những kịch bản triển khai đề xuất của nó (gọi là "DNS64 trong DNS chế độ đệ quy trình giải quyết") được minh họa trong hình sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task35_Translation_TC-IP_Illustrated_Vol1_Page_565to573/Image/2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task35_Translation_TC-IP_Illustrated_Vol1_Page_565to573/Image/2.png)
 
 > DNS64 chuyển đổi A record sang AAAA record và làm việc với IPv4/IPv6  cho phép client IPv6-only truy cập vào dịch vụ trong mạng lưói IPv4
 

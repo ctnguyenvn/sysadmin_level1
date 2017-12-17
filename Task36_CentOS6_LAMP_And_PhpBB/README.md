@@ -77,7 +77,7 @@ Một số điểm nổi bậc
 
 Sau đó chỉnh như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/1.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/1.png" /></p>
 
 Lưu và khởi động lại network
 
@@ -179,7 +179,7 @@ Khởi động lại httpd
 
 Cuối cùng dùng trình duyệt sẽ được
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/2.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/2.png" /></p>
 
 <a name="5.2"></a>
 #### 5.2 Cài đặt MySQL 5.1
@@ -190,7 +190,7 @@ Cuối cùng dùng trình duyệt sẽ được
 
 Sau đó thêm dòng sau như hình vào file `/etc/my.cnf`
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/3.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/3.png" /></p>
 
 Khởi động mysqld như sau
 
@@ -294,7 +294,7 @@ phpinfo();
 ?>
 ```
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/4.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/4.png" /></p>
 
 <a name="6"></a>
 ### 6. Cài đặt phpBB
@@ -312,41 +312,41 @@ mv phpBB3 /var/www/html/phpbb
 
 Tiếp theo ta cần tạo 1 database với mysql như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/5.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/5.png" /></p>
 
 Sau đó khởi động lại apache và mở trình duyệt ở client như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/6.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/6.png" /></p>
 
 Chọn phần `install` và nhấn submit
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/7.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/7.png" /></p>
 
 > Lưu ý: Có 1 số file cần phần quyền để có thể ghi dữ liệu. Chúng có thể là `cache, files, stories, file config.php, images/avatar/upload`. Chúng ta nên sử dụng `chmod 777` cho những file/folder này
 
 Tạo tài khoản quản trị
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/8.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/8.png" /></p>
 
 Kết nối database
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/9.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/9.png" /></p>
 
 Tiếp theo để configure 1 số thứ ta làm như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/10.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/10.png" /></p>
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/11.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/11.png" /></p>
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/12.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/12.png" /></p>
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/13.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/13.png" /></p>
 
 Giao diện chung của phpBB
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/14.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/14.png" /></p>
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/15.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/15.png" /></p>
 
 <a name="6.2"></a>
 #### 6.2 Một số chức năng cơ bản của phpBB 3.2
@@ -358,23 +358,23 @@ Giao diện chung của phpBB
 
 Ví dụ để xóa chuyên mục bất kỳ ta chọn dấu `x` tại chuyên mục muốn xóa và làm như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/16.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/16.png" /></p>
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/17.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/17.png" /></p>
 
 Để tạo 1 chuyên mục ta chọn `create new forum` và làm như hình
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/18.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/18.png" /></p>
 
 > Lưu ý: nếu muốn tạo 1 chủ đề cho chuyên mục nào thì phần `parent forum` chọn chuyên mục đó
 
 Tiếp theo có thể thiết lập quyền cho các chuyên mục hay chủ đề bằng cách bôi đen phần muốn chọn (bên group hoặc bên user) và nhấn `add permission` 
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/19.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/19.png" /></p>
 
 Tiếp tục phân quyền cho các mục. Có thể phân như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/20.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/20.png" /></p>
 
 > Lưu ý: Đối với group và user đều làm như nhau
 
@@ -383,13 +383,13 @@ Tiếp tục phân quyền cho các mục. Có thể phân như sau
 
 Ở mục này ta có thể thiết lập tin nhắn, gửi bài, biểu tượng, kiểm duyệt từ, thiết lập các tập tin...
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/23.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/23.png" /></p>
 
 Để tạo 1 post mới ta có thể đăng nhập vào trang web và chọn chủ đề muốn tạo post và làm như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/21.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/21.png" /></p>
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/22.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/22.png" /></p>
 
 <a name="6.2.3"></a>
 #### 6.2.3 Users and Groups
@@ -398,17 +398,17 @@ Tiếp tục phân quyền cho các mục. Có thể phân như sau
 
 Ví dụ để quản lý user ta chọn `manager user` và nhập tên user cần quản lý và xem, sửa 1 số thông tin như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/24.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/24.png" /></p>
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/25.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/25.png" /></p>
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/26.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/26.png" /></p>
 
 Hoặc để đăng ký tài khoản mới ta vào trang web chọn registry và làm như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/27.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/27.png" /></p>
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/28.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/28.png" /></p>
 
 <a name="6.2.4"></a>
 #### 6.2.4 Permission
@@ -417,9 +417,9 @@ Tiếp theo phần này ta có thể cấp quyền cho các chuyên mục, thàn
 
 Ví dụ để cấp quyền cho user ta làm như sau. Chọn `user permission` và điền username của user cần cấp quyền và nhấn `submit`
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/29.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/29.png" /></p>
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/30.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/30.png" /></p>
 
 <a name="6.2.5"></a>
 #### 6.2.5 Customise
@@ -430,20 +430,20 @@ Ví dụ để thay đổi giao diện ta làm như sau
 
 Đầu tiên tìm kiếm và tải theme muốn về (lưu ý chọn đúng phiên bản phpBB hiện tại). Sau đó giải nén và copy vào thư mục style trên server. Tiếp theo ta quay lại trình duyệt và chọn `Install Style` trong mục `CUSTOMISE` và chọn style vừa thêm xong nhấn install để hoàn tất cài đặt
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/35.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/35.png" /></p>
 
 Sau khi cài xong ta vào phần `Style` uninstall (lưu ý không xóa file từ hệ thống) và kích hoạt style vừa cài
 
 Kết quả sau khi thay đổi giao diện
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/36.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/36.png" /></p>
 
 <a name="6.2.6"></a>
 #### 6.2.6 Mantenance
 
 Phần này cho phép ta xem các nhật ký như thao tác, thông tin IP, username... Ngoài ra ta có thể backup dữ liệu, phục hồi dữ liệu...
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/31.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/31.png" /></p>
 
 <a name="6.2.7"></a>
 #### 6.2.7 System
@@ -452,11 +452,11 @@ Phần này cho phép ta xem các nhật ký như thao tác, thông tin IP, user
 
 Ví dụ ta có thể xem phiên bản PHP của hẹ thống đang sử dụng hiện tại
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/32.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/32.png" /></p>
 
 Hoặc vô hiệu những quyền quản lý bằng cách `disable` mục muốn thay đổi
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/33.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task36_CentOS6_LAMP_And_PhpBB/Image/33.png" /></p>
 
 ***
 

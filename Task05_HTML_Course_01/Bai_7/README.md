@@ -2,7 +2,7 @@
 
 Trong HTML có hỗ trợ liên kết, nghĩa là những văn bản có các đường liên kết tới một trang khác hoặc một website khác.Để sử dụng ta dùng thẻ `<a> </a>`
 
-`<a href="github.com/hellsins" title="hellsins github" target="_blank">This is my github account</a>`
+`<a href="github.com/ctnguyenvn" title="ctnguyenvn github" target="_blank">This is my github account</a>`
 
 - Ý nghĩa các thuộc tính
 

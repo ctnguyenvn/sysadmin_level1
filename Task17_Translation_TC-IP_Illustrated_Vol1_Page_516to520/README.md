@@ -59,7 +59,7 @@
 
 - Phân giải đầy đủ mà không thể dùng từ các mục được lưu trữ từ trước diễn ra trong một số thực thể, như hình minh họa sau
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task17_Translation_TC-IP_Illustrated_Vol1_Page_516to520/img/1.PNG)
+	![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task17_Translation_TC-IP_Illustrated_Vol1_Page_516to520/img/1.PNG)
 
 	> Một điển hình đệ quy DNS truy vấn cho `EXAMPLE.CO`M từ `A.HOME` liên quan đến 10 thông báo (message). Các máy chủ địa phương đệ quy (`GW.HOME` ở đây) sử dụng một máy chủ DNS cung cấp bởi ISP của nó. Máy chủ đó, lần lượt, sử dụng một máy chủ tên gốc của Internet và một máy chủ gTLD (cho COM và NET TLDs) để tìm máy chủ tên cho miền `EXAMPLE.COM`. Tên máy chủ (`A.IANA-SERVERS.NET` ở đây) cung cấp địa chỉ IP đã yêu cầu cho máy chủ lưu trữ `EXAMPLE.COM`. Tất cả các máy chủ đệ quy cache bất kỳ thông tin đã học được để sử dụng sau
 

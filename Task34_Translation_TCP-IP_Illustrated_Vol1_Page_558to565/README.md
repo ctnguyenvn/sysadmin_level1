@@ -25,7 +25,7 @@ Một zone transfer được sử dụng để sao chép 1 thiết lập của R
 
 Theo quy định ban đầu, zone transfers được khởi xướng sau khi `polling`, nơi slave liên hệ master để xem nếu chuyển vùng có cần thiết bằng cách so sánh số version của zone. Một phương thức sau nói nếu zone transfer cần sử dụng một cơ chế cập nhật không đồng bộ khi các nội dung zone thay đổi. Phương thức này được gọi là `DNS NOTIFY`. Khi chuyển vùng được bắt đầu, hoặc là toàn bộ zone được chuyển giao (sử dụng thông điệp DNS AXFR) [RFC5936], hay một tùy chọn `incremental zone transfer` có thể được sử dụng (sử dụng thông điệp DNS IXFR) [RFC1995]. Đề án nói chung hoạt động theo hình minh họa sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/1.png)
 
 > Một DNS zone transfer copy các nội dung của zone giữa các server. Một thông báo tùy chọn có thể gây ra một slave để request tất cả hoặc tăng zone transfer
 
@@ -52,13 +52,13 @@ gw.home has address 10.0.0.1
 ```
 Option -l cho phép lệnh (chương trình) `host` thực hiện chuyển vùng hoàn toàn từ một máy chủ DNS local. Chương trình khởi tạo một cuộc đối thoại query/response dựa trên TCP, minh họa trong hình sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/2.png)
 
 > Một DNS request cho chuyển vùng hoàn toàn sử dụng các loại  Ả record và TCP là một giao thức truyền tải.
 
 Trong hình trên, chúng tôi có thể thấy cách chuyển vùng thực hiện sử dụng TCP. Ba segment TCP đầu tiên là một phần của quá trình thiết lập kết nối TCP chuẩn. Gói thứ tư (giải mã) là gói tin request. Nó là một tiêu chuẩn DNS bình thường, với type AXFR và class IN (Internet). Các truy vấn dành cho các tên miền `home`. Các reponse đến truy vấn này được chứa trong thông điệp 6, sau TCP ACK như hình sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/3.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/3.png)
 
 > Các reponse thành công cho một request chuyển giao khu vực đầy đủ bao gồm tất cả các record cho zone. Các giao dịch thực hiện sử dụng TCP, như nội dung zone có thể lớn và một bản sao đáng tin cậy là cần thiết.
 
@@ -77,13 +77,13 @@ gw.home. hostmaster.gw.home. 1997022700 10800 15 604800 10800
 ```
 Các dòng lệnh chỉ đầu ra từ lệnh nên ngắn gọn, 10.0.0.1 là địa chỉ của máy chủ DNS để sử dụng, và một chuyển vùng gia tăng bắt đầu nối tiếp với số 1997022700 nên được thực hiện. Ví dụ này tạo một cuộc trao đổi tương tự như minh họa trong 2 hình trên cho AXFR, ngoại trừ trong trường hợp này số serial của các yêu cầu phù hợp với số serial hiện tại như hình sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/4.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/4.png)
 
 > Một yêu cầu chuyển vùng gia tăng (IXFR loại bản ghi) mang trên TCP. Các number được sử dụng để xác định record, nếu có, đã thay đổi từ một chuyển vùng trước đó đã diễn ra.
 
 Hình dưới cho thấy cách request IXFR bao gồm một RR SOA trống trong phần authority (thẩm quyền). Các SOA record bao gồm số serial xác định (1997022700). Các reponse (gói 6) không chứa thông tin thực tế vì số này phù hợp với số hiện tại ở máy chủ
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/5.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/5.png)
 
 > Việc giải quyết một Ỉ request khi số serial là hiện tại chỉ chứa một SOA record và không có additional information
 
@@ -94,7 +94,7 @@ Reponse trong hình trên chỉ chứa RR SOA trong phần answer. Không giốn
 
 Như đã đề cập trước đó, `polling` trước kia được sử dụng để xác định sự cần thiết khi phải chuyển vùng, có nghĩa là các máy chủ slave sẽ kiểm tra với một máy chủ master (xác định "làm mới" khoảng thời gian) để xem nếu zone đã được cập nhật (chỉ ra bởi một số serial khác nhau), trong trường hợp chuyển vùng sẽ được bắt đầu. Đây là một quá trình hơi lãng phí, vì nhiều cuộc thăm dò vô dụng có thể xảy ra trước khi các zone được cập nhật. Để cải thiện tình hình, [RFC1996] đã phát triển cơ chế DNS NOTIFY. DNS NOTIFY cho phép một máy chủ với nội dung sửa đổi zone để thông báo cho các máy chủ slave một bản cập nhật đã được thực hiện và chuyển giao khu vực được bắt đầu. Cụ thể hơn, nếu được kích hoạt, một tin nhắn thông báo được gửi để thiết lập các máy chủ liên quan nếu RR SOA cho zone thay đổi (ví dụ, nếu số serial  tăng nối tiếp). Điều này cho phép chuyển vùng được bắt đầu dễ dàng khi cần thiết. Sử dụng một tên miền local (home), chúng ta có thể thấy cách làm việc này như hình sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/6.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task34_Translation_TCP-IP_Illustrated_Vol1_Page_558to565/Image/6.png)
 
 > Một DNS NOTIFY chỉ ra một bản cập nhật đến các zone file. Có hai phần truyền lại cách nhau 15 giây ngoài (trái với phương pháp đề nghị chuẩn).
 

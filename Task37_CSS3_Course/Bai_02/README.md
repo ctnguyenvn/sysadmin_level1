@@ -17,7 +17,7 @@ border-radius: 15px 15px 15px 15px;
 
 Trong đó mỗi cách dùng có những tác dụng sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task37_CSS3_Course/Bai_02/Image/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task37_CSS3_Course/Bai_02/Image/1.png)
 
 - Trường hợp có 1 tham số thì sẽ có tác dụng cho 4 góc
 

@@ -25,7 +25,7 @@
 
 - Có 1 chuẩn định dạng thông điệp DNS [RFC6195]. Nó được sử dụng cho tất cả các hoạt động DNS (queries, responses, zone transfers, notifications, và dynamic updates), như minh họa trong hình dưới
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task20_Translation_TC-IP_Illustrated_Vol1_Page_520to525/img/1.png)
+	![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task20_Translation_TC-IP_Illustrated_Vol1_Page_520to525/img/1.png)
 
 >	Định dạng thông điệp DNS có header 12-byte cố định. Toàn bộ thông thường được thực hiện trong một datagram UDP/IPv4 và giới hạn 512 byte. DNS UPDATE (DNS với bản cập nhật động) sử dụng tên trường ZOCOUNT, PRCOUNT, UPCOUNT, và ADCOUNT. Một mở rộng định dạng đặc biệt (gọi EDNS0) cho phép tin nhắn được lớn hơn 512 byte, đó là cần thiết cho DNSSEC
 
@@ -37,7 +37,7 @@
 
 - Các bit AD được thiết lập là true nếu thông tin được xác thực, và bit CD được thiết lập là true nếu kiểm tra an ninh được vô hiệu hóa. Trường response Code (hoặc RCODE) là một trường 4-bit trả lại code có giá trị có thể được đưa ra trong [DNSPARAM]. Các giá trị thông thường bao gồm 0 (không có lỗi) và 3 (tên lỗi hay "“nonexistent  domain", viết như NXDOMAIN). Một danh sách của 11 mã lỗi đầu tiên được đưa ra trong Bảng sau (giá trị từ 11 đến 15 là không được gán). loại bổ sung được xác định bằng phần mở rộng đặc biệt (xem phần 11.5.2). Tên lỗi chỉ được trả về từ một máy chủ tên miền có quyền nghĩa là tên miền được quy định trong các truy vấn không tồn tại
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task20_Translation_TC-IP_Illustrated_Vol1_Page_520to525/img/2.png)
+	![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task20_Translation_TC-IP_Illustrated_Vol1_Page_520to525/img/2.png)
 
 - Bốn trường tiếp theo kích thước 16 bit xác định số lượng các entries trong question, answer, authority, and additional information để hoàn thành thông điệp DNS. Đối với một truy vấn (question), số lượng các question thường 1 và ba giá trị khác là 0. Trong một reply, số lượng các reply là ít nhất 1. Câu hỏi có name, type, and class. (Class hỗ trợ hồ sơ không Internet (non-internet), nhưng chúng ta bỏ qua điều này cho các mục đích của chúng ta. Các loại xác định kiểu của đối tượng đang được tìm kiếm) Tất cả các phần khác chứa zero hay nhiều RR. RR gồm  name, type, and class information, nhưng còn giá trị TTL điều khiển các dữ liệu có thể được lưu trữ trong bao lâu. Chúng ta sẽ thảo luận về các loại RR quan trọng nhất và chi tiết khi chúng ta có một cái nhìn về cách mã hóa tên DNS và chọn giao thức vận chuyển để sử dụng khi mang theo thông điệp DNS.
 
@@ -51,7 +51,7 @@
 
 - Mỗi nhãn dữ liệu (data label) bắt đầu với một 1-byte xác định số byte theo ngay sau. Tên sẽ được kết thúc với một byte chứa giá trị 0, đó là một nhãn hiệu với chiều dài 0 (nhãn của root). Ví dụ, các mã hóa của tên www.pearson.com sẽ được thể hiện trong hình sau
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task20_Translation_TC-IP_Illustrated_Vol1_Page_520to525/img/3.png)
+	![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task20_Translation_TC-IP_Illustrated_Vol1_Page_520to525/img/3.png)
 
 > 	DNS name được mã hóa như là một chuỗi các nhãn. Ví dụ này sẽ mã hoá www.pearson.com, trong đó (kỹ thuật) có 4 nhãn. Sự kết thúc của tên được xác định bởi một nhãn dài 0 của nameless root
 
@@ -62,7 +62,7 @@
 
 - Trong nhiều trường hợp, một DNS respons hoàn toàn mang thông tin trong answer, authority, and additional information liên quan đến tên miền tương tự. Nếu nhãn dữ liệu đã được sử dụng, các ký tự tương tự sẽ được lặp đi lặp lại trong thông điệp DNS khi đề cập đến cùng tên. Để tránh dư thừa này và tiết kiệm không gian, một chương trình nén được sử dụng. Bất kỳ chỗ nào phần nhãn của một tên miền có thể xảy ra, trước đó đếm byte duy nhất (thường là giữa 0 và 63) thay vì có 2 bit bậc cao của nó bật lên, và các bit còn lại được kết hợp với các bit trong các byte tiếp theo để tạo thành một con trỏ 14-bit (offset) trong thông điệp DNS. Việc bù cho số lượng các byte từ đầu của thông điệp DNS nơi một nhãn dữ liệu (được gọi là compression target) được tìm thấy rằng cần phải được thay thế cho nhãn nén. Nhãn nén do đó có thể trỏ đến một địa điểm lên đến 16, 383 byte từ đầu. Hình sau minh họa cách chúng ta có thể mã hóa các tên miền usc.edu và ucla.edu sử dụng nhãn nén.
 
-	![](https://github.com/hellsins/sysadmin_level1/blob/master/Task20_Translation_TC-IP_Illustrated_Vol1_Page_520to525/img/4.png)
+	![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task20_Translation_TC-IP_Illustrated_Vol1_Page_520to525/img/4.png)
 
 > 	Một nhãn nén (compression label) có thể liên hệ các nhãn khác để tiết kiệm không gian. Điều này được thực hiện bằng cách thiết lập 2 bit bậc cao của byte trước nội dung nhãn. Điều này báo hiệu rằng 14 bit sau được sử dụng trong việc bù cho các nhãn thay thế. Trong ví dụ này, usc.edu và ucla.edu chia sẻ nhãn edu.
 

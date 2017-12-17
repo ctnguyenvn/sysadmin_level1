@@ -18,11 +18,11 @@
 
 Trong nhiều trường hợp, người dùng linux đặc biệt là các quản trị vieenthuongwf xuyên làm việc với các file cấu hình như viết script. Vì vậy việc sử dụng text editter làm cho mọi việc trở nên thuận tiện hơn rất nhiều. Trên linux có một số trình soản thảo phổ biến như **vi**, **nano**...
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_11/Images/1.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_11/Images/1.png"></p>
 
 Đôi khi người dùng muốn tạo file mà không cần dùng đén editer. Do đó ta có thể sử dụng các lệnh cơ bản để tạo chúng một cách nhanh chóng. Có 2 cách cơ bản là sử dụng **echo** và **cat** như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_11/Images/2.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_11/Images/2.png"></p>
 
 Đối với **echo** việc sử dụng dấu **>** sẽ ghi lại tự đầu còn với **>>** sẽ ghi tiếp vào sau nội dung của file nếu file tồn tại.
 
@@ -147,7 +147,7 @@ Một số key làm việc với **vi**
 
 **vi** hỗ trợ việc sử dụng lệnh ngoài như các command sử dụng trên linux. Để làm điều này ta gõ **:! command**. Ví dụ sử dụng **:! wc %** để thực hiện lệnh wc ở file hiện tại
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_11/Images/3.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task43_Linux_Course_01_LFS101/Chapter_11/Images/3.png"></p>
 
 Trình soạn thảo **emacs** là một đối thủ cạnh tranh phổ biến cho vi. Không giống như vi, nó không hoạt động với chế độ. Emacs được tùy biến cao và bao gồm một số lượng lớn các tính năng. Ban đầu nó được thiết kế để sử dụng trên console, nhưng cũng sớm được điều chỉnh để hoạt động với một GUI. Emacs có nhiều tính năng khác ngoài chỉnh sửa văn bản đơn giản; Nó có thể được sử dụng cho email, gỡ lỗi, vv 
 

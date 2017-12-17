@@ -81,27 +81,27 @@ Lưu ý cần gỡ tất cả các phiên bản virtualbox trước đó đã c�
 - Đặt tên máy và chọn như hình 
 > Nếu sử dụng bản 32 bit chọn Red hat (32 bit)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox1.png)
 
 - Chọn Memory size (RAM)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox2.png)
 
 - Chọn tạo mới ổ cứng ảo
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox3.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox3.png)
 
 - Chọn loại ổ cứng ảo (VDI)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox4.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox4.png)
 
 - chọn lưu trữ trên ổ cứng vật lý (chọn dynamically)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox5.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox5.png)
 
 - Chọn kích thước và vị trí ỗ đĩa
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox6.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox6.png)
 
 
 <a name="CaiDatCentos"></a>
@@ -109,38 +109,38 @@ Lưu ý cần gỡ tất cả các phiên bản virtualbox trước đó đã c�
 
 - Nhấn Start để bắt đầu chọn dvd/iso file
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox7.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/vbox7.png)
 
 - Chọn Install or upgrade an existing system
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install1.png)
 
 - Chọn Skip để bỏ qua bộ cài đăt
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install2.png)
 
 - Sau khi chọn next ta bắt đầu chọn ngôn ngữ cài đặt
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install4.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install4.png)
 
 - Chọn bàn phím hệ thống (keyboard)
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install5.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install5.png)
 
 - Chọn Kiểu thiết bị sẽ cài đặt
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install6.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install6.png)
 
 - Chọn yes, discard any data để bỏ qua cảnh báo (xóa dữ liệu trên ổ cứng đã chọn)
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install7.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install7.png)
 
 - Đặt hostname
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install8.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install8.png)
 
 > Có thể config network để có thể khởi động network khi vào hệ thống như sau
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install9.png)
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install10.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install9.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install10.png)
 
 - Chọn giờ hệ thống
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install11.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install11.png)
 
 - Đặt passwork cho user root
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install12.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install12.png)
 
 - Chọn kiểu cài đặt:
 
@@ -150,10 +150,10 @@ Lưu ý cần gỡ tất cả các phiên bản virtualbox trước đó đã c�
 	+ Use Free Space: Sử dụng phân vùng trống
 	+ Create custom Layout: Tạo phân vùng tùy chỉnh theo ý muốn 
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install13.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install13.png)
 
 - Chọn Standard partition 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install14.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install14.png)
 
 - Tùy chỉnh phân vùng
 
@@ -161,26 +161,26 @@ Lưu ý cần gỡ tất cả các phiên bản virtualbox trước đó đã c�
 	+ File System Type: Chọn kiểu file hệ thống (ext3, ext4, swap,...)
 	+ Size: Kích thước phân vùng
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install15.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install15.png)
 
 - Sau khi tạo xong tất cả các phân vùng mong muốn, chọn Next và chọn write changes to disk để ghi lại những thay đổi
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install17.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install17.png)
 
 - Boot loader (để mặc định)
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install18.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install18.png)
 
 - Chọn loại hệ thống desktop (có hỗ trợ GUI), Minimal (Chỉ hỗ trợ console), basic server,...
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install19.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install19.png)
 
 - Sau đó nhấn Next và quá trình cài đặt bắt đầu, sau khi cài xong reboot lại hệ thống
 
 - Chọn forward đến tạo user (điền thông tin user) và tiếp tục
 
 - Chọn ngày và thời gian
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install21.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install21.png)
 
 - Thiết lập dung lượng cho kdump
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install22.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/install22.png)
 
 
 
@@ -198,7 +198,7 @@ Thay đổi pass của user này:
 
 **Passwd user_name**
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init1.png)
 
 <a name="UseRoot"></a>
 ##### 4.2 Use root account
@@ -209,16 +209,16 @@ Thay đổi pass của user này:
 - Sử dụng lệnh 
 	**vi /etc/sysconfig/network-scripts/ifcfg-eth0**
 và thay đổi như sau:
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init2.png)
 
 - Restart lại service network và kiểm tra lại với các lệnh như hình
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init3.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init3.png)
 
 - Để disable IPv6 ta thêm 2 dòng sau vào file /etc/sysctl.conf
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init4.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init4.png)
 
 - Áp dụng cấu hình với lệnh sysctl -p và kiểm tra ta được
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init5.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init5.png)
 
 <a name="SerConfig"></a>
 ##### 4.4 Configure Services
@@ -227,57 +227,57 @@ chkconfig là lệnh thao tác với service, một số lệnh cơ bản như s
 	
 + kiểm tra các service
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init6.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init6.png)
 
 + Tắt service
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init7.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init7.png)
 
 <a name="SysUpdate"></a>
 ##### 4.5 Update System
 
 - Sử dụng lệnh
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init8.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init8.png)
 
 <a name="Vim"></a>
 ##### 4.6 Vim Settings
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init9.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init9.png)
 
 - Sau khi dùng lệnh trên cài đặt thì ta chỉnh alias như sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init10.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init10.png)
 
 - Ngoài ra ta chỉnh 1 số cấu hình như hiển thị dòng, systax trong vim
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init11.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init11.png)
 
 <a name="SudoSet"></a>
 ##### 4.7 Sudo Settings
 
-- Cho user (hellsins) quyền như root
+- Cho user (ctnguyenvn) quyền như root
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init12.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init12.png)
 
 - Tạo group mới
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init14.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init14.png)
 
 - Áp dụng quyền cụ thể cho từng user đối với từng lệnh
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init15.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init15.png)
 
 - Sau khi áp dụng ta được kết quả sau
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init16.png)
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init17.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init16.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init17.png)
 
 - Để chỉ ghi log của sudo ta thêm vào cuối file sudoer dòng:
 	
 	**Defaults syslog=local1**
 
 Sau đó thêm vào file /etc/rsyslog.conf như sau (khoảng dưới dòng 42)
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init18.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task02_CentOS_Install_and_Initial_Config/img/init18.png)
 
 #### Kết thúc

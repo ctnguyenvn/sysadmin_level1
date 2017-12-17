@@ -4,7 +4,7 @@
 
 #### Cơ chế hoạt động của 1 web tĩnh
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task41_PHP_Course_01/Image/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task41_PHP_Course_01/Image/1.png)
 
 __Bước 1__: Client gửi request (sử dụng URL) 
 
@@ -23,7 +23,7 @@ __Bước 7__: Client dùng browser để hiển thị kết quả trả về
 
 #### Cơ chế hoạt động của 1 web động
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task41_PHP_Course_01/Image/2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task41_PHP_Course_01/Image/2.png)
 
 __Bước 1__: Client gửi request (sử dụng URL) 
 

@@ -58,58 +58,58 @@ Sau đây chúng ta sẽ đi qua tìm hiểu cũng như sử dụng cơ bản v�
 
 - Chọn ô **Hosting mới**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_1.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_1.png" /></p>
 
 - Chọn **Tài khoản Hosting mới**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_2.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_2.png" /></p>
 
 - Chọn ô **Free**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_3.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_3.png" /></p>
 
 - Chọn **Thanh toán ngay**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_4.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_4.png" /></p>
 
 - Nhấn **Tôi đồng ý với** và chọn **Hoàn Tất Đơn Hàng**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_5.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_5.png" /></p>
 
 - Đăng ký thành công. Giờ bạn có thể chọn **Cài đặt** để bắt đầu
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_6.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_6.png" /></p>
 
 - Chọn Loại tên miền là **Domain** vì tôi đã có domain, sau đó điền đầy đủ thông tin và nhấn **Cài đặt**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_7.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_7.png" /></p>
 
 - Nếu chưa có tên miền bạn có thể chọn **subdomain miễn phí** và cũng điền đầy đủ và nhấn **Cài đặt**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_8.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_8.png" /></p>
 
 - Quá trình tạo Hosting miễn phí thành công
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_9.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/2_9.png" /></p>
 
 <a name="3"></a>
 #### 3. Trỏ Name Server từ tenten về Hostinger
 
 - Để trỏ tên miền từ tenten về Hostinger ta vào trang navi.tenten.vn đăng nhập vào tài khoản và chọn như sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/3_1.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/3_1.png" /></p>
 
 - Tiếp theo ta nhập Name server của Hostinger vào và nhấn Next
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/3_2.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/3_2.png" /></p>
 
 - Tiếp tục nhấn Next
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/3_3.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/3_3.png" /></p>
 
 - Xác nhận thành công
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/3_4.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/3_4.png" /></p>
 <a name="4"></a>
 #### 4. Một số tính năng với cpanel của Hostinger
 
@@ -122,19 +122,19 @@ Vào **Tài khoản => Thông tin chi tiết**
 
 - **Name Server**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_1_1.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_1_1.png" /></p>
 
 - **Thông tin website**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_1_2.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_1_2.png" /></p>
 
 - Dịch vụ FTP
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_1_3.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_1_3.png" /></p>
 
 - **Website Builder**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_1_4.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_1_4.png" /></p>
 
 <a #name="4.2"></a>
 ##### 4.2 Tạo 1 database
@@ -143,11 +143,11 @@ Vào **Tài khoản => Thông tin chi tiết**
 
 - Chọn MySQL Databases
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_2_1.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_2_1.png" /></p>
 
 - Điền đầy đủ thông tin của database và nhấn **Tạo**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_2_2.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_2_2.png" /></p>
 
 <a #name="4.3"></a>
 ##### 4.3 Cài Wordpress với website builder
@@ -156,15 +156,15 @@ Chúng ta có thể cài wordpress tự động với website như sau
 
 - Chọn **Trình tự động cài đặt**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_3_1.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_3_1.png" /></p>
 
 - Tìm WordPress và chọn nó để cài đặt (có thẻ điền vào ô trống để tìm nhanh)
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_3_2.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_3_2.png" /></p>
 
 - Điền và kiểm tra đầy đủ thông tin và nhấn **Cài đặt** để bắt đầu quá trình cài đặt
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_3_3.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/4_3_3.png" /></p>
 
 <a name="5"></a>
 #### 5. Tạo subdomain
@@ -173,22 +173,22 @@ Chúng ta có thể cài wordpress tự động với website như sau
 
 - Chọn **Subdomains**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/5_1.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/5_1.png" /></p>
 
 - Điền subdomain và nhấn **Tạo** để bắt đầu 
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/5_2.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/5_2.png" /></p>
 
 <a name="6"></a>
 #### 6. Sử dụng FileZilla để upload mã nguồn lên hosting
 
 Để bắt đầu sủ dụng FileZilla để upload mã nguồn lên hosting  ta login vào FileZilla sử dụng thông tin ở phần **Thông tin chi tiết**
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/6_1.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/6_1.png" /></p>
 
 - Chúng ta chọn tất cả các file, folder ở vùng 3 và kéo bỏ sang vùng 5 để tiếng hành upload lên hosting
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/6_2.png" /></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task23_Hosting_Usage/Image/6_2.png" /></p>
 
 - Trong đó:
 

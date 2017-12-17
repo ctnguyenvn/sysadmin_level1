@@ -83,7 +83,7 @@ Ví dụ này cho thấy một vài khía cạnh thú vị của records A, AAAA
 Bây giờ chúng ta đã thấy các định dạng thông điệp DNS, các lựa chọn giao thức vận chuyển, và các loại RR cho các queries và responses cơ bản, chúng ta hãy xem một ví dụ. Chúng tôi bắt đầu với một trường hợp đơn giản để xem các thông tin liên lạc giữa một trình giải quyết trên một client, một local name 
 server, và một quản lý name server từ xa bởi một ISP. Kịch bản này cho thấy tầm quan trọng của bộ nhớ đệm trong DNS. Cấu trúc liên kết được thể hiện trong hình sau.
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task24_Translation_TC-IP_Illustrated_Vol1_Page_536to540/Image/1.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task24_Translation_TC-IP_Illustrated_Vol1_Page_536to540/Image/1.png"></p>
 
 > Một ví dụ đơn giản query/response DNS. Các local DNS server (GW.HOME) cung cấp đệ quy cho client (A.HOME), và sử dụng các máy chủ DNS được cung cấp tại các ISP khi dữ liệu được yêu cầu không có trong bộ nhớ cache.
 
@@ -112,7 +112,7 @@ Lệnh đầu tiên là đặc biệt để Windows loại bỏ các dữ liệu
 
 Hãy xem những gì sẽ xảy ra với các giao thức DNS tại packet, chúng tôi sử dụng Wireshark và có một cái nhìn tại các gói đầu tiên như hình sau
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task24_Translation_TC-IP_Illustrated_Vol1_Page_536to540/Image/2.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task24_Translation_TC-IP_Illustrated_Vol1_Page_536to540/Image/2.png"></p>
 
 > Một datagram UDP/IPv4 chứa một truy vấn chuẩn DNS cho địa chỉ IPv4 với berkeley.edu
 
@@ -122,7 +122,7 @@ Quay sang các chi tiết của DNS header, ID giao dịch là 0x0002 và tạo 
 
 Trong hình dưới, chúng tôi thấy một truy vấn tương tự như gửi của client, nhưng trong trường hợp này là nguồn địa chỉ IPv4 là 70.231.136.162 (địa chỉ IPv4 ISP-side của GW.HOME). Địa chỉ đích là 206.13.28.12, địa chỉ IPv4 của máy chủ DNS của ISP cung cấp, và cổng nguồn là một cổng khác trên máy chủ DNS địa phương (60961).
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task24_Translation_TC-IP_Illustrated_Vol1_Page_536to540/Image/3.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task24_Translation_TC-IP_Illustrated_Vol1_Page_536to540/Image/3.png"></p>
 
 > Một yêu cầu DNS được tạo ra tại GW.HOME được gửi đến các ISP name server như một hệ quả của đệ quy.
 
@@ -133,7 +133,7 @@ available tất cả các thiết lập). Phần question có chứa một bản
 
 Các Response  trong hình dưới, gói 2, là giống như một gói từ 206.13.28.12, ngoại trừ nó bây giờ được gửi từ 10.0.0.1 đến client ban đầu của chúng tôi tại 10.0.0.120, và các giao dịch ID phù hợp với một trong DNS gốc yêu cầu. cũng lưu ý rằng từ quan điểm của client để xem toàn bộ thời gian đi của giao dịch là khoảng 14.7ms, nhưng chúng tôi biết rằng hầu hết thời gian đó (14.2ms) đã được đưa lên trong các giao dịch giữa các máy chủ tên địa phương (GW.HOME ) và máy chủ tên của ISP (206.13.28.12).
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task24_Translation_TC-IP_Illustrated_Vol1_Page_536to540/Image/4.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task24_Translation_TC-IP_Illustrated_Vol1_Page_536to540/Image/4.png"></p>
 
 > Một DNS response chuẩn gửi từ máy chủ DNS của ISP trở lại
 GW.HOME
@@ -145,7 +145,7 @@ Record CNAME là viết tắt của record `canonical name` và được sử d�
 
 Trong một CNAME RR, phần RDATA chứa các `anonical name` kết hợp với tên miền (bí danh). Tên này sử dụng cùng một loại mã hóa như các tên khác (ví dụ, data labe và compression labe). Khi một CNAME RR là kết quả cho một tên cụ thể, không có dữ liệu được cho phép RFC1912. 
 
-<p align="center"><img src="https://github.com/hellsins/sysadmin_level1/blob/master/Task24_Translation_TC-IP_Illustrated_Vol1_Page_536to540/Image/5.png"></p>
+<p align="center"><img src="https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task24_Translation_TC-IP_Illustrated_Vol1_Page_536to540/Image/5.png"></p>
 
 > Một response tạo ra bởi GW.HOME và dành cho client. Thông báo này đã hoàn tất các giao dịch DNS đệ quy.
 

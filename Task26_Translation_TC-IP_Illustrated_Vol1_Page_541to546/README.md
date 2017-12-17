@@ -83,7 +83,7 @@ phloem.uoregon.edu AAA IPv6 address = 2001:468:d01:20::80df:2023
 
 Điều này chứa trong hai gói, và chúng tôi đã chọn hiển thị các reply, đó là những chi tiết thú vị của cả hai. Một truy vấn cho một SOA RR đã được gửi đến các máy chủ `260:f140:ffff:fffe::3` (`adns1.Berkeley.EDU`) từ hệ thống local toàn cầu có phạm vi địa chỉ IPv6 `2001:5c0:1101:ed00:5571:5f81:e0a6:4978`. Các `response` được thực hiện trong một datagram với 491 byte tổng chiều dài (trường Payload dài 451) IPv6. Gói này đặc biệt có chứa các header IPv6 (40 byte), header UDP (8 byte), cộng với DNS messager (443 byte). Thông điệp DNS bao gồm một `question`, một `answer`, 6 `authority RR`, và 10 `additional RRs`.
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task26_Translation_TC-IP_Illustrated_Vol1_Page_541to546/Image/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task26_Translation_TC-IP_Illustrated_Vol1_Page_541to546/Image/1.png)
 
 > `Response` tới DNS query cho SOA record sử dụng IPv6. `Response` gồm địa chỉ IPv4 và IPv6 cho zone
 

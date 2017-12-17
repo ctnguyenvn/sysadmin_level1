@@ -61,11 +61,11 @@ LMD là một phần mềm mạnh mẽ với 1 số đặc điểm nổi bật n
 
 Để cài đặt LMD từ trang web chính thức ta làm như sau:
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/1.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/1.png)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/2.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/2.png)
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/3.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/3.png)
 
 
 
@@ -116,7 +116,7 @@ maldet -a [thư mục]
 ```
 Ví dụ:
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/4.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/4.png)
 
 Để xem report ta dùng lệnh:
 
@@ -169,7 +169,7 @@ yum update && yum install clamd
 
 Để sử dụng ClamAv đầu tiên ta cần khởi động clamd hoặc có thể khởi động mặc định với lệnh:
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/6.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/6.png)
 
 Bạn có thể scan thư mục bất kỳ. Ví dụ kết quả scan toàn bộ hệ thống với lệnh:
 
@@ -178,7 +178,7 @@ clamscan -r /
 ```
 là 
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/8.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/8.png)
 
 Một số Option thường được sử dụng với ClamAV:
 
@@ -195,7 +195,7 @@ Một số Option thường được sử dụng với ClamAV:
 freshclam
 ```
 
-![](https://github.com/hellsins/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/7.png)
+![](https://github.com/ctnguyenvn/sysadmin_level1/blob/master/Task29_CentOS6_Antivirus/Image/7.png)
 
 <a name="2.4"></a>
 #### 2.4 Remove ClamAV#
